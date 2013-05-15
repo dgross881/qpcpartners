@@ -1,0 +1,27 @@
+- @title = 'Contact Us'
+
+%h1 Contact Us
+%aside.contact
+	%p
+		Please send us a message with your contact information and a short introduction, and we will contact you as soon as we are able.
+	%p 
+		Thank you!
+= form_tag contacts_path, :method => 'post' do
+	%table
+		%tr
+			%td
+				.left
+					= text_field_tag "contact[name]", nil, :placeholder => "Your name"
+
+					= text_field_tag "contact[company]", nil, :placeholder => "Company name"
+
+					= url_field_tag "contact[website]", nil, :placeholder => "Company website"
+
+					= email_field_tag "contact[email]", nil, :placeholder => "Your email address"
+
+					= telephone_field_tag "contact[phone]", nil, :placeholder => "Your telephone number"
+			%td
+				.right
+					= text_area_tag "contact[message]", nil, :placeholder => "Tell us about your company.  We also welcome any other concerns or questions that you may have."
+
+					= submit_tag "Send"

@@ -1,0 +1,16 @@
+%h2 Capabilities
+%table#capabilities
+	%tbody
+		%tr
+			%td
+				%ul.floating_white
+					%h3 
+						China Office
+					- china_office.each do |a|
+						%li= a
+			%td
+				%ul.floating_white
+					%h3
+						USA Office
+					- usa_office.each do |b|
+						%li= b

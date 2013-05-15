@@ -1,0 +1,5 @@
+%nav
+	#nav_wrapper
+		%ul
+			- nav_items.each_pair do |nav, con|
+				%li= link_to "#{nav}", "/#{con}"

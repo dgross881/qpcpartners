@@ -1,0 +1,26 @@
+footer {
+	float: right;
+	display: inline-block;
+	padding: 1.5rem;
+	margin: 3rem 0;
+	background-color: hsla(0,0,0,0.8);
+	color: white;
+	a {
+		color: white;
+		text-decoration: none;
+		@include transition(color, 150ms);
+		&:visited {
+			color: white;
+		}
+		&:hover {
+			color: #999;
+			text-decoration: none;
+			@include transition(color, 150ms);
+		}
+	}
+	#footer_wrapper {
+		.copyright {
+
+		}
+	}
+}

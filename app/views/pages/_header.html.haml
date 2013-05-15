@@ -1,0 +1,17 @@
+%header
+	.header_width_adjust
+		#logobox
+			= image_tag('logo.png')
+		#top_bar	
+			.language 
+				= link_to "華", root_path
+			.locations
+				%ul
+					- cities.each do |city|
+						%li
+							= "#{city}"
+		#header_space
+			- if flash[:notice]
+				.message= flash[:notice]
+
+		= render 'pages/nav'

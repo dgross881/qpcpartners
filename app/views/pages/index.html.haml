@@ -1,0 +1,34 @@
+- @title = 'Welcome!'
+#home_container
+	#home_wrapper
+		.left-col
+			#home_updates
+				%h1
+					QPC News
+				%article.update
+					= link_to image_tag('corcoran_front.png'), "http://www.corcoran.com"
+					#update_title
+						QPC - Corcoran Group, China Rep
+					#update_body
+						As Corcoran Group's China Representative, QPC has greatly enhanced its ability to provide its clients with comprehensive, high-quality international business expansion services, and has strengthened its positioning in the China-US market.
+				%article.update
+					#update_title
+						Website Re-design
+					#update_body
+						The re-design enhances accessibility for international and domestic clients.
+			#home_links	
+				%h1
+					Current Market Trends
+				= link_to image_tag('china_daily.png'), "http://usa.chinadaily.com.cn/business/index.html", :class => 'white-base-with-shadow'
+				= link_to image_tag('rhgroup.jpg'), "http://rhgroup.net/interactive/china-investment-monitor", :class => 'white-base-with-shadow'
+				= link_to image_tag('mckinsey.jpg'), "http://www.mckinseyquarterly.com/category_editor.aspx?l2=7&pid=2064&srid=264", :class => 'white-base-with-shadow'
+		.right-col
+			.black-base-with-shadow
+				%h1
+					Our Mission
+				%p 			
+					Assist clients in meeting their short-, medium- & long-term international business expansion objectives, opening new markets, realizing unexplored potential and achieving desired results.
+				%h1
+					Our Vision
+				%p
+					Provide consultancy services related to overseas business development, cross-border business expansion and merger and acquisitions for small- and medium-size companies with expertise in China-USA segment.

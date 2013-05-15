@@ -1,0 +1,88 @@
+@mixin box-shadow($inset: false, $x: 0.1rem, $y: 0.1rem, $size: 1.5rem, $color: #222) {
+	@if $inset == false { $inset: null;}
+	-webkit-box-shadow: $inset 0rem 0.1rem $size $color;
+	-moz-box-shadow: $inset 0rem 0.1rem $size $color;
+	-o-box-shadow: $inset 0rem 0.1rem $size $color;
+	box-shadow: $inset 0rem 0.1rem $size $color;
+}
+
+@mixin transition($property, $len_time, $ease: ease-in-out, $delay: 0s) {
+	-webkit-transition: $property $len_time $ease $delay;
+  -moz-transition: $property $len_time $ease $delay;
+  -o-transition: $property $len_time $ease $delay;
+  transition: $property $len_time $ease $delay;
+}
+
+/* 1/3 width floating white box image with header and summary */
+
+@mixin filter($style-and-amount) {
+	filter: $style-and-amount;
+	-webkit-filter: $style-and-amount;
+	-moz-filter: $style-and-amount;
+	-ms-filter: $style-and-amount;
+	-o-filter: $style-and-amount;
+}
+
+@mixin image-with-shadow-and-padding($text-bg-hover, $height, $headline_width) {
+	.floating_white{
+		position: relative;
+		height: $height;
+		background-color: white;
+		@include box-shadow(false, 0, 0, 1rem, $shadow-color);
+		.core_wrap {
+			position: relative;
+			img {	
+				padding: 1rem 1rem;
+				opacity: 0.6;
+				@include filter(grayscale(75%));
+				@include transition(all, 300ms);
+			}
+			.headline {	
+				position: absolute;
+				bottom: 0rem;
+				padding: .5rem 1rem 1rem 1rem;
+				background-color: hsla(0,0,0,0.8);
+				color: white;
+				margin: 1.1rem 1rem;
+				width: $headline_width;
+				@include transition(all, 300ms);
+				h3 {
+					margin: 1rem 0;
+				}
+				p {
+					font-size: 1.4rem;
+					display: none;
+					padding-bottom: .5rem;
+					@include transition(all, 300ms);
+				}
+			}
+			&:hover {
+				img {
+					opacity: 1;
+					@include filter(grayscale(0%));
+					@include transition(all, 300ms);
+				}
+				.headline {
+					background-color: $text-bg-hover;
+					p {
+						display: inline;
+						@include transition(all, 300ms, ease);
+					}
+				}
+			}
+		}
+	}
+}
+
+/* @mixin navlink-hover-bg($n, $color)   <--   defined in _nav.css.scss */
+
+@mixin black-base-with-shadow($alpha, $padding, $shadow-size) {
+	@include box-shadow(false, 0, 0, $shadow-size, $shadow-color);
+	padding: $padding;
+	background-color: hsla(0,0,0,$alpha);
+}
+@mixin white-base-with-shadow($alpha, $padding, $shadow-size) {
+	@include box-shadow(false, 0, 0, $shadow-size, $shadow-color);
+	padding: $padding;
+	background-color: hsla(0,0,100,$alpha);
+}

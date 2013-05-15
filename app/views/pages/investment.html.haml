@@ -1,0 +1,46 @@
+- @title = 'Real Estate'
+
+%h1.real_estate Real Estate
+%h3.real_estate
+	= link_to("Investment Properties", '#investment_properties') 
+	| 
+	=link_to("Investment Projects", '#investment_projects')
+
+#investment_properties
+	%h2 
+		Investment Properties
+	#properties_wrapper
+		%h3 
+			Commercial and Residential
+			%p 
+				As the representative of Corcoran Group in China, QPC is uniquely positioned to offer clients its clients the finest property options across The Big Apple.
+			= link_to image_tag('corcoran.png'), "http://www.corcoran.com"
+	= image_tag("corcoran_home.png", :class => "right")
+#investment_projects
+	%h2 
+		Investment Projects – Current Real Estate Projects
+	#projects_wrapper
+		%h3
+			Washington DC Metro Area
+			%p
+				This property is located in the National Park Seminary historic neighborhood of greater Washington DC and is surrounded by parks and wooded lots, located approximately 1.5 miles from the Washington DC city limits and 1 mile from the metro station. This exclusive location is situated in a national park and adjacent to recently renovated high-end housing complexes. The property is currently uninhabited and in need of repair.
+			.list_p
+				%p 
+					%strong
+						Subdivision: 
+					Forest Glen Park
+				%p 
+					%strong
+						Type: 
+					Single Family
+				%p 
+					%strong
+						House Size: 
+					2506 Sq. Ft.
+					%strong
+						Bedrooms: 
+					3
+					%strong
+						Baths: 
+					2.5
+	= image_tag "forestglen.jpg"
