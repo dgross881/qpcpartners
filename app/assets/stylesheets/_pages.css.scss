@@ -365,8 +365,13 @@ h3.real_estate {
 		.right-col {
 			width: 30%;
 			float: right;
+			&:hover {
+				@include black-base-with-shadow(1, 1rem, 2rem);
+				@include transition(background-color, 200ms);
+			}
 			.black-base-with-shadow {
 				@include black-base-with-shadow(0.8, 1rem, 2rem);
+				@include transition(background-color, 200ms);
 				color: hsla(0,0,100,1);
 			}
 		}
@@ -401,17 +406,24 @@ h3.real_estate {
 			#home_links {
 				float:left;
 				width: 65%;
-				h1{
-					position: relative;
-				}
-				a {
-					margin: 0 auto;
-					padding:3rem 1rem;
-					.white-base-with-shadow {
-						@include white-base-with-shadow(0.9, 1rem, 2rem);
-						color: hsla(0,0,0,1); 
+				#links {
+					@include white-base-with-shadow(1, 1rem, 2rem);
+					&:hover {
 						img {
-
+							@include box-shadow(false, 1, 1, 1rem, $inner-shadow);
+							@include transition(all, 200ms);
+						}
+					}
+					a {
+						margin: 0 auto;
+						padding: 0 .75rem;
+						img {
+							@include box-shadow(false, 0, 0, 0rem, $inner-shadow);
+							@include transition(all, 200ms);
+							&:hover {
+								@include box-shadow(false, 1, 1, 2rem, $inner-shadow);
+								@include transition(all, 200ms);
+							}
 						}
 					}
 				}
