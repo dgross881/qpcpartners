@@ -28,6 +28,8 @@ class PagesController < ApplicationController
       respond_to do |format|
         if @contact.save
           flash[:notice] = "We've received your message, #{params[:contact][:name]}. Thank you!"
+          ContactMailer.thank_you_email(@contact).deliver
+          NotifyMailer.notify_email(@contact).deliver
           format.html { redirect_to '/' }
           format.json { render json: @contact, status: :created, location: @contact }
         else
