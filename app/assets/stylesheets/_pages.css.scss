@@ -165,6 +165,7 @@ h2.core_actions {
 		list-style: none;
 		color: black;
 		margin: 0 0 3rem 0;
+		@include transition(all, 200ms);
 		@include box-shadow(false, 0, 0, 1.5rem, $shadow-color);
 		li {
 			float: left;
@@ -216,7 +217,7 @@ table#capabilities {
 					width: 45rem;
 					li {
 						padding: 1rem 0.5rem;
-						list-style-type: circle;
+						list-style: none;
 					}
 				}
 			}
@@ -264,10 +265,10 @@ article#services {
 		margin: 0 0 1.4rem 0;
 		background-color: hsla(0,0,0,0.9);
 		padding: 1rem;
-		@include transition(background-color, 200ms);
+		@include transition(all, 200ms);
 		&:hover {
 			background-color:gray;
-			@include transition(background-color, 200ms);
+			@include transition(all, 200ms);
 		}
 	}
 }
@@ -365,6 +366,8 @@ h3.real_estate {
 		.right-col {
 			width: 30%;
 			float: right;
+			background-color: hsla(0,0,0,0.8);
+			@include transition(background-color, 200ms);
 			&:hover {
 				@include black-base-with-shadow(1, 1rem, 2rem);
 				@include transition(background-color, 200ms);

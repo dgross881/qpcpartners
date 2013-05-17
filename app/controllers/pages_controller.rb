@@ -19,7 +19,6 @@ class PagesController < ApplicationController
   end
 
   def contact
-    @contact = Contact.new
   end
 
   def contacts
@@ -27,11 +26,11 @@ class PagesController < ApplicationController
       @contact = Contact.new(params[:contact])
       respond_to do |format|
         if @contact.save
-          flash[:notice] = "We've received your message, #{params[:contact][:name]}. Thank you!"
           ContactMailer.thank_you_email(@contact).deliver
           NotifyMailer.notify_email(@contact).deliver
-          format.html { redirect_to '/' }
+          flash[:notice] = "We've received your message, #{params[:contact][:name]}. Thank you!"
           format.json { render json: @contact, status: :created, location: @contact }
+          format.html { redirect_to '/' and return }
         else
           format.html { render action: "contact" }
           format.json { render json: @contact.errors, status: :unprocessable_entity }

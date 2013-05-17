@@ -9,7 +9,7 @@
 		<p>Email: <%= @contact.email %></p>
 		<p>Telephone: <%= @contact.phone %></p>
 		<p>Company Name: <%= @contact.company %></p>
-		<p>Company Website: <%= @contact.website %></p>
+		<p>Company Website: <%= link_to "#{@contact.website}", @contact.website %>
 
 		<p>Message: <%= @contact.message %></p>
 	</body>

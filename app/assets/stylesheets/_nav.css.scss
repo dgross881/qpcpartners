@@ -3,13 +3,13 @@
 @mixin navlink-hover-bg($n, $color) {
 	&:nth-child(#{$n}) {
 		a {
-			padding: 0.5rem 2rem;
-			background-color: rgba(0,0,0,0.4);
+			padding: 0.6rem 2rem;
+			background-color: hsla(0,0,100,1);
 			@include transition(all, 250ms);
-			color: #fff;
+			color: #333;
 			&:hover {
 				background-color: $color;
-				@include transition(background-color, 0.25s);
+				@include transition(all, 0.25s);
 				color: white;
 				text-decoration: none;
 			}

@@ -1,8 +1,8 @@
-New Message from, <%= @contact.name %>
+New message from, <%= @contact.name %>.
 
 Email: <%= @contact.email %>
 Telephone: <%= @contact.phone %>
 Company Name: <%= @contact.company %>
-Company Website: <%= @contact.website %>
+Company Website: <%= link_to "#{@contact.website}", @contact.website %>
 
 Message: <%= @contact.message %></p>
