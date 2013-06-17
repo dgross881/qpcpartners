@@ -1,10 +1,9 @@
 %header
 	.header_width_adjust
-		#logobox
-			= image_tag('logo.png')
+		= link_to image_tag('QPC-logo.png'), '/', :id => 'logobox'
 		#top_bar	
 			.language 
-				= link_to "華", root_path
+				= link_to "", cn_root_path, :style => "background: url('#{root_path}assets/cn_flag.png') no-repeat"
 			.locations
 				%ul
 					- cities.each do |city|

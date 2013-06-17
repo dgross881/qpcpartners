@@ -1,27 +1,28 @@
 - @title = 'Contact Us'
 
 %h1 Contact Us
-%aside.contact
-	%p
-		Please send us a message with your contact information and a short introduction, and we will contact you as soon as we are able.
-	%p 
-		Thank you!
-= form_tag contacts_path, :method => 'post' do
-	%table
+%table#capabilities
+	%tbody
 		%tr
 			%td
-				.left
-					= text_field_tag "contact[name]", nil, :placeholder => "Your name"
-
-					= text_field_tag "contact[company]", nil, :placeholder => "Company name"
-
-					= url_field_tag "contact[website]", nil, :placeholder => "Company website"
-
-					= email_field_tag "contact[email]", nil, :placeholder => "Your email address"
-
-					= telephone_field_tag "contact[phone]", nil, :placeholder => "Your telephone number"
+				%ul.floating_white
+					%h3 
+						Gregory Wilson
+					%li{'data-icon' => "^"}
+						New York, NY, USA
+					%li{'data-icon' => "$"}
+						= link_to 'gwilson@qpcpartners.com', 'mailto: gwilson@qpcpartners.com'
+					%li{'data-icon' => "%"}
+						+1 240 291 0120 (USA)
+					%li{'data-icon' => "&"}
+						gregory.andrew.wilson
 			%td
-				.right
-					= text_area_tag "contact[message]", nil, :placeholder => "Tell us about your company.  We also welcome any other concerns or questions that you may have."
-
-					= submit_tag "Send"
+				%ul.floating_white
+					%h3
+						Jimmy Song
+					%li{'data-icon' => "^"}
+						Hangzhou, CN
+					%li{'data-icon' => "$"}
+						= link_to 'jsong@qpcpartners.com', 'mailto: jsong@qpcpartners.com'
+					%li{'data-icon' => "%"}
+						+86 1336 225 4070 (PRC)

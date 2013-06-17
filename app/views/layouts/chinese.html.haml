@@ -1,0 +1,17 @@
+!!! 5
+%html
+	%head
+		%title= "QPC | Quantum Perspective Consultancy | #{@title}"
+		= stylesheet_link_tag    "application", :media => "all"
+		= csrf_meta_tags
+
+	%body
+		#wrapper
+			/ nav partial called by header partial
+			= render 'cn/header'
+			#container_header
+			#container
+				= yield
+			%footer.left
+				= render 'cn/footer'
+				= javascript_include_tag "application"

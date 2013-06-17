@@ -2,15 +2,25 @@
 #home_container
 	#home_wrapper
 		.left-col
-			#home_updates
-				%h1
-					QPC News
+			#slider
 				%article.update
-					= link_to image_tag('corcoran_front.png'), "http://www.corcoran.com"
+					= link_to image_tag('corcoran_front.png', { :name => 'left' }), "http://www.corcoran.com/"
 					#update_title
-						QPC is Corcoran Group, China Rep
+						QPC is named Corcoran Group, China Rep
 					#update_body
 						As Corcoran Group's China Representative, QPC has greatly enhanced its ability to provide its clients with comprehensive, high-quality international business expansion services, and has strengthened its positioning in the China-US market.
+				%article.update
+					= link_to image_tag('fund_raising.png', { :name => 'right' }), "/investment"
+					#update_title
+						Upcoming Investment Projects
+					#update_body
+						New fund being raised between June-August 2013 for Sept-Dec foreclosure purchases in the Washington DC and NYC metro areas; purchases to be remodeled and ready for rental or sale listing by April 2014.
+				%article.update
+					= link_to image_tag( 'bionic_eye.png', { :name => 'left' }), "http://bioniceyetechnologies.com/"
+					#update_title
+						Bionic Eye: QPC working with Bionic Eye Technologies
+					#update_body
+						QPC is consulting Bionic Eye Technologies Inc. of Boston, MA during first round capital raising for their revolutionary vision correction device, in July 2013. QPC has been chosen to represent Bionic Eye throughout China.
 			#home_links	
 				%h1
 					Current Market Trends

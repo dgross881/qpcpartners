@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "fonts";
 
 /* other stylesheets included at bottom of page */
 
@@ -11,10 +12,14 @@ body {
 		family: 'Roboto', sans-serif;
 		weight: lighter;
 	}
-  background: hsl(0, 0%, 70%); /*url('bg.jpg') top fixed*/
+	background-color: hsl(0, 0%, 70%);
+	background: url('gray.png');
 }
-＃wrapper {
-	width: 100%;
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
 	background: transparent;
 }
 .wrapper {
@@ -23,17 +28,11 @@ body {
 .right {float: right;}
 .left {float: left;}
 #container_header {
-	width: 960px;
-	height: 16rem;
-	margin: 0 auto;
+	height: 15rem;
 }
 #container {
-	width: 960px;
-	display: relative;
-	margin: 0 auto;
 	color: white;
-	min-height: 100%;
-	height: auto !important;
+	height: 100%;
 }
 h1 {
 	font-size: 32px;
@@ -88,11 +87,16 @@ a {
 	}
 }
 article {
-	@include box-shadow(false, 0, 0.1rem, 2rem, $shadow-color);
+	@include box-shadow(false, 0, 0.1rem, 1rem, $shadow-color);
+	@include transition(all, 200ms);
 	width: 60%;
 	padding: 1.5rem 2rem;
 	background-color: rgba(255, 255, 255, 1.0);
 	color: #111;
+	&:hover {
+		@include box-shadow(false, 0, 0.1rem, 2.5rem, $shadow-color);
+		@include transition(all, 200ms);
+	}
 }
 aside {
 	width: 33%;
@@ -101,4 +105,5 @@ aside {
 @import "header";
 @import "nav";
 @import "pages";
+@import "cn";
 @import "footer";

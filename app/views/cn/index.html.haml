@@ -1,0 +1,45 @@
+# encoding: utf-8
+
+- @title = 'Welcome!'
+#home_container
+	#home_wrapper
+		.left-col
+			#slider
+				%article.update
+					= link_to image_tag('corcoran_front.png', { :name => 'left' }), "http://www.corcoran.com/"
+					#update_title
+						QPC is named Corcoran Group, China Rep
+					#update_body
+						As Corcoran Group's China Representative, QPC has greatly enhanced its ability to provide its clients with comprehensive, high-quality international business expansion services, and has strengthened its positioning in the China-US market.
+				%article.update
+					= link_to image_tag('fund_raising.png', { :name => 'right' }), "/investment"
+					#update_title
+						Upcoming Investment Projects
+					#update_body
+						New fund being raised between June-August 2013 for Sept-Dec foreclosure purchases in the Washington DC and NYC metro areas; purchases to be remodeled and ready for rental or sale listing by April 2014.
+				%article.update
+					= link_to image_tag( 'bionic_eye.png', { :name => 'left' }), "http://bioniceyetechnologies.com/"
+					#update_title
+						Bionic Eye: QPC working with Bionic Eye Technologies
+					#update_body
+						QPC is consulting Bionic Eye Technologies Inc. of Boston, MA during first round capital raising for their revolutionary vision correction device, in July 2013. QPC has been chosen to represent Bionic Eye throughout China.
+			#home_links	
+				%h1
+					当前的行业趋势
+				#links
+					= link_to image_tag('china_daily.png'), "http://usa.chinadaily.com.cn/business/index.html", :class => 'white-base-with-shadow'
+					= link_to image_tag('rhgroup.jpg'), "http://rhgroup.net/interactive/china-investment-monitor", :class => 'white-base-with-shadow'
+					= link_to image_tag('mckinsey.jpg'), "http://www.mckinseyquarterly.com/category_editor.aspx?l2=7&pid=2064&srid=264", :class => 'white-base-with-shadow'
+		.right-col
+			.black-base-with-shadow{:style => "padding: 3rem;"}
+				%h1
+					QPC任务
+				%p 			
+					协助客户，以满足其短期，中期和长期的国际化扩张目标，开拓新的市场，挖掘未开发的潜力并达到预期的结果。
+				%br
+				%hr
+				%br
+				%h1
+					QPC蓝图
+				%p
+					向中国-美国段的中小企业的海外业务发展，跨国业务拓展，收购与合并，提供相关的专业咨商服务。

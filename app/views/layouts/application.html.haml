@@ -3,7 +3,6 @@
 	%head
 		%title= "QPC | Quantum Perspective Consultancy | #{@title}"
 		= stylesheet_link_tag    "application", :media => "all"
-		= javascript_include_tag "application"
 		= csrf_meta_tags
 
 	%body
@@ -13,4 +12,6 @@
 			#container_header
 			#container
 				= yield
-				%footer= render 'pages/footer'
+			%footer.left
+				= render 'pages/footer'
+				= javascript_include_tag "application"
