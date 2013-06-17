@@ -4,7 +4,8 @@
 module CnHelper
 
 	def cn_nav_items
-		{"执行摘要" => "summary",
+		{ "主页" => "",
+			"执行摘要" => "summary",
       "核心能力" => "core",
       "业务服务" => "services",
       "咨询项目" => "consulting",
@@ -18,41 +19,41 @@ module CnHelper
 
 	def cn_strategic_actions
 		[
-			"Investor Road Shows",
-			"Investment Targeting",
-			"Strategic Partnerships",
-			"Due Diligence",
-			"Government Regulation",
-			"Financial Services",
-			"Legal Services",
-			"Deal Structuring",
-			"Negotiations",
-			"Deal Finalization",
-			"Implementation"
+			"客户/投资者巡回指导  >>",
+			"项目目标  >>",
+			"战略合作伙伴关联  >>",
+			"尽职监督  >>",
+			"政府监管  >>",
+			"财务服务  >>",
+			"司法咨询  >>",
+			"交易结构  >>",
+			"谈判  >>",
+			"并购交易  >>",
+			"执行  >>"
 		]
 	end
 
 	def cn_china_office
 		[
-			"Identify and source clients",
-			"Determine client requirements",
-			"Present opportunities to clients",
-			"Identify and explain cultural, accounting and legal differences",
-			"Oversee transactions",
-			"Continue assistance once transactions are completed"
+			"识别客户资源",
+			"明确客户需求",
+			"向客户提供机会",
+			"明确并解释文化，会计和法律的差异",
+			"监督交易",
+			"交易完成后继续提供咨商"
 		]
 	end
 
 	def cn_usa_office
 		[
-			"Identify opportunities and growth potential",
-			"Conduct due diligence on opportunities",
-			"Conduct site visits and interview staff",
-			"Evaluate opportunities",
-			"Investigate financial and legal positions",
-			"Compile project portfolios for presentation to clients",
-			"Oversee transactions",
-			"Continue assistance once transactions are completed"
+			"寻找机会和增长潜力",
+			"进行全面的机会调查",
+			"进行实地考察和面试人员",
+			"评估机会",
+			"调查财务和法律地位",
+			"编译提交给客户的投资项目组合",
+			"监督交易",
+			"交易完成后继续提供咨商"
 		]
 	end
 end

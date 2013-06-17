@@ -37,7 +37,7 @@ window.now = function() { return Date.now(); };
 
 			time.progress = stamp - time.start;
 			
-			next.style.opacity = Math.pow(time.progress / time.duration, .4);
+			next.style.opacity = Math.pow(time.progress / (time.duration/2), .4);
 			current.style.opacity = 1 - Math.pow(time.progress / time.duration, .4);
 
 			check: if (time.progress > time.duration) {

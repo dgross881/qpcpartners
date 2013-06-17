@@ -13,17 +13,17 @@ module PagesHelper
 	end
 
 	def strategic_actions
-		["Investor Road Shows",
-			"Investment Targeting",
-			"Strategic Partnerships",
-			"Due Diligence",
-			"Government Regulation",
-			"Financial Services",
-			"Legal Services",
-			"Deal Structuring",
-			"Negotiations",
-			"Deal Finalization",
-			"Implementation"]
+		["Investor Road Shows  >>",
+			"Investment Targeting  >>",
+			"Strategic Partnerships  >>",
+			"Due Diligence  >>",
+			"Government Regulation  >>",
+			"Financial Services  >>",
+			"Legal Services  >>",
+			"Deal Structuring  >>",
+			"Negotiations  >>",
+			"Deal Finalization  >>",
+			"Implementation  >>"]
 	end
 
 	def china_office

@@ -1,20 +1,20 @@
 - @title = 'Services'
 #services_wrapper
-	#services_list
-		%ul
-			- strategic_actions.each_with_index do |action,i|
-				%li{:name => i}= action
-
 	%article#services
-		%h1 Services
+		%h1 服务简介
 		%h3 Deal Profiles
 
-		%p Consulting Services – Individual, company or corporation requiring cross border professional business advice or services. QPC partners build on their business experience in over 30 countries to assist clients on a consulting basis. 
+		%p 咨询服务 –– 个人，公司或需要跨境专业业务咨询服务的企业。 QPC的合作伙伴将在30多个国家建立自己的业务网络，在咨询上协助客户。
+		%br
+		%p 客户 –– 可投资资产> 100万美元并希望跨境投资或拓展业务的中国和美国的普通公民，公司和企业。中国客户主要来源于中国一、二线城市。在过去的二十年中，由于中国的经济繁荣和人民币或外币的现金流入和财富积累，这些客户都获得了利益。中国的经济增长和投资回报率不断下降，减少了开放外国直接投资机会的可能性。美国的客户主要是来自于东北海岸，他们主要看上了中国的出口量和消费者需求的日益增大。  
+		%br
+		%p 收购目标 –– 在美国的公司，项目，房地产或资产为利益相关者提供了机会，创造了增长和价值。目前，大多数美国资产价值被低估，但国家的经济前景正在改善。为了价值增长或减轻债务，这些公司必须获得的资金，但却是很难从陷入困境的美国银行业或战略合作伙伴那里获得的。 年收益额小于20,000,000美元的公司规模和小于10,000,000美元的交易额。
+		%br
+		%h3 QPC市场定位 
+		%br
+		%p QPC将向中国和美国的客户提供大型投资机构和投资银行服务范围内容以外的服务。专注于涉及中小型交易的中国在美国设立或收购资产的实体。这些交易需要在中小型投资交易里所需的特殊的技能。  
 
-		%p Client – China or US based private citizen, entrepreneur or corporation with investable assets > $1mill USD and an appetite for cross border investments or business expansion.   
-
-		%p Target Acquisition – US based company, project, real estate or assets presenting opportunities to create growth and value for stakeholders. At present, most US assets are under-valued while the country's economic outlook is improving. In order to fund growth, or relieve debt, these companies must obtain capital from the troubled US banking industry or through strategic partnerships. Company size of < $20 mill USD yearly revenue and < $10 mill USD deal size. 
-
-		%h3 Niche Market
-
-		%p QPC offers services to Chinese and United States clients with requirements falling outside the scope of services provided by large institutions and investment banks. Focusing on small and medium deals involving Chinese entities establishing or acquiring assets in the USA.  These transactions require specific skills which are rare in the small-medium size deal segment.  In addition QPC offers US clients troubleshooting assistance, business development consulting, and guidance in capturing Chinese consumer demand.   
+	#services_list
+		%ul
+			- cn_strategic_actions.each_with_index do |action,i|
+				%li{:name => i}= action
