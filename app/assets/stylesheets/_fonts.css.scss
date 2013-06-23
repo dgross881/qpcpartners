@@ -9,7 +9,7 @@
 	font-style: normal;
 }
 
-[data-icon]:before {
+[data-icon]::before {
 	font-family: 'icomoon';
 	content: attr(data-icon);
 	speak: none;
