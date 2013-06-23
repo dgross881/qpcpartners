@@ -3,7 +3,7 @@
 // ##########################################################
 window.now = function() { return Date.now(); };
 
-(function Slider() {
+(function() {
 	if (document.getElementById('slider')) {
 		var slides = document.getElementById('slider'),
 		slideArray = slides.children,
