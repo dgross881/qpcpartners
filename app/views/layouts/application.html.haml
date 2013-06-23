@@ -3,6 +3,7 @@
 	%head
 		%title= "QPC | Quantum Perspective Consultancy | #{@title}"
 		= stylesheet_link_tag    "application", :media => "all"
+		= render 'layouts/ga' if Rails.env == "production"
 		= csrf_meta_tags
 
 	%body
@@ -15,4 +16,3 @@
 			%footer.left
 				= render 'pages/footer'
 				= javascript_include_tag "application"
-				= render 'layouts/ga' if Rails.env == "production"
