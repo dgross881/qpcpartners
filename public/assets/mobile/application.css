@@ -1,0 +1,2170 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300italic,300,500,500italic,100);
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *
+ */
+/* 
+html5doctor.com Reset Stylesheet v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+*/
+/* line 33, ../../../app/assets/stylesheets/mobile/application.css.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* line 42, ../../../app/assets/stylesheets/mobile/application.css.scss */
+body {
+  line-height: 1;
+}
+
+/* line 46, ../../../app/assets/stylesheets/mobile/application.css.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 49, ../../../app/assets/stylesheets/mobile/application.css.scss */
+nav ul {
+  list-style: none;
+}
+
+/* line 52, ../../../app/assets/stylesheets/mobile/application.css.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 56, ../../../app/assets/stylesheets/mobile/application.css.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 60, ../../../app/assets/stylesheets/mobile/application.css.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+/* line 68, ../../../app/assets/stylesheets/mobile/application.css.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+/* line 74, ../../../app/assets/stylesheets/mobile/application.css.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* line 80, ../../../app/assets/stylesheets/mobile/application.css.scss */
+del {
+  text-decoration: line-through;
+}
+
+/* line 83, ../../../app/assets/stylesheets/mobile/application.css.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+/* line 87, ../../../app/assets/stylesheets/mobile/application.css.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+/* line 92, ../../../app/assets/stylesheets/mobile/application.css.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 100, ../../../app/assets/stylesheets/mobile/application.css.scss */
+input, select {
+  vertical-align: middle;
+}
+
+/* 1/3 width floating white box image with header and summary */
+/* @mixin navlink-hover-bg($n, $color)   <--   defined in _nav.css.scss */
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot");
+  src: url("fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype"), url("fonts/icomoon.svg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 12, ../../../app/assets/stylesheets/_fonts.css.scss */
+[data-icon]::before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  margin-right: 0.75rem;
+}
+
+/* other stylesheets included at bottom of page */
+/* line 7, ../../../app/assets/stylesheets/_base.css.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* =10px */
+/* line 8, ../../../app/assets/stylesheets/_base.css.scss */
+body {
+  font-size: 14px;
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  background-color: #b3b3b3;
+  background: url("gray.png");
+}
+
+/* line 19, ../../../app/assets/stylesheets/_base.css.scss */
+#wrapper {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  background: transparent;
+}
+
+/* line 25, ../../../app/assets/stylesheets/_base.css.scss */
+.wrapper {
+  position: relative;
+}
+
+/* line 28, ../../../app/assets/stylesheets/_base.css.scss */
+.right {
+  float: right;
+}
+
+/* line 29, ../../../app/assets/stylesheets/_base.css.scss */
+.left {
+  float: left;
+}
+
+/* line 30, ../../../app/assets/stylesheets/_base.css.scss */
+#container_header {
+  height: 15rem;
+}
+
+/* line 33, ../../../app/assets/stylesheets/_base.css.scss */
+#container {
+  color: white;
+  height: 100%;
+  position: relative;
+}
+
+/* line 38, ../../../app/assets/stylesheets/_base.css.scss */
+h1 {
+  font-size: 32px;
+  font-size: 3.2rem;
+  font-weight: 200 !important;
+  padding: 0.5rem 0 2rem 0;
+}
+
+/* line 44, ../../../app/assets/stylesheets/_base.css.scss */
+h2 {
+  font-size: 2.8rem;
+  font-size: 28px;
+  font-weight: 100 !important;
+  padding: 0.5rem 0;
+}
+
+/* line 50, ../../../app/assets/stylesheets/_base.css.scss */
+h3 {
+  font-size: 2.0rem;
+  font-size: 20px;
+  font-weight: 200;
+  padding: .5rem 0;
+}
+
+/* line 56, ../../../app/assets/stylesheets/_base.css.scss */
+h4 {
+  font-size: 1.6rem;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* line 63, ../../../app/assets/stylesheets/_base.css.scss */
+h5 {
+  font-size: 2.0rem;
+  font-size: 20px;
+  color: blue;
+  font: bold italic;
+}
+
+/* line 69, ../../../app/assets/stylesheets/_base.css.scss */
+h6 {
+  font-size: 1.6rem;
+  font-size: 16px;
+  font-style: bold;
+}
+
+/* line 74, ../../../app/assets/stylesheets/_base.css.scss */
+p {
+  line-height: 2.1rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+/* line 79, ../../../app/assets/stylesheets/_base.css.scss */
+a {
+  color: #003a75;
+  text-decoration: none;
+}
+/* line 82, ../../../app/assets/stylesheets/_base.css.scss */
+a:visited {
+  color: #012342;
+  text-decoration: none;
+}
+/* line 86, ../../../app/assets/stylesheets/_base.css.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 90, ../../../app/assets/stylesheets/_base.css.scss */
+article {
+  -webkit-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+  width: 60%;
+  padding: 1.5rem 2rem;
+  background-color: white;
+  color: #111;
+}
+/* line 97, ../../../app/assets/stylesheets/_base.css.scss */
+article:hover {
+  -webkit-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+
+/* line 102, ../../../app/assets/stylesheets/_base.css.scss */
+aside {
+  width: 33%;
+}
+
+/* line 2, ../../../app/assets/stylesheets/_header.css.scss */
+header {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin: 0;
+}
+/* line 8, ../../../app/assets/stylesheets/_header.css.scss */
+header .header_width_adjust {
+  width: 960px;
+  margin: 0 auto;
+}
+/* line 11, ../../../app/assets/stylesheets/_header.css.scss */
+header .header_width_adjust #logobox {
+  float: left;
+  display: inline-block;
+  background-color: white;
+  padding: 1rem;
+  -webkit-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 18, ../../../app/assets/stylesheets/_header.css.scss */
+header .header_width_adjust #logobox:hover {
+  -webkit-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 23, ../../../app/assets/stylesheets/_header.css.scss */
+header .header_width_adjust #top_bar {
+  float: right;
+  display: block;
+  width: 75%;
+  color: #145189;
+}
+/* line 28, ../../../app/assets/stylesheets/_header.css.scss */
+header .header_width_adjust #top_bar .language {
+  margin: 0 0 0 1rem;
+  font-size: 2.4rem;
+  float: right;
+  margin: 1rem 0;
+}
+/* line 33, ../../../app/assets/stylesheets/_header.css.scss */
+header .header_width_adjust #top_bar .language a {
+  -webkit-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: box-shadow 400ms ease-in-out 0s;
+  -moz-transition: box-shadow 400ms ease-in-out 0s;
+  -o-transition: box-shadow 400ms ease-in-out 0s;
+  transition: box-shadow 400ms ease-in-out 0s;
+  padding: 0.6rem 2.3rem;
+  /*background: url('cn_flag.png') white no-repeat;*/
+}
+/* line 38, ../../../app/assets/stylesheets/_header.css.scss */
+header .header_width_adjust #top_bar .language a:hover {
+  text-decoration: none;
+  -webkit-transition: box-shadow 500ms ease-in-out 0s;
+  -moz-transition: box-shadow 500ms ease-in-out 0s;
+  -o-transition: box-shadow 500ms ease-in-out 0s;
+  transition: box-shadow 500ms ease-in-out 0s;
+  -webkit-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+}
+/* line 43, ../../../app/assets/stylesheets/_header.css.scss */
+header .header_width_adjust #top_bar .language a:active {
+  -webkit-box-shadow: inset 0 0 0.6rem rgba(128, 128, 128, 0.9);
+  -moz-box-shadow: inset 0 0 0.6rem rgba(128, 128, 128, 0.9);
+  -o-box-shadow: inset 0 0 0.6rem rgba(128, 128, 128, 0.9);
+  box-shadow: inset 0 0 0.6rem rgba(128, 128, 128, 0.9);
+}
+/* line 48, ../../../app/assets/stylesheets/_header.css.scss */
+header .header_width_adjust #top_bar .locations {
+  float: right;
+  padding: 0.9rem 0 0;
+  height: auto;
+  text-align: right;
+  color: white;
+  font-size: 1.5rem;
+  width: 92%;
+}
+/* line 56, ../../../app/assets/stylesheets/_header.css.scss */
+header .header_width_adjust #top_bar .locations ul {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+/* line 59, ../../../app/assets/stylesheets/_header.css.scss */
+header .header_width_adjust #top_bar .locations ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+/* line 66, ../../../app/assets/stylesheets/_header.css.scss */
+header .header_width_adjust #header_space {
+  position: relative;
+  text-align: right;
+  color: white;
+  font-size: 1.0rem;
+}
+/* line 71, ../../../app/assets/stylesheets/_header.css.scss */
+header .header_width_adjust #header_space .message {
+  position: absolute;
+  padding: 1rem;
+  background-color: white;
+  top: 6rem;
+  right: 0;
+  font-size: 1.6rem;
+  color: green;
+}
+
+/* stylesheet-specific @mixin [	contains nav item stylings ] */
+/* line 28, ../../../app/assets/stylesheets/_nav.css.scss */
+nav {
+  float: right;
+  display: inline-block;
+  font-size: 1.5rem;
+  width: auto;
+  height: 1.8rem;
+  margin: 3.5rem 0rem;
+  padding: .5rem 0;
+}
+/* line 38, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li {
+  float: left;
+  width: auto;
+  margin: 0 0 0 1.5rem;
+}
+/* line 5, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(1) a {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+  color: #333;
+}
+/* line 11, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(1) a:hover {
+  background-color: #eb001b;
+  color: white;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 18, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(1) a:active {
+  -webkit-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -moz-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -o-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -webkit-transition: all 100ms ease-in-out 0s;
+  -moz-transition: all 100ms ease-in-out 0s;
+  -o-transition: all 100ms ease-in-out 0s;
+  transition: all 100ms ease-in-out 0s;
+  background-color: #d10018;
+}
+/* line 5, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(2) a {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+  color: #333;
+}
+/* line 11, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(2) a:hover {
+  background-color: #044a90;
+  color: white;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 18, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(2) a:active {
+  -webkit-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -moz-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -o-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -webkit-transition: all 100ms ease-in-out 0s;
+  -moz-transition: all 100ms ease-in-out 0s;
+  -o-transition: all 100ms ease-in-out 0s;
+  transition: all 100ms ease-in-out 0s;
+  background-color: #033d77;
+}
+/* line 5, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(3) a {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+  color: #333;
+}
+/* line 11, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(3) a:hover {
+  background-color: #eb001b;
+  color: white;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 18, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(3) a:active {
+  -webkit-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -moz-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -o-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -webkit-transition: all 100ms ease-in-out 0s;
+  -moz-transition: all 100ms ease-in-out 0s;
+  -o-transition: all 100ms ease-in-out 0s;
+  transition: all 100ms ease-in-out 0s;
+  background-color: #d10018;
+}
+/* line 5, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(4) a {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+  color: #333;
+}
+/* line 11, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(4) a:hover {
+  background-color: #044a90;
+  color: white;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 18, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(4) a:active {
+  -webkit-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -moz-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -o-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -webkit-transition: all 100ms ease-in-out 0s;
+  -moz-transition: all 100ms ease-in-out 0s;
+  -o-transition: all 100ms ease-in-out 0s;
+  transition: all 100ms ease-in-out 0s;
+  background-color: #033d77;
+}
+/* line 5, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(5) a {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+  color: #333;
+}
+/* line 11, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(5) a:hover {
+  background-color: #eb001b;
+  color: white;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 18, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(5) a:active {
+  -webkit-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -moz-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -o-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -webkit-transition: all 100ms ease-in-out 0s;
+  -moz-transition: all 100ms ease-in-out 0s;
+  -o-transition: all 100ms ease-in-out 0s;
+  transition: all 100ms ease-in-out 0s;
+  background-color: #d10018;
+}
+/* line 5, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(6) a {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+  color: #333;
+}
+/* line 11, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(6) a:hover {
+  background-color: #044a90;
+  color: white;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 18, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(6) a:active {
+  -webkit-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -moz-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -o-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -webkit-transition: all 100ms ease-in-out 0s;
+  -moz-transition: all 100ms ease-in-out 0s;
+  -o-transition: all 100ms ease-in-out 0s;
+  transition: all 100ms ease-in-out 0s;
+  background-color: #033d77;
+}
+/* line 5, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(7) a {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+  color: #333;
+}
+/* line 11, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(7) a:hover {
+  background-color: #eb001b;
+  color: white;
+  text-decoration: none;
+  -webkit-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0.1rem 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 18, ../../../app/assets/stylesheets/_nav.css.scss */
+nav #nav_wrapper ul li:nth-child(7) a:active {
+  -webkit-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -moz-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -o-box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  box-shadow: inset 0 0 0.5rem rgba(128, 128, 128, 0.9);
+  -webkit-transition: all 100ms ease-in-out 0s;
+  -moz-transition: all 100ms ease-in-out 0s;
+  -o-transition: all 100ms ease-in-out 0s;
+  transition: all 100ms ease-in-out 0s;
+  background-color: #d10018;
+}
+
+/* line 6, ../../../app/assets/stylesheets/_pages.css.scss */
+#summary_wrapper {
+  position: relative;
+  display: inline-block;
+}
+/* line 10, ../../../app/assets/stylesheets/_pages.css.scss */
+#summary_wrapper aside h2 {
+  color: white;
+  border-bottom: 1rem;
+  padding: .5rem .5rem 0 .5rem;
+}
+/* line 15, ../../../app/assets/stylesheets/_pages.css.scss */
+#summary_wrapper aside ul {
+  list-style: none;
+}
+/* line 17, ../../../app/assets/stylesheets/_pages.css.scss */
+#summary_wrapper aside ul li {
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 400ms ease-in-out 0s;
+  -moz-transition: all 400ms ease-in-out 0s;
+  -o-transition: all 400ms ease-in-out 0s;
+  transition: all 400ms ease-in-out 0s;
+}
+/* line 22, ../../../app/assets/stylesheets/_pages.css.scss */
+#summary_wrapper aside ul li:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-transition: all 400ms ease-in-out 0s;
+  -moz-transition: all 400ms ease-in-out 0s;
+  -o-transition: all 400ms ease-in-out 0s;
+  transition: all 400ms ease-in-out 0s;
+}
+/* line 26, ../../../app/assets/stylesheets/_pages.css.scss */
+#summary_wrapper aside ul li h4 {
+  margin: 0;
+  padding: 1rem 0;
+  font-size: 1.8rem;
+}
+
+/* line 36, ../../../app/assets/stylesheets/_pages.css.scss */
+aside.contact {
+  margin: 1rem 0;
+  float: left;
+  padding: 1rem;
+  width: 19rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem;
+}
+/* line 44, ../../../app/assets/stylesheets/_pages.css.scss */
+aside.contact p {
+  font-size: 1.8rem;
+  color: white;
+  -webkit-transition: all 400ms ease-in-out 0s;
+  -moz-transition: all 400ms ease-in-out 0s;
+  -o-transition: all 400ms ease-in-out 0s;
+  transition: all 400ms ease-in-out 0s;
+}
+/* line 49, ../../../app/assets/stylesheets/_pages.css.scss */
+aside.contact:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  -webkit-transition: all 400ms ease-in-out 0s;
+  -moz-transition: all 400ms ease-in-out 0s;
+  -o-transition: all 400ms ease-in-out 0s;
+  transition: all 400ms ease-in-out 0s;
+}
+
+/* line 55, ../../../app/assets/stylesheets/_pages.css.scss */
+form {
+  float: right;
+  margin: 0 auto;
+}
+/* line 59, ../../../app/assets/stylesheets/_pages.css.scss */
+form table td {
+  padding: 0 1rem;
+}
+/* line 61, ../../../app/assets/stylesheets/_pages.css.scss */
+form table td h3 {
+  margin: 0.5rem 0 0.5rem 0;
+}
+/* line 63, ../../../app/assets/stylesheets/_pages.css.scss */
+form table td h3 label {
+  width: 30rem;
+}
+/* line 67, ../../../app/assets/stylesheets/_pages.css.scss */
+form table td .left {
+  width: 27.5rem;
+}
+/* line 70, ../../../app/assets/stylesheets/_pages.css.scss */
+form table td input {
+  width: 26rem;
+  border-width: 0;
+  border-style: none;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 80, ../../../app/assets/stylesheets/_pages.css.scss */
+form table td input:hover {
+  -webkit-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+}
+/* line 83, ../../../app/assets/stylesheets/_pages.css.scss */
+form table td input:focus {
+  -webkit-box-shadow: 0 0 2rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 2rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 2rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 2rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 88, ../../../app/assets/stylesheets/_pages.css.scss */
+form table td .right {
+  width: 42rem;
+  float: right;
+}
+/* line 91, ../../../app/assets/stylesheets/_pages.css.scss */
+form table td .right textarea {
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+  float: right;
+  font-family: 'Roboto', sans-serif;
+  width: 40rem;
+  height: 19.2rem;
+  border-width: 0;
+  border-style: none;
+  padding: 0.8rem;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+/* line 104, ../../../app/assets/stylesheets/_pages.css.scss */
+form table td .right textarea:hover {
+  -webkit-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+}
+/* line 107, ../../../app/assets/stylesheets/_pages.css.scss */
+form table td .right textarea:focus {
+  -webkit-box-shadow: 0 0 2rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 2rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 2rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 2rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 112, ../../../app/assets/stylesheets/_pages.css.scss */
+form table td .right input[type=submit] {
+  float: right;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+  background-color: white;
+  width: 50%;
+}
+/* line 117, ../../../app/assets/stylesheets/_pages.css.scss */
+form table td .right input[type=submit]:hover {
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+  -webkit-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+/* line 124, ../../../app/assets/stylesheets/_pages.css.scss */
+form table td .right input[type=submit]:active {
+  -webkit-transition: all 100ms ease-in-out 0s;
+  -moz-transition: all 100ms ease-in-out 0s;
+  -o-transition: all 100ms ease-in-out 0s;
+  transition: all 100ms ease-in-out 0s;
+  -webkit-box-shadow: inset 0 0 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: inset 0 0 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: inset 0 0 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: inset 0 0 1rem rgba(102, 102, 102, 0.9);
+  background-color: maroon;
+  color: white;
+}
+
+/* line 136, ../../../app/assets/stylesheets/_pages.css.scss */
+#core_three {
+  height: 45rem;
+}
+/* line 138, ../../../app/assets/stylesheets/_pages.css.scss */
+#core_three .third_left {
+  float: left;
+  width: 31.8%;
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 142, ../../../app/assets/stylesheets/_pages.css.scss */
+#core_three .third_left:nth-child(1) {
+  margin: 0 1rem 0 0;
+}
+/* line 27, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(1) .floating_white {
+  position: relative;
+  height: 41.1rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 33, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(1) .floating_white .core_wrap {
+  position: relative;
+}
+/* line 35, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(1) .floating_white .core_wrap img {
+  padding: 1rem 1rem;
+  opacity: 1.0;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 41, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(1) .floating_white .core_wrap .headline {
+  position: absolute;
+  bottom: 0rem;
+  padding: .5rem 1rem 1rem 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  margin: 1.1rem 1rem;
+  width: 86.9%;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 50, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(1) .floating_white .core_wrap .headline h3 {
+  margin: 1rem 0;
+}
+/* line 53, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(1) .floating_white .core_wrap .headline p {
+  font-size: 1.4rem;
+  display: none;
+  padding-bottom: .5rem;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 61, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(1) .floating_white .core_wrap:hover img {
+  opacity: 0.6;
+  filter: grayscale(75%);
+  -webkit-filter: grayscale(75%);
+  -moz-filter: grayscale(75%);
+  -ms-filter: grayscale(75%);
+  -o-filter: grayscale(75%);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 66, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(1) .floating_white .core_wrap:hover .headline {
+  background-color: #044a90;
+}
+/* line 68, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(1) .floating_white .core_wrap:hover .headline p {
+  display: inline;
+  -webkit-transition: all 200ms ease-out 0s;
+  -moz-transition: all 200ms ease-out 0s;
+  -o-transition: all 200ms ease-out 0s;
+  transition: all 200ms ease-out 0s;
+}
+/* line 74, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(1) .floating_white .core_wrap:hover {
+  -webkit-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 146, ../../../app/assets/stylesheets/_pages.css.scss */
+#core_three .third_left:nth-child(2) {
+  margin: 0 1rem;
+}
+/* line 27, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(2) .floating_white {
+  position: relative;
+  height: 41.1rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 33, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(2) .floating_white .core_wrap {
+  position: relative;
+}
+/* line 35, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(2) .floating_white .core_wrap img {
+  padding: 1rem 1rem;
+  opacity: 1.0;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 41, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(2) .floating_white .core_wrap .headline {
+  position: absolute;
+  bottom: 0rem;
+  padding: .5rem 1rem 1rem 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  margin: 1.1rem 1rem;
+  width: 86.9%;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 50, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(2) .floating_white .core_wrap .headline h3 {
+  margin: 1rem 0;
+}
+/* line 53, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(2) .floating_white .core_wrap .headline p {
+  font-size: 1.4rem;
+  display: none;
+  padding-bottom: .5rem;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 61, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(2) .floating_white .core_wrap:hover img {
+  opacity: 0.6;
+  filter: grayscale(75%);
+  -webkit-filter: grayscale(75%);
+  -moz-filter: grayscale(75%);
+  -ms-filter: grayscale(75%);
+  -o-filter: grayscale(75%);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 66, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(2) .floating_white .core_wrap:hover .headline {
+  background-color: #eb001b;
+}
+/* line 68, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(2) .floating_white .core_wrap:hover .headline p {
+  display: inline;
+  -webkit-transition: all 200ms ease-out 0s;
+  -moz-transition: all 200ms ease-out 0s;
+  -o-transition: all 200ms ease-out 0s;
+  transition: all 200ms ease-out 0s;
+}
+/* line 74, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(2) .floating_white .core_wrap:hover {
+  -webkit-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 150, ../../../app/assets/stylesheets/_pages.css.scss */
+#core_three .third_left:nth-child(3) {
+  margin: 0 0 0 1rem;
+}
+/* line 27, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(3) .floating_white {
+  position: relative;
+  height: 41.1rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 33, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(3) .floating_white .core_wrap {
+  position: relative;
+}
+/* line 35, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(3) .floating_white .core_wrap img {
+  padding: 1rem 1rem;
+  opacity: 1.0;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 41, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(3) .floating_white .core_wrap .headline {
+  position: absolute;
+  bottom: 0rem;
+  padding: .5rem 1rem 1rem 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  margin: 1.1rem 1rem;
+  width: 86.9%;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 50, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(3) .floating_white .core_wrap .headline h3 {
+  margin: 1rem 0;
+}
+/* line 53, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(3) .floating_white .core_wrap .headline p {
+  font-size: 1.4rem;
+  display: none;
+  padding-bottom: .5rem;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 61, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(3) .floating_white .core_wrap:hover img {
+  opacity: 0.6;
+  filter: grayscale(75%);
+  -webkit-filter: grayscale(75%);
+  -moz-filter: grayscale(75%);
+  -ms-filter: grayscale(75%);
+  -o-filter: grayscale(75%);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 66, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(3) .floating_white .core_wrap:hover .headline {
+  background-color: #044a90;
+}
+/* line 68, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(3) .floating_white .core_wrap:hover .headline p {
+  display: inline;
+  -webkit-transition: all 200ms ease-out 0s;
+  -moz-transition: all 200ms ease-out 0s;
+  -o-transition: all 200ms ease-out 0s;
+  transition: all 200ms ease-out 0s;
+}
+/* line 74, ../../../app/assets/stylesheets/_mixins.css.scss */
+#core_three .third_left:nth-child(3) .floating_white .core_wrap:hover {
+  -webkit-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 154, ../../../app/assets/stylesheets/_pages.css.scss */
+#core_three .third_left:nth-child:hover {
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+  -webkit-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+}
+
+/* line 161, ../../../app/assets/stylesheets/_pages.css.scss */
+h2.core_actions {
+  position: relative;
+  margin: 45rem 0 0 0;
+  height: 3.2rem;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* line 170, ../../../app/assets/stylesheets/_pages.css.scss */
+#strategy ul {
+  display: inline-block;
+  background-color: white;
+  list-style: none;
+  color: black;
+  margin: 0 0 3rem 0;
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+  -webkit-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+}
+/* line 178, ../../../app/assets/stylesheets/_pages.css.scss */
+#strategy ul li {
+  float: left;
+  text-align: center;
+  padding: 1rem 1.4rem;
+  font-size: 1.8rem;
+  font-weight: 200;
+  width: auto;
+  cursor: pointer;
+}
+/* line 188, ../../../app/assets/stylesheets/_pages.css.scss */
+#strategy ul li:hover {
+  background-color: #999;
+  color: white;
+}
+
+/* line 196, ../../../app/assets/stylesheets/_pages.css.scss */
+h2.right {
+  position: relative;
+  font-size: 1.6rem;
+  display: block;
+  color: white;
+  -webkit-transition: all 150ms ease-in-out 0s;
+  -moz-transition: all 150ms ease-in-out 0s;
+  -o-transition: all 150ms ease-in-out 0s;
+  transition: all 150ms ease-in-out 0s;
+  margin: -4rem 2rem 0 0;
+}
+
+/* line 205, ../../../app/assets/stylesheets/_pages.css.scss */
+table#capabilities {
+  position: relative;
+  width: 100%;
+  display: block;
+}
+/* line 211, ../../../app/assets/stylesheets/_pages.css.scss */
+table#capabilities tbody tr td {
+  padding: 1rem 0 0 0;
+}
+/* line 213, ../../../app/assets/stylesheets/_pages.css.scss */
+table#capabilities tbody tr td:nth-child(2) {
+  padding: 0 0 0 2rem;
+}
+/* line 216, ../../../app/assets/stylesheets/_pages.css.scss */
+table#capabilities tbody tr td h3 {
+  font-size: 2.4rem;
+  padding: 1rem .5rem;
+}
+/* line 220, ../../../app/assets/stylesheets/_pages.css.scss */
+table#capabilities tbody tr td ul.floating_white {
+  -webkit-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  background-color: white;
+  color: black;
+  padding: .5rem 1rem;
+  width: 45rem;
+}
+/* line 226, ../../../app/assets/stylesheets/_pages.css.scss */
+table#capabilities tbody tr td ul.floating_white li {
+  padding: 1rem 0.5rem;
+  list-style: none;
+}
+
+/* line 235, ../../../app/assets/stylesheets/_pages.css.scss */
+#services_wrapper {
+  display: inline-block;
+}
+
+/* line 239, ../../../app/assets/stylesheets/_pages.css.scss */
+article#services {
+  top: 0px;
+  right: 0px;
+  width: 60%;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  clear: both;
+}
+
+/* line 249, ../../../app/assets/stylesheets/_pages.css.scss */
+.half_left {
+  float: left;
+  width: 48.3%;
+}
+/* line 252, ../../../app/assets/stylesheets/_pages.css.scss */
+.half_left:nth-child(2) {
+  margin: 0 1.2rem 0 0;
+}
+/* line 27, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(2) .floating_white {
+  position: relative;
+  height: 24rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 33, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(2) .floating_white .core_wrap {
+  position: relative;
+}
+/* line 35, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(2) .floating_white .core_wrap img {
+  padding: 1rem 1rem;
+  opacity: 1.0;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 41, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(2) .floating_white .core_wrap .headline {
+  position: absolute;
+  bottom: 0rem;
+  padding: .5rem 1rem 1rem 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  margin: 1.1rem 1rem;
+  width: 91.3%;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 50, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(2) .floating_white .core_wrap .headline h3 {
+  margin: 1rem 0;
+}
+/* line 53, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(2) .floating_white .core_wrap .headline p {
+  font-size: 1.4rem;
+  display: none;
+  padding-bottom: .5rem;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 61, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(2) .floating_white .core_wrap:hover img {
+  opacity: 0.6;
+  filter: grayscale(75%);
+  -webkit-filter: grayscale(75%);
+  -moz-filter: grayscale(75%);
+  -ms-filter: grayscale(75%);
+  -o-filter: grayscale(75%);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 66, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(2) .floating_white .core_wrap:hover .headline {
+  background-color: #eb001b;
+}
+/* line 68, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(2) .floating_white .core_wrap:hover .headline p {
+  display: inline;
+  -webkit-transition: all 200ms ease-out 0s;
+  -moz-transition: all 200ms ease-out 0s;
+  -o-transition: all 200ms ease-out 0s;
+  transition: all 200ms ease-out 0s;
+}
+/* line 74, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(2) .floating_white .core_wrap:hover {
+  -webkit-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 256, ../../../app/assets/stylesheets/_pages.css.scss */
+.half_left:nth-child(3) {
+  margin: 0 1rem;
+}
+/* line 27, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(3) .floating_white {
+  position: relative;
+  height: 24rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 33, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(3) .floating_white .core_wrap {
+  position: relative;
+}
+/* line 35, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(3) .floating_white .core_wrap img {
+  padding: 1rem 1rem;
+  opacity: 1.0;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 41, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(3) .floating_white .core_wrap .headline {
+  position: absolute;
+  bottom: 0rem;
+  padding: .5rem 1rem 1rem 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  margin: 1.1rem 1rem;
+  width: 91.3%;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 50, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(3) .floating_white .core_wrap .headline h3 {
+  margin: 1rem 0;
+}
+/* line 53, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(3) .floating_white .core_wrap .headline p {
+  font-size: 1.4rem;
+  display: none;
+  padding-bottom: .5rem;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 61, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(3) .floating_white .core_wrap:hover img {
+  opacity: 0.6;
+  filter: grayscale(75%);
+  -webkit-filter: grayscale(75%);
+  -moz-filter: grayscale(75%);
+  -ms-filter: grayscale(75%);
+  -o-filter: grayscale(75%);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 66, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(3) .floating_white .core_wrap:hover .headline {
+  background-color: #044a90;
+}
+/* line 68, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(3) .floating_white .core_wrap:hover .headline p {
+  display: inline;
+  -webkit-transition: all 200ms ease-out 0s;
+  -moz-transition: all 200ms ease-out 0s;
+  -o-transition: all 200ms ease-out 0s;
+  transition: all 200ms ease-out 0s;
+}
+/* line 74, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(3) .floating_white .core_wrap:hover {
+  -webkit-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 260, ../../../app/assets/stylesheets/_pages.css.scss */
+.half_left:nth-child(4) {
+  margin: 3rem 1.2rem 0 0;
+}
+/* line 27, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(4) .floating_white {
+  position: relative;
+  height: 24rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 33, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(4) .floating_white .core_wrap {
+  position: relative;
+}
+/* line 35, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(4) .floating_white .core_wrap img {
+  padding: 1rem 1rem;
+  opacity: 1.0;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 41, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(4) .floating_white .core_wrap .headline {
+  position: absolute;
+  bottom: 0rem;
+  padding: .5rem 1rem 1rem 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  margin: 1.1rem 1rem;
+  width: 91.3%;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 50, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(4) .floating_white .core_wrap .headline h3 {
+  margin: 1rem 0;
+}
+/* line 53, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(4) .floating_white .core_wrap .headline p {
+  font-size: 1.4rem;
+  display: none;
+  padding-bottom: .5rem;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 61, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(4) .floating_white .core_wrap:hover img {
+  opacity: 0.6;
+  filter: grayscale(75%);
+  -webkit-filter: grayscale(75%);
+  -moz-filter: grayscale(75%);
+  -ms-filter: grayscale(75%);
+  -o-filter: grayscale(75%);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 66, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(4) .floating_white .core_wrap:hover .headline {
+  background-color: #eb001b;
+}
+/* line 68, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(4) .floating_white .core_wrap:hover .headline p {
+  display: inline;
+  -webkit-transition: all 200ms ease-out 0s;
+  -moz-transition: all 200ms ease-out 0s;
+  -o-transition: all 200ms ease-out 0s;
+  transition: all 200ms ease-out 0s;
+}
+/* line 74, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(4) .floating_white .core_wrap:hover {
+  -webkit-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 264, ../../../app/assets/stylesheets/_pages.css.scss */
+.half_left:nth-child(5) {
+  margin: 3rem 0 0 1rem;
+}
+/* line 27, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(5) .floating_white {
+  position: relative;
+  height: 24rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 33, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(5) .floating_white .core_wrap {
+  position: relative;
+}
+/* line 35, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(5) .floating_white .core_wrap img {
+  padding: 1rem 1rem;
+  opacity: 1.0;
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 41, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(5) .floating_white .core_wrap .headline {
+  position: absolute;
+  bottom: 0rem;
+  padding: .5rem 1rem 1rem 1rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  margin: 1.1rem 1rem;
+  width: 91.3%;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 50, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(5) .floating_white .core_wrap .headline h3 {
+  margin: 1rem 0;
+}
+/* line 53, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(5) .floating_white .core_wrap .headline p {
+  font-size: 1.4rem;
+  display: none;
+  padding-bottom: .5rem;
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 61, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(5) .floating_white .core_wrap:hover img {
+  opacity: 0.6;
+  filter: grayscale(75%);
+  -webkit-filter: grayscale(75%);
+  -moz-filter: grayscale(75%);
+  -ms-filter: grayscale(75%);
+  -o-filter: grayscale(75%);
+  -webkit-transition: all 300ms ease-in-out 0s;
+  -moz-transition: all 300ms ease-in-out 0s;
+  -o-transition: all 300ms ease-in-out 0s;
+  transition: all 300ms ease-in-out 0s;
+}
+/* line 66, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(5) .floating_white .core_wrap:hover .headline {
+  background-color: #044a90;
+}
+/* line 68, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(5) .floating_white .core_wrap:hover .headline p {
+  display: inline;
+  -webkit-transition: all 200ms ease-out 0s;
+  -moz-transition: all 200ms ease-out 0s;
+  -o-transition: all 200ms ease-out 0s;
+  transition: all 200ms ease-out 0s;
+}
+/* line 74, ../../../app/assets/stylesheets/_mixins.css.scss */
+.half_left:nth-child(5) .floating_white .core_wrap:hover {
+  -webkit-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+
+/* line 269, ../../../app/assets/stylesheets/_pages.css.scss */
+#services_list {
+  width: 32.4px;
+  height: 600px;
+  text-align: left;
+  font-size: 2.0rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  clear: both;
+}
+/* line 279, ../../../app/assets/stylesheets/_pages.css.scss */
+#services_list ul li {
+  list-style: none;
+  width: 32.4rem;
+  margin: 0 0 1.4rem 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 1rem;
+  overflow: hidden;
+  display: block;
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 288, ../../../app/assets/stylesheets/_pages.css.scss */
+#services_list ul li:hover {
+  background-color: gray;
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+
+/* line 294, ../../../app/assets/stylesheets/_pages.css.scss */
+h3.real_estate {
+  margin: -1.0rem 0 2rem 0;
+}
+/* line 296, ../../../app/assets/stylesheets/_pages.css.scss */
+h3.real_estate a {
+  color: white;
+  -webkit-transition: color 150ms ease-in-out 0s;
+  -moz-transition: color 150ms ease-in-out 0s;
+  -o-transition: color 150ms ease-in-out 0s;
+  transition: color 150ms ease-in-out 0s;
+}
+/* line 299, ../../../app/assets/stylesheets/_pages.css.scss */
+h3.real_estate a:hover {
+  color: red;
+  text-decoration: none;
+  -webkit-transition: color 150ms ease-in-out 0s;
+  -moz-transition: color 150ms ease-in-out 0s;
+  -o-transition: color 150ms ease-in-out 0s;
+  transition: color 150ms ease-in-out 0s;
+}
+
+/* line 306, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_properties {
+  padding: 1rem;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 3rem 0;
+  -webkit-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 313, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_properties .right {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+/* line 318, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_properties img[class=right] {
+  border: 2px solid #000;
+}
+/* line 321, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_properties h2 {
+  color: black;
+  margin: 0 0 1rem 0;
+}
+/* line 325, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_properties #properties_wrapper {
+  width: 30%;
+  padding: 1rem;
+  background-color: black;
+}
+/* line 329, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_properties #properties_wrapper h3 {
+  margin: 0rem 0 1rem 0;
+}
+/* line 332, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_properties #properties_wrapper p {
+  margin: 1rem 0 1rem 0;
+  font-size: 1.6rem;
+}
+/* line 336, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_properties #properties_wrapper img[alt="Corcoran"] {
+  margin: 1rem 0 -1.5rem 0;
+}
+/* line 340, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_properties:hover {
+  -webkit-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+
+/* line 346, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_projects {
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 3rem 0;
+  -webkit-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 352, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_projects h2 {
+  color: black;
+  margin: 0 0 1rem 0;
+}
+/* line 356, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_projects #projects_wrapper {
+  width: 58%;
+  float: right;
+  padding: 1rem 1rem 0 1rem;
+  background-color: black;
+}
+/* line 361, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_projects #projects_wrapper h2 {
+  color: white;
+}
+/* line 364, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_projects #projects_wrapper h3 {
+  margin: 0;
+}
+/* line 367, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_projects #projects_wrapper .list_p {
+  margin: 1.5rem 0;
+}
+/* line 369, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_projects #projects_wrapper .list_p p {
+  margin: 0;
+}
+/* line 373, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_projects #projects_wrapper p {
+  margin: 1rem 0 0 0;
+  font-size: 1.6rem;
+}
+/* line 377, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_projects #projects_wrapper img[alt="Corcoran"] {
+  margin: 1rem 0 -1.5rem 0;
+}
+/* line 381, ../../../app/assets/stylesheets/_pages.css.scss */
+#investment_projects:hover {
+  -webkit-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+
+/* line 387, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container {
+  position: relative;
+  display: block;
+  width: 96rem;
+  margin: 0 auto;
+}
+/* line 392, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper {
+  display: inline-block;
+  width: 100%;
+}
+/* line 395, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .right-col {
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+  float: right;
+}
+/* line 400, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .right-col .black-base-with-shadow {
+  margin-right: 0px;
+  -webkit-box-shadow: 0 0 0 rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 0 rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 0 rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 0 rgba(102, 102, 102, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+/* line 407, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .right-col .black-base-with-shadow:hover {
+  -webkit-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 2.5rem rgba(102, 102, 102, 0.9);
+  background-color: black;
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 414, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .left-col {
+  position: absolute;
+  display: inline-block;
+  float: left;
+  top: 0;
+  width: 67.5%;
+  margin: 0;
+}
+/* line 421, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .left-col #slider {
+  width: 65rem;
+  height: 27rem;
+  padding: 1.5rem;
+  margin: -1.5rem 0rem 0rem -1.5rem;
+  overflow: hidden;
+  position: relative;
+  -webkit-box-shadow: 1 1 1rem rgba(128, 128, 128, 0.9);
+  -moz-box-shadow: 1 1 1rem rgba(128, 128, 128, 0.9);
+  -o-box-shadow: 1 1 1rem rgba(128, 128, 128, 0.9);
+  box-shadow: 1 1 1rem rgba(128, 128, 128, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 430, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .left-col #slider article.update {
+  -webkit-box-shadow: 0 0 0 none;
+  -moz-box-shadow: 0 0 0 none;
+  -o-box-shadow: 0 0 0 none;
+  box-shadow: 0 0 0 none;
+  position: absolute;
+  display: inline-block;
+  width: 92%;
+  padding: 1rem;
+}
+/* line 436, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .left-col #slider article.update h1 {
+  float: left;
+}
+/* line 439, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .left-col #slider article.update #update_title {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+/* line 443, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .left-col #slider article.update #update_body {
+  font-size: 1.7rem;
+  padding-right: .5rem;
+}
+/* line 448, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .left-col #slider article.update > a img[name='left'] {
+  margin-right: 1rem;
+  float: left;
+}
+/* line 452, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .left-col #slider article.update > a img[name='right'] {
+  margin-left: 1rem;
+  float: right;
+}
+/* line 457, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .left-col #home_links {
+  float: left;
+  width: 100%;
+}
+/* line 462, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .left-col #home_links #links:hover img {
+  -webkit-box-shadow: 1 1 1rem rgba(128, 128, 128, 0.9);
+  -moz-box-shadow: 1 1 1rem rgba(128, 128, 128, 0.9);
+  -o-box-shadow: 1 1 1rem rgba(128, 128, 128, 0.9);
+  box-shadow: 1 1 1rem rgba(128, 128, 128, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 467, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .left-col #home_links #links a {
+  margin: 0 2rem 0 0;
+}
+/* line 469, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .left-col #home_links #links a:nth-child(3) {
+  margin: 0 0 0 -.5rem;
+}
+/* line 472, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .left-col #home_links #links a img {
+  -webkit-box-shadow: 0 0 0rem rgba(128, 128, 128, 0.9);
+  -moz-box-shadow: 0 0 0rem rgba(128, 128, 128, 0.9);
+  -o-box-shadow: 0 0 0rem rgba(128, 128, 128, 0.9);
+  box-shadow: 0 0 0rem rgba(128, 128, 128, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+  -webkit-box-shadow: 0 0 2rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 2rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 2rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 2rem rgba(102, 102, 102, 0.9);
+  padding: 0.5rem;
+  background-color: white;
+}
+/* line 476, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .left-col #home_links #links a img:hover {
+  -webkit-box-shadow: 1 1 2.5rem rgba(128, 128, 128, 0.9);
+  -moz-box-shadow: 1 1 2.5rem rgba(128, 128, 128, 0.9);
+  -o-box-shadow: 1 1 2.5rem rgba(128, 128, 128, 0.9);
+  box-shadow: 1 1 2.5rem rgba(128, 128, 128, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+  -webkit-box-shadow: 0 0 4rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 4rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 4rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 4rem rgba(102, 102, 102, 0.9);
+  padding: 0.5rem;
+  background-color: white;
+}
+/* line 481, ../../../app/assets/stylesheets/_pages.css.scss */
+#home_container #home_wrapper .left-col #home_links #links a img:active {
+  -webkit-box-shadow: 1 1 2rem rgba(128, 128, 128, 0.9);
+  -moz-box-shadow: 1 1 2rem rgba(128, 128, 128, 0.9);
+  -o-box-shadow: 1 1 2rem rgba(128, 128, 128, 0.9);
+  box-shadow: 1 1 2rem rgba(128, 128, 128, 0.9);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+  -webkit-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -moz-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  -o-box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  box-shadow: 0 0 1rem rgba(102, 102, 102, 0.9);
+  padding: 0.5rem;
+  background-color: white;
+}
+
+/* line 5, ../../../app/assets/stylesheets/_cn.css.scss */
+.cn {
+  background-image: url("assets/usa_flag.png");
+}
+
+/* line 1, ../../../app/assets/stylesheets/_footer.css.scss */
+footer.left {
+  clear: both;
+  float: right;
+  display: block;
+  padding: 1.5rem;
+  margin: 7rem 0 3rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+  color: white;
+}
+/* line 10, ../../../app/assets/stylesheets/_footer.css.scss */
+footer.left a {
+  color: white;
+  text-decoration: none;
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 14, ../../../app/assets/stylesheets/_footer.css.scss */
+footer.left a:visited {
+  color: white;
+}
+/* line 17, ../../../app/assets/stylesheets/_footer.css.scss */
+footer.left a:hover {
+  color: #999;
+  text-decoration: none;
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}
+/* line 23, ../../../app/assets/stylesheets/_footer.css.scss */
+footer.left:hover {
+  background-color: black;
+  -webkit-transition: all 200ms ease-in-out 0s;
+  -moz-transition: all 200ms ease-in-out 0s;
+  -o-transition: all 200ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
+}

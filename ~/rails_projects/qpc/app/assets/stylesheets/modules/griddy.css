@@ -1,0 +1,65 @@
+/*
+Syntax error: Undefined mixin 'mobile'.
+        on line 7 of /Users/lindgrenryan/rails_projects/qpc/app/assets/stylesheets/modules/_grid.css.scss, in `mobile'
+        from line 7 of /Users/lindgrenryan/rails_projects/qpc/app/assets/stylesheets/modules/_grid.css.scss
+
+2:   .fluid { @content } }
+3: @mixin fixed {
+4:   .fixed { @content } }
+5: 
+6: span {
+7:   @include mobile {
+8:     @include box-left;
+9:     @include fluid {
+10:       .one {
+11:         width: 8.33%;
+12:         max-width: 80px;
+
+Backtrace:
+/Users/lindgrenryan/rails_projects/qpc/app/assets/stylesheets/modules/_grid.css.scss:7:in `mobile'
+/Users/lindgrenryan/rails_projects/qpc/app/assets/stylesheets/modules/_grid.css.scss:7
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/tree/root_node.rb:20:in `render'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/engine.rb:315:in `_render'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/engine.rb:262:in `render'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/plugin/compiler.rb:235:in `watch'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/plugin.rb:107:in `method_missing'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/exec.rb:452:in `watch_or_update'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/exec.rb:315:in `process_result'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/exec.rb:41:in `parse'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/lib/sass/exec.rb:21:in `parse!'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/gems/sass-3.2.9/bin/sass:9:in `<top (required)>'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/bin/sass:23:in `load'
+/Users/lindgrenryan/.rvm/gems/ruby-1.9.3-p392/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'mobile'.\A         on line 7 of /Users/lindgrenryan/rails_projects/qpc/app/assets/stylesheets/modules/_grid.css.scss, in `mobile'\A         from line 7 of /Users/lindgrenryan/rails_projects/qpc/app/assets/stylesheets/modules/_grid.css.scss\A \A 2:   .fluid { @content } }\A 3: @mixin fixed {\A 4:   .fixed { @content } }\A 5: \A 6: span {\A 7:   @include mobile {\A 8:     @include box-left;\A 9:     @include fluid {\A 10:       .one {\A 11:         width: 8.33%;\A 12:         max-width: 80px;"; }

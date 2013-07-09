@@ -86,6 +86,7 @@
 	padding: $padding;
 	background-color: hsla(0,0,0,$alpha);
 }
+
 @mixin white-base-with-shadow($alpha, $padding, $shadow-size) {
 	@include box-shadow(false, 0, 0, $shadow-size, $shadow-color);
 	padding: $padding;

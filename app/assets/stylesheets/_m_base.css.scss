@@ -1,9 +1,5 @@
-@import "variables";
-@import "mixins";
-@import "fonts";
 
-/* other stylesheets included at bottom of page */
-@media (min-device-width: 569px) {
+@media (min-device-width: 320px) and (max-device-width: 568px) {
 	html { font-size: 62.5%; } /* =10px */
 	body { 
 		font: {
@@ -17,7 +13,7 @@
 	}
 
 	#wrapper {
-		width: 960px;
+		width: 440px;
 		margin: 0 auto;
 		position: relative;
 		background: transparent;
@@ -104,8 +100,8 @@
 	}
 }
 
-@import "header";
-@import "nav";
-@import "pages";
-@import "cn";
-@import "footer";
+@import "m_header";
+@import "m_nav";
+@import "m_pages";
+@import "m_cn";
+@import "m_footer";
