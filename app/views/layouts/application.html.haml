@@ -1,18 +1,15 @@
 !!! 5
 %html
 	%head
+		%meta{:charset=>"utf-8", :name=>"viewport", :content=>"width=device-width", "initial-scale"=>"1.0"}
 		%title= "QPC | Quantum Perspective Consultancy | #{@title}"
 		= stylesheet_link_tag    "application", :media => "all"
 		= render 'layouts/ga' if Rails.env == "production"
 		= csrf_meta_tags
 
 	%body
-		#wrapper
-			/ nav partial called by header partial
-			= render 'pages/header'
-			#container_header
-			#container
-				= yield
-			%footer.left
-				= render 'pages/footer'
-				= javascript_include_tag "application"
+		= render 'pages/nav'
+		%div{:id => "pages-container", :class => ('container' unless @index)}
+			= yield
+			= render 'pages/footer'
+		= javascript_include_tag "application"

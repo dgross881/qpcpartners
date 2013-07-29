@@ -1,0 +1,25 @@
+#mainSlider.carousel.slide
+	%ol.carousel-indicators
+		%li{"data-target"=>"#mainSlider", "data-slide-to"=>"0", "class"=>"active"}
+		%li{"data-target"=>"#mainSlider", "data-slide-to"=>"1"}
+		%li{"data-target"=>"#mainSlider", "data-slide-to"=>"2"}
+	.carousel-inner
+		.item.active
+			= image_tag "bg.png"
+			.carousel-caption
+				%h3
+					Test Caption Heading
+				%p 
+					Smaller, more descriptive text below heading
+		.item
+			= image_tag "bg2.png"
+			.carousel-caption.well.dark-well
+				%h3
+					Test Caption Heading
+				%p 
+					Smaller, more descriptive text below heading
+
+	%a.left.carousel-control{"href"=>"#mainSlider", "data-slide"=>"prev"}
+		%span.glyphicon.glyphicon-chevron-left
+	%a.right.carousel-control{"href"=>"#mainSlider", "data-slide"=>"next"}
+		%span.glyphicon.glyphicon-chevron-right

@@ -1,6 +1,8 @@
 class CnController < ApplicationController
   layout 'chinese'
+  
   def index
+    @index = true
   	@cn = true
   end
 

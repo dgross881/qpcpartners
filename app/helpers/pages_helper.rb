@@ -1,7 +1,6 @@
 module PagesHelper
 	def nav_items
-		{"Executive Summary" => "summary",
-      "Core Competence" => "core",
+		{"About QPC" => "summary",
       "Services" => "services",
       "Consulting" => "consulting",
       "Real Estate" => "investment",

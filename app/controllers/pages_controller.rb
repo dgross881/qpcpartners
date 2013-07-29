@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   
   def index
+    @index = true
   end
 
   def summary

@@ -1,5 +1,19 @@
-%nav
-	#nav_wrapper
-		%ul
-			- nav_items.each_pair do |nav, con|
-				%li= link_to "#{nav}", "/#{con}"
+.nav.navbar-wrapper
+	.container
+		.navbar.navbar-static-top
+			.container
+				= link_to "中文", '/cn', {:id => 'lang', :class=>"btn btn-danger nav-lang-btn"}
+				%button.navbar-toggle{"type"=>"button", "data-toggle"=>"collapse", "data-target"=>".nav-collapse"}
+					%span.icon-bar
+					%span.icon-bar
+					%span.icon-bar
+				= link_to "QPC Partners", "/", :class => "navbar-brand"
+				.nav-collapse.collapse
+					%ul.nav.navbar-nav
+						- nav_items.each_pair do |nav, con|
+							%li
+								- if nav == "About QPC"
+									= link_to "#{nav}", "/#{con}"
+								- else
+									= link_to "#{nav}", "/#{con}"
+

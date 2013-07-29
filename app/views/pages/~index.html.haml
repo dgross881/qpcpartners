@@ -1,0 +1,40 @@
+- @title = 'Welcome!'
+#home_container
+	#home_wrapper
+		.left-col
+			#slider
+				%article.update
+					= link_to image_tag('corcoran_front.png', { :name => 'left' }), "http://www.corcoran.com/"
+					#update_title
+						QPC is named Corcoran Group, China Rep
+					#update_body
+						As Corcoran Group's China Representative, QPC has greatly enhanced its ability to provide its clients with comprehensive, high-quality international business expansion services, and has strengthened its positioning in the China-US market.
+				%article.update
+					= link_to image_tag('fund_raising.png', { :name => 'right' }), "/investment"
+					#update_title
+						Upcoming Investment Projects
+					#update_body
+						New fund being raised between June-August 2013 for Sept-Dec foreclosure purchases in the Washington DC and NYC metro areas; purchases to be remodeled and ready for rental or sale listing by April 2014.
+				%article.update
+					= link_to image_tag('bionic_eye.png', { :name => 'left' }), "http://bioniceyetechnologies.com/"
+					#update_title
+						Bionic Eye: QPC working with Bionic Eye Technologies
+					#update_body
+						QPC is consulting Bionic Eye Technologies Inc. of Boston, MA during first round capital raising for their revolutionary vision correction device, in July 2013. QPC has been chosen to represent Bionic Eye throughout China.
+			#home_links	
+				%h1
+					Current Market Trends
+				#links
+					= link_to image_tag('china_daily.png'), "http://usa.chinadaily.com.cn/business/index.html", :class => 'white-base-with-shadow'
+					= link_to image_tag('rhgroup.jpg'), "http://rhgroup.net/interactive/china-investment-monitor", :class => 'white-base-with-shadow'
+					= link_to image_tag('mckinsey.jpg'), "http://www.mckinseyquarterly.com/category_editor.aspx?l2=7&pid=2064&srid=264", :class => 'white-base-with-shadow'
+		.right-col
+			.black-base-with-shadow
+				%h1
+					Our Mission
+				%p 			
+					Assist clients in meeting their short-, medium- & long-term international business expansion objectives, opening new markets, realizing unexplored potential and achieving desired results.
+				%h1
+					Our Vision
+				%p
+					Provide consultancy services related to overseas business development, cross-border business expansion and merger and acquisitions for small- and medium-size companies with expertise in China-USA segment.

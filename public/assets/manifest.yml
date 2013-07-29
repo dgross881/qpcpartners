@@ -1,14 +1,14 @@
 ---
-icomoon.dev.svg: icomoon.dev-e1fadcc8f6e4c916127f1befcc02415d.svg
-icomoon/index.dev.svg: icomoon.dev-e1fadcc8f6e4c916127f1befcc02415d.svg
-icomoon.eot: icomoon-71a1bdb12a2f4ea13b2bdb829431029c.eot
-icomoon/index.eot: icomoon-71a1bdb12a2f4ea13b2bdb829431029c.eot
-icomoon.svg: icomoon-5c9c70b66729be536bd763fd1ef5fc86.svg
-icomoon/index.svg: icomoon-5c9c70b66729be536bd763fd1ef5fc86.svg
-icomoon.ttf: icomoon-3b960a3284c7eece59e2567c81d9ef5c.ttf
-icomoon/index.ttf: icomoon-3b960a3284c7eece59e2567c81d9ef5c.ttf
-icomoon.woff: icomoon-6e2cfe733814594b9ed4fa4b380b9321.woff
-icomoon/index.woff: icomoon-6e2cfe733814594b9ed4fa4b380b9321.woff
+glyphiconshalflings-regular.eot: glyphiconshalflings-regular-8f41a102f5570cb6677eeec342991f8b.eot
+glyphiconshalflings-regular/index.eot: glyphiconshalflings-regular-8f41a102f5570cb6677eeec342991f8b.eot
+glyphiconshalflings-regular.otf: glyphiconshalflings-regular-6ed214c313ea88ee39b995b345c2d1c4.otf
+glyphiconshalflings-regular/index.otf: glyphiconshalflings-regular-6ed214c313ea88ee39b995b345c2d1c4.otf
+glyphiconshalflings-regular.svg: glyphiconshalflings-regular-bb7a80d4a61697056b36dc29be2ecd9e.svg
+glyphiconshalflings-regular/index.svg: glyphiconshalflings-regular-bb7a80d4a61697056b36dc29be2ecd9e.svg
+glyphiconshalflings-regular.ttf: glyphiconshalflings-regular-6502e5a88f02b90aeb32c2dd21ea37ab.ttf
+glyphiconshalflings-regular/index.ttf: glyphiconshalflings-regular-6502e5a88f02b90aeb32c2dd21ea37ab.ttf
+glyphiconshalflings-regular.woff: glyphiconshalflings-regular-f4efd9e8a9f1af441a81cd0b62b33a70.woff
+glyphiconshalflings-regular/index.woff: glyphiconshalflings-regular-f4efd9e8a9f1af441a81cd0b62b33a70.woff
 QPC Logo.eps: QPC Logo-68067629eb58db44e0196078a47b2bc6.eps
 QPC Logo/index.eps: QPC Logo-68067629eb58db44e0196078a47b2bc6.eps
 QPC-logo.png: QPC-logo-291774440cd917c94def9692b6ff3f8e.png
@@ -67,9 +67,9 @@ textile.png: textile-07c077f64b8a3b33e3450707ac3826e4.png
 textile/index.png: textile-07c077f64b8a3b33e3450707ac3826e4.png
 usa_flag.png: usa_flag-a6e8852272950a237f0b7609391bedb6.png
 usa_flag/index.png: usa_flag-a6e8852272950a237f0b7609391bedb6.png
-application.js: application-46a90539e644caacafd83d8f2ee29fc1.js
-application/index.js: application-46a90539e644caacafd83d8f2ee29fc1.js
-application.css: application-4b7f6f00b0264c8247ac1be00858e748.css
-application/index.css: application-4b7f6f00b0264c8247ac1be00858e748.css
+application.js: application-be29af43e7b0d58a7dbdea6256cf4c52.js
+application/index.js: application-be29af43e7b0d58a7dbdea6256cf4c52.js
+application.css: application-92a371f2dcc16455f794241a39e48a6d.css
+application/index.css: application-92a371f2dcc16455f794241a39e48a6d.css
 jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
 jquery/index.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
