@@ -17,10 +17,6 @@ QPC-logo_big.png: QPC-logo_big-93968554fdd8c7729b4d488c76b6e6cd.png
 QPC-logo_big/index.png: QPC-logo_big-93968554fdd8c7729b4d488c76b6e6cd.png
 bg.jpg: bg-5603884afb1bb1552733ae8794239807.jpg
 bg/index.jpg: bg-5603884afb1bb1552733ae8794239807.jpg
-bg.png: bg-c02bd63fc627f04d943a2db313ac3c11.png
-bg/index.png: bg-c02bd63fc627f04d943a2db313ac3c11.png
-bg2.png: bg2-05878e6f702910e6d752a65ec4db1be6.png
-bg2/index.png: bg2-05878e6f702910e6d752a65ec4db1be6.png
 bionic_eye.png: bionic_eye-7da24d0ad6cddb3d51f9cd567c95376d.png
 bionic_eye/index.png: bionic_eye-7da24d0ad6cddb3d51f9cd567c95376d.png
 bridge.png: bridge-525821560392fa95bbc47bde8be46f53.png
@@ -69,7 +65,7 @@ usa_flag.png: usa_flag-a6e8852272950a237f0b7609391bedb6.png
 usa_flag/index.png: usa_flag-a6e8852272950a237f0b7609391bedb6.png
 application.js: application-c3b59edb43f915f0e9cb5f9a29e150dd.js
 application/index.js: application-c3b59edb43f915f0e9cb5f9a29e150dd.js
-application.css: application-5f1f5f281d9137b82e448ebb4fa32614.css
-application/index.css: application-5f1f5f281d9137b82e448ebb4fa32614.css
+application.css: application-8896bca221cb03fa1bbc1ebed32eae52.css
+application/index.css: application-8896bca221cb03fa1bbc1ebed32eae52.css
 jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
 jquery/index.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
