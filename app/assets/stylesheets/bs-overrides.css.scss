@@ -28,7 +28,10 @@
 
 @media (min-width: 768px) {
 	.navbar-wrapper { padding-top: 45px; }
-	#mainSlider { top: -115px; margin-bottom: -40px; } }
+	#mainSlider { top: -180px; margin-bottom: -80px; } }
+
+@media (min-width: 1200px) {
+	#mainSlider { top: -260px; margin-bottom: -180px; } }
 
 @media (max-width: 768px) {
 	.navbar-wrapper { 
