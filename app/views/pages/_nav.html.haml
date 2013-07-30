@@ -3,7 +3,7 @@
 		.navbar.navbar-static-top
 			.container
 				= link_to "中文", '/cn', {:id => 'lang', :class=>"btn btn-danger nav-lang-btn"}
-				%button.navbar-toggle{"type"=>"button", "data-toggle"=>"collapse", "data-target"=>".nav-collapse"}
+				%button.navbar-toggle{"type"=>"button", "data-toggle"=>"true", "data-target"=>".nav-collapse"}
 					%span.icon-bar
 					%span.icon-bar
 					%span.icon-bar
@@ -12,8 +12,5 @@
 					%ul.nav.navbar-nav
 						- nav_items.each_pair do |nav, con|
 							%li
-								- if nav == "About QPC"
-									= link_to "#{nav}", "/#{con}"
-								- else
-									= link_to "#{nav}", "/#{con}"
+								= link_to nav, "/#{con}"
 

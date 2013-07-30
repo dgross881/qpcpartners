@@ -12,4 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require ./bootstrap.js
+//= require ./bs-overrides.js
+//= require ./utils.js
+// require_tree .

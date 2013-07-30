@@ -1,11 +1,15 @@
-// Cheap and ugly 'fix' for navbar collapse bug
-// menu still opens with animation, but closes abruptly
-// NEEDS OPTIMIZATION!!
-$('.navbar-toggle').on('click', function (e) {
-	var target = $('.nav-collapse');
-	if (target.hasClass('collapsing')) {
-		target.addClass('collapse').addClass('in').removeClass('collapsing');
-	} else {
-		target.addClass('collapsing').toggle();
-	}
-});
+// Cheap and ugly 'fix' for navbar collapse bug (might be an isolated issue)
+// $('.navbar-toggle')'s data-toggle attribute changed to 'true' from 'collapse',
+// and mobile navbar toggle now controlled purely by javascript API, as follows:
+(function () {
+	var open = false;
+	$('.navbar-toggle').click(function () {
+		if (!open) {
+			$('.nav-collapse').collapse('show');
+			open = true;
+		} else {
+			$('.nav-collapse').collapse('hide');
+			open = false;
+		}
+	});
+}());
