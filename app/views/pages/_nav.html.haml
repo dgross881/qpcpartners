@@ -11,6 +11,5 @@
 				.nav-collapse.collapse
 					%ul.nav.navbar-nav
 						- nav_items.each_pair do |nav, con|
-							%li
-								= link_to nav, "/#{con}"
+							%li= link_to nav, "/#{con}"
 

@@ -1,22 +1,53 @@
 - @title = 'Services'
 
 .container
-	%article#services
-		%h1 Services
+	%h1 Services
+	%br
+	.row
+		.col-lg-4
+			#services-accordion.accordion
+				- strategic_actions.each_with_index do |(action,summary), i|
+					- num = number_helper[i]
+					- if action == "Investor Road Shows"
+						.accordion-group
+							.accordion-heading
+								%a.accordion-toggle{"href"=>"#service-#{num}", "data-toggle"=>"collapse", "data-parent"=>"#services-accordion"}= action
+							%div{"id"=>"service-#{num}", "class"=>"accordion-body collapse in"}
+								.accordion-inner= summary
+					- else
+						.accordion-group
+							.accordion-heading
+								%a.accordion-toggle{"href"=>"#service-#{num}", "data-toggle"=>"collapse", "data-parent"=>"#services-accordion"}= action
+							%div{"id"=>"service-#{num}", "class"=>"accordion-body collapse"}
+								.accordion-inner= summary
+			%br
+		.col-lg-8
+			%h3 Niche Markets
+			%br
+			%p QPC offers services to Chinese and American clients whose requirements fall outside the scope of services provided by large institutions and investment banks. We focus on small-to-medium-sized deals involving Chinese entities establishing or acquiring assets in the USA.
+			%p Such transactions require specific skills which are rare in the small- to medium-size deal segment. We offer our clients the skills, experience and cross-cultural/cross-border understanding necessary to successfully expand overseas and into a completely new demographic.
+			%p QPC offers its US clients in-depth troubleshooting assistance, business development consulting, and marketing guidance in order to capture Chinese consumer demand and interest.
 
-		#services_list
-		%ul
-			- strategic_actions.each_with_index do |action,i|
-				%li{:name => i}= action
-
-		%h3 Deal Profiles
-
-		%p Consulting Services – Individual, company or corporation requiring cross border professional business advice or services. QPC partners build on their business experience in over 30 countries to assist clients on a consulting basis. 
-
-		%p Client – China or US based private citizen, entrepreneur or corporation with investable assets > $1mill USD and an appetite for cross border investments or business expansion.   
-
-		%p Target Acquisition – US based company, project, real estate or assets presenting opportunities to create growth and value for stakeholders. At present, most US assets are under-valued while the country's economic outlook is improving. In order to fund growth, or relieve debt, these companies must obtain capital from the troubled US banking industry or through strategic partnerships. Company size of < $20 mill USD yearly revenue and < $10 mill USD deal size. 
-
-		%h3 Niche Markets
-
-		%p QPC offers services to Chinese and United States clients with requirements falling outside the scope of services provided by large institutions and investment banks. Focusing on small and medium deals involving Chinese entities establishing or acquiring assets in the USA.  These transactions require specific skills which are rare in the small-medium size deal segment.  In addition QPC offers US clients troubleshooting assistance, business development consulting, and guidance in capturing Chinese consumer demand.   
+			%br
+			%br
+			
+			.panel.panel-primary
+				.panel-heading
+					%h3.panel-title Primary Service Sector 
+				.container
+					.row
+						.col-lg-5.text-right
+							%strong Business Development Consulting
+						.col-lg-7
+							%p Chinese and United States companies entering international markets.
+					.row
+						.col-lg-5.text-right
+							%strong Corporate Expansion & Investment
+						.col-lg-7
+							%p Business development and cross-border expansion.
+					.row
+						.col-lg-5.text-right
+							%strong Private Company Expansion
+						.col-lg-7
+							%p Small-to-mid-cap clients with assets ranging from $0.5-10 mill USD in the short-term to $10-20 mill USD for the mid-term.
+		
