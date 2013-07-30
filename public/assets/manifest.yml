@@ -65,7 +65,7 @@ usa_flag.png: usa_flag-a6e8852272950a237f0b7609391bedb6.png
 usa_flag/index.png: usa_flag-a6e8852272950a237f0b7609391bedb6.png
 application.js: application-c3b59edb43f915f0e9cb5f9a29e150dd.js
 application/index.js: application-c3b59edb43f915f0e9cb5f9a29e150dd.js
-application.css: application-8896bca221cb03fa1bbc1ebed32eae52.css
-application/index.css: application-8896bca221cb03fa1bbc1ebed32eae52.css
+application.css: application-e26e73686100f3385c6d2e93546f6d71.css
+application/index.css: application-e26e73686100f3385c6d2e93546f6d71.css
 jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
 jquery/index.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map

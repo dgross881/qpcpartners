@@ -9,6 +9,8 @@
 	/* hides the overflow of featurette images in mobile views */
 
 #pages-container > .container { overflow: hidden; }
+@media (max-width: 767px) {
+	#pages-container > .container { padding: 50px 15px 0; } }
 
 /* 
  * ==================================================
@@ -50,7 +52,8 @@
 		left: 0; 
 		z-index: 1030; }
 	#mainSlider { 
-		top: -20px; 
+		top: 0px; 
+		padding-top: 50px;
 		margin-bottom: 25px; } }
 
 @media (max-width: 768px) {
@@ -166,17 +169,6 @@ footer.col-12 .copyright {
 	float: right;
 	padding: 60px 0;
 	color: #d8d8d8; }
-
-/* 
- * ==================================================
- *	GENERIC PAGE styles
- * ==================================================
-*/
-
-	/* pad the sides of #pages-container for mobile views */
-
-@media (max-width: 767px) {
-	#pages-container .container { padding: 0 15px; } }
 
 /* 
  * ==================================================
