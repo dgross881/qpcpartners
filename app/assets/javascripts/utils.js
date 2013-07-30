@@ -1,3 +1,10 @@
+// kill the address bar in mobile safari
+window.addEventListener("load",function() {
+	setTimeout(function(){
+		window.scrollTo(0, 1);
+	}, 0);
+});
+
 // Utility functions
 
 (function ($) {
