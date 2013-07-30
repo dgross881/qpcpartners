@@ -2,6 +2,16 @@
 
 /* 
  * ==================================================
+ *	BODY CONTAINER overflow hide
+ * ==================================================
+*/
+
+	/* hides the overflow of featurette images in mobile views */
+
+#pages-container > .container { overflow: hidden; }
+
+/* 
+ * ==================================================
  *	NAVBAR, CAROUSEL and MAIN PAGE positioning fixes
  * ==================================================
 */
@@ -18,7 +28,7 @@
 
 @media (min-width: 768px) {
 	.navbar-wrapper { padding-top: 45px; }
-	#mainSlider { top: -115px; } }
+	#mainSlider { top: -115px; margin-bottom: -40px; } }
 
 @media (max-width: 768px) {
 	.navbar-wrapper { 
