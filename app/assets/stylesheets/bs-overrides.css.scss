@@ -27,7 +27,8 @@
 
 #mainSlider { 
 	z-index: 1;
-	position: relative; }
+	position: relative;
+	min-width: 320px; }
 .navbar-wrapper { 
 	z-index: 10; 
 	position: relative; }
@@ -84,6 +85,8 @@
 
 	/* position the caption */
 
+@media (max-width: 768px) {
+	.carousel-caption h3 { font-size: 130%; } }
 @media (min-width: 768px) {
 	.carousel-caption { margin-bottom: 30px; } }
 @media (min-width: 1000px) { 
