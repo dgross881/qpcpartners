@@ -10,6 +10,9 @@
 				= link_to "QPC Partners", "/", :class => "navbar-brand"
 				.nav-collapse.collapse
 					%ul.nav.navbar-nav
-						- nav_items.each_pair do |nav, con|
-							%li= link_to nav, "/#{con}"
+						- nav_items.each_with_index do |(nav, con), i|
+							- if i == 0 
+								%li= link_to nav, "/#{con}", {:class=>'active'}
+							- else
+								%li= link_to nav, "/#{con}"
 

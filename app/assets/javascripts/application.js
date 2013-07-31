@@ -15,4 +15,5 @@
 //= require ./bootstrap.js
 //= require ./bs-overrides.js
 //= require ./utils.js
+//= require ./misc.js
 // require_tree .

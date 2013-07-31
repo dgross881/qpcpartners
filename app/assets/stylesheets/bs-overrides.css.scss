@@ -10,7 +10,7 @@
 
 #pages-container > .container { overflow: hidden; }
 @media (max-width: 767px) {
-	#pages-container > .container { padding: 50px 15px 0; } }
+	#pages-container > .container { padding: 50px 0 0; } }
 
 /* 
  * ==================================================
@@ -190,3 +190,5 @@ p.well {
 
 .accordion-heading {
 	background-color: #f5f5f5; }
+
+.consulting-image { max-width: 100%; }

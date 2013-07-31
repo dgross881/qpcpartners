@@ -1,4 +1,4 @@
-// kill the address bar in mobile safari
+// kill the address bar in mobile Safari (iOS < 7.0)
 window.addEventListener("load",function() {
 	setTimeout(function(){
 		window.scrollTo(0, 1);
@@ -10,7 +10,7 @@ window.addEventListener("load",function() {
 (function ($) {
 
 	// force the language button to navigate to the same page
-	// but in the appropriate language
+	// but in the opposite language
 	(function () {
 		$('#lang').click(function (ev) {
 			var loc = window.location;
@@ -22,12 +22,6 @@ window.addEventListener("load",function() {
 		  }
 		});
 	}());	
-
-	// add the 'active' class the 'li' element of active linked list anchor
-	(function () {
-		var selector = 'li a[href$="' + window.location.pathname + '"]';
-		$(selector).parent().addClass('active');
-	}());
 
 }(jQuery))
 
