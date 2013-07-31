@@ -3,23 +3,26 @@
 .container
 	%h1 Consulting Projects
 	%br
-	.col-lg-6
-		= image_tag 'building_materials.png', :alt => "Building Materials", :class => "consulting-image"
-		%h3 Building Materials
-		%p
-			Guided process for new product from R&D to global expansion entering 30+ markets.  In less than 10 years the product has reached $500 mill in annual sales.
-	.col-lg-6
-		= image_tag 'textile.png', :alt => "Textiles", :class => "consulting-image"
-		%h3 Textiles
-		%p 
-			Demand-oriented projects assisting clothing manufacturers in finding alternative suppliers, in addition to supply-oriented projects developing international markets for manufacturers.
-	.col-lg-6
-		= image_tag 'electronics.png', :alt => "Electronics", :class => "consulting-image"
-		%h3 Electronics
-		%p 
-			Multiple projects in the electronics industry working with products at every stage of product life.
-	.col-lg-6
-		= image_tag 'medical.png', :alt => "Medical Instruments", :class => "consulting-image"
-		%h3 Medical Devices
-		%p 
-			New projects involving cutting-edge surgical technology and other medical instruments.
+	.row
+		.col-lg-6
+			= image_tag 'building_materials.jpg', :alt => "Building Materials", :class => "fluid-image"
+			%h3 Building Materials
+			%p
+				Guided process for new product from R&D to global expansion entering 30+ markets.  In less than 10 years the product has reached $500 mill in annual sales.
+		.col-lg-6
+			= image_tag 'electronics.jpg', :alt => "Electronics", :class => "fluid-image"
+			%h3 Electronics
+			%p 
+				Multiple projects in the electronics industry working with products at every stage of product life.
+	%br
+	.row
+		.col-lg-6
+			= image_tag 'medical.jpg', :alt => "Medical Devices & Instruments", :class => "fluid-image"
+			%h3 Medical Devices
+			%p 
+				New projects involving cutting-edge surgical technology and other medical instruments and instruments.
+		.col-lg-6
+			= image_tag 'textiles.jpg', :alt => "Textiles", :class => "fluid-image"
+			%h3 Textiles
+			%p 
+				Demand-oriented projects assisting clothing manufacturers in finding alternative suppliers, in addition to supply-oriented projects developing international markets for manufacturers.
