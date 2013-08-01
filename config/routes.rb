@@ -1,6 +1,6 @@
 Qpcpartners::Application.routes.draw do
 
-  post "contact/new"
+  match "contact/new" => "contacts#new"
 
   root :to => 'pages#index'
   match "/cn" => "cn#index", :as => 'cn_root'

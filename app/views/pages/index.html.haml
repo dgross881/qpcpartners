@@ -1,11 +1,5 @@
 - @title = 'Home'
 
-- if flash[:success]
-	.flash.flash-index.flash-success= flash[:success]
-- elsif flash[:notice] 
-	.flash.flash-index.flash-notice= flash[:notice]
-- elsif flash[:warning]
-	.flash.flash-index.flash-warning= flash[:warning]
 = render 'pages/index/carousel'
 .container
 	= render 'pages/index/marketing'

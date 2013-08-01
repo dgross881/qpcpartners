@@ -12,7 +12,7 @@
 		- elsif flash[:warning]
 			.col-12.flash.flash-contact.flash-warning= flash[:warning]
 
-		= form_tag({:controller => "contact", :action => "new"}, :class => "form-group", :method => "post") do
+		= form_tag({:controller => "contacts", :action => "new"}, :class => "form-group", :method => "post") do
 			.row
 				.col-lg-9.col-sm-9.col-12
 					.row
@@ -20,14 +20,14 @@
 							%h4.text-right.hidden-sm Full Name
 							%h4.text-left.visible-sm Full Name
 						.col-lg-8.col-sm-8.col-12
-							= text_field_tag "contact[name]", (flash[:contact] ? flash[:contact][:name] : nil), :class => "form-control"
+							= text_field_tag "contact[name]", (flash[:contact] ? flash[:contact][:name] : nil), :class => "form-control", :required => "true"
 					%br.hidden-sm
 					.row
 						.col-lg-4.col-sm-4.col-12
 							%h4.text-right.hidden-sm Email Address
 							%h4.text-left.visible-sm Email Address
 						.col-lg-8.col-sm-8.col-12
-							= text_field_tag "contact[email]", (flash[:contact] ? flash[:contact][:email] : nil), :class => "form-control"
+							= text_field_tag "contact[email]", (flash[:contact] ? flash[:contact][:email] : nil), :class => "form-control", :required => "true"
 					%br.hidden-sm
 					.row
 						.col-lg-4.col-sm-4.col-12
@@ -55,7 +55,7 @@
 							%h4.text-right.hidden-sm Message Body
 							%h4.text-left.visible-sm Message Body
 						.col-lg-8.col-sm-8.col-12
-							= text_area_tag "contact[message]", (flash[:contact] ? flash[:contact][:message] : nil), :class => "form-control", :rows => "5"
+							= text_area_tag "contact[message]", (flash[:contact] ? flash[:contact][:message] : nil), :class => "form-control", :rows => "5", :required => "true"
 					%br
 					.row
 						.col-lg-4.col-sm-4.col-12
