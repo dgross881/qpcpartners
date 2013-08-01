@@ -1,11 +1,11 @@
 Qpcpartners::Application.routes.draw do
 
-  post "contact/submit"
+  post "contact/new"
 
   root :to => 'pages#index'
   match "/cn" => "cn#index", :as => 'cn_root'
   
-  %w(summary core services consulting investment contact contacts).each do |page|
+  %w(summary services consulting investment contact).each do |page|
     match "/#{page}" => "pages##{page}", :as => "#{page}"
     match "/cn/#{page}" => "cn##{page}", :as => "cn_#{page}"
   end

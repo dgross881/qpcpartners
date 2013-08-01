@@ -12,7 +12,7 @@
 		- elsif flash[:warning]
 			.col-12.flash.flash-contact.flash-warning= flash[:warning]
 
-		= form_for @contact, :url => "/contact/submit", :class => "form-group", :method => "post" do |f|
+		= form_tag({:controller => "contact", :action => "new"}, :class => "form-group", :method => "post") do
 			.row
 				.col-lg-9.col-sm-9.col-12
 					.row
@@ -20,47 +20,47 @@
 							%h4.text-right.hidden-sm Full Name
 							%h4.text-left.visible-sm Full Name
 						.col-lg-8.col-sm-8.col-12
-							= f.text_field :name, :class => "form-control"
+							= text_field_tag "contact[name]", (flash[:contact] ? flash[:contact][:name] : nil), :class => "form-control"
 					%br.hidden-sm
 					.row
 						.col-lg-4.col-sm-4.col-12
 							%h4.text-right.hidden-sm Email Address
 							%h4.text-left.visible-sm Email Address
 						.col-lg-8.col-sm-8.col-12
-							= f.text_field :email, :class => "form-control"
+							= text_field_tag "contact[email]", (flash[:contact] ? flash[:contact][:email] : nil), :class => "form-control"
 					%br.hidden-sm
 					.row
 						.col-lg-4.col-sm-4.col-12
 							%h4.text-right.hidden-sm Phone Number
 							%h4.text-left.visible-sm Phone Number
 						.col-lg-8.col-sm-8.col-12
-							= f.text_field :phone, :class => "form-control"
+							= text_field_tag "contact[phone]", (flash[:contact] ? flash[:contact][:phone] : nil), :class => "form-control"
 					%br.hidden-sm
 					.row
 						.col-lg-4.col-sm-4.col-12
 							%h4.text-right.hidden-sm Company Name
 							%h4.text-left.visible-sm Company Name
 						.col-lg-8.col-sm-8.col-12
-							= f.text_field :company, :class => "form-control"
+							= text_field_tag "contact[company]", (flash[:contact] ? flash[:contact][:company] : nil), :class => "form-control"
 					%br.hidden-sm
 					.row
 						.col-lg-4.col-sm-4.col-12
 							%h4.text-right.hidden-sm Company Website
 							%h4.text-left.visible-sm Company Website
 						.col-lg-8.col-sm-8.col-12
-							= f.text_field :website, :class => "form-control"
+							= text_field_tag "contact[website]", (flash[:contact] ? flash[:contact][:website] : nil), :class => "form-control"
 					%br.hidden-sm
 					.row
 						.col-lg-4.col-sm-4.col-12
 							%h4.text-right.hidden-sm Message Body
 							%h4.text-left.visible-sm Message Body
 						.col-lg-8.col-sm-8.col-12
-							= f.text_area :name, :class => "form-control", :rows => "5"
+							= text_area_tag "contact[message]", (flash[:contact] ? flash[:contact][:message] : nil), :class => "form-control", :rows => "5"
 					%br
 					.row
 						.col-lg-4.col-sm-4.col-12
 						.col-lg-8.col-sm-8.col-12
-							= f.submit :class => "btn btn-block", :value => "Send"
+							= submit_tag "Send", :class => "btn btn-block"
 				.col-lg-3.col-sm-3.col-12
 					%br.visible-sm
 					%br.visible-sm

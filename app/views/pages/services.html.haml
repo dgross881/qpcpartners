@@ -4,7 +4,7 @@
 	%h1 Services
 	%br
 	.row
-		.col-lg-4.col-sm-4.col-12
+		.col-lg-3.col-sm-4.col-12
 			%small.text-right.visible-sm tap to expand
 			#services-accordion.accordion
 				- strategic_actions.each_with_index do |(action,summary), i|
@@ -22,7 +22,7 @@
 							%div{"id"=>"service-#{num}", "class"=>"accordion-body collapse"}
 								.accordion-inner= summary
 			%small.hidden-sm click to expand
-		.col-lg-8.col-sm-8.col-12
+		.col-lg-9.col-sm-8.col-12
 			%h3 Niche Markets
 			%br.visible-lg
 			%p QPC offers services to Chinese and American clients whose requirements fall outside the scope of services provided by large institutions and investment banks. We focus on small-to-medium-sized deals involving Chinese entities establishing or acquiring assets in the USA.
