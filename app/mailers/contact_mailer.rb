@@ -1,5 +1,5 @@
 class ContactMailer < ActionMailer::Base
-  default from: "gregory@qpcpartners.com"
+  default from: "tathman@gmail.com"
 
   def thank_you_email(contact)
   	@contact = contact

@@ -4,11 +4,15 @@
 	%h1 Contact Us
 	%p.lead Please feel free to contact us via the form or contact information below.
 	%br.hidden-sm
-	%br.hidden-sm
-	%br.visible-lg
-	%br.visible-lg
 	.container
-		%form.form-group{:action => "post"}
+		- if flash[:success] 
+			.col-12.flash.flash-contact.flash-success= flash[:success]
+		- elsif flash[:notice] 
+			.col-12.flash.flash-contact.flash-notice= flash[:notice]
+		- elsif flash[:warning]
+			.col-12.flash.flash-contact.flash-warning= flash[:warning]
+
+		= form_for @contact, :url => "/contact/submit", :class => "form-group", :method => "post" do |f|
 			.row
 				.col-lg-9.col-sm-9.col-12
 					.row
@@ -16,32 +20,47 @@
 							%h4.text-right.hidden-sm Full Name
 							%h4.text-left.visible-sm Full Name
 						.col-lg-8.col-sm-8.col-12
-							%input.form-control{"type"=>"text"}
-					%br
+							= f.text_field :name, :class => "form-control"
+					%br.hidden-sm
 					.row
 						.col-lg-4.col-sm-4.col-12
 							%h4.text-right.hidden-sm Email Address
 							%h4.text-left.visible-sm Email Address
 						.col-lg-8.col-sm-8.col-12
-							%input.form-control{"type"=>"text"}
-					%br
+							= f.text_field :email, :class => "form-control"
+					%br.hidden-sm
 					.row
 						.col-lg-4.col-sm-4.col-12
 							%h4.text-right.hidden-sm Phone Number
 							%h4.text-left.visible-sm Phone Number
 						.col-lg-8.col-sm-8.col-12
-							%input.form-control{"type"=>"text"}
-					%br
+							= f.text_field :phone, :class => "form-control"
+					%br.hidden-sm
+					.row
+						.col-lg-4.col-sm-4.col-12
+							%h4.text-right.hidden-sm Company Name
+							%h4.text-left.visible-sm Company Name
+						.col-lg-8.col-sm-8.col-12
+							= f.text_field :company, :class => "form-control"
+					%br.hidden-sm
+					.row
+						.col-lg-4.col-sm-4.col-12
+							%h4.text-right.hidden-sm Company Website
+							%h4.text-left.visible-sm Company Website
+						.col-lg-8.col-sm-8.col-12
+							= f.text_field :website, :class => "form-control"
+					%br.hidden-sm
 					.row
 						.col-lg-4.col-sm-4.col-12
 							%h4.text-right.hidden-sm Message Body
 							%h4.text-left.visible-sm Message Body
 						.col-lg-8.col-sm-8.col-12
-							%textarea.form-control{"rows"=>"5"}
+							= f.text_area :name, :class => "form-control", :rows => "5"
 					%br
 					.row
-						.col-offset-8.col-lg-4
-							%button{"type"=>"submit", "class"=>"btn btn-block"} Submit
+						.col-lg-4.col-sm-4.col-12
+						.col-lg-8.col-sm-8.col-12
+							= f.submit :class => "btn btn-block", :value => "Send"
 				.col-lg-3.col-sm-3.col-12
 					%br.visible-sm
 					%br.visible-sm

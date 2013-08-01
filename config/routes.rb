@@ -1,5 +1,7 @@
 Qpcpartners::Application.routes.draw do
 
+  post "contact/submit"
+
   root :to => 'pages#index'
   match "/cn" => "cn#index", :as => 'cn_root'
   

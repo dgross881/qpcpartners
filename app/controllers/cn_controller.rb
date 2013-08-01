@@ -28,6 +28,7 @@ class CnController < ApplicationController
 
   def contact
   	@cn = true
+    @contact = Contact.new
   end
 
 end
