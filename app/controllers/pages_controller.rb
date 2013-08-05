@@ -9,9 +9,6 @@ class PagesController < ApplicationController
   def summary
   end
 
-  def core
-  end
-
   def services
   end
 

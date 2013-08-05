@@ -10,10 +10,6 @@ class CnController < ApplicationController
   	@cn = true
   end
 
-  def core
-  	@cn = true
-  end
-
   def services
   	@cn = true
   end

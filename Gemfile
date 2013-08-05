@@ -21,12 +21,6 @@ group :test do
 	gem 'autotest'
 end
 
-group :staging do
-	gem 'sqlite3'
-	gem 'thin'
-	gem 'haml-rails'
-end
-
 group :production do
 	gem 'pg'
 	gem 'thin'
