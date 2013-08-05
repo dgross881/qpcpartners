@@ -5,7 +5,7 @@
 		%meta{:name=>"apple-mobile-web-app-capable", :content=>"yes"}
 		%title= "QPC | Quantum Perspective Consultancy | #{@title}"
 		= stylesheet_link_tag    "application", :media => "all"
-		= render 'layouts/ga' if Rails.env == "production"
+		/ = render 'layouts/ga' if Rails.env == "production"
 		= csrf_meta_tags
 
 	%body
@@ -13,4 +13,4 @@
 		%div{:id=>"pages-container", :class=>('container' unless @index)}
 			= yield
 			= render 'pages/footer'
-		= javascript_include_tag "application"
+			= javascript_include_tag "application"

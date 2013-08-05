@@ -1,0 +1,50 @@
+	/* pad the edges of the mobile views a bit */
+
+.marketing {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+	/* center align the text within the three columns below the carousel */
+
+.marketing .col-sm-4 {
+  text-align: center;
+  margin-bottom: 60px; }
+
+.marketing h2 {
+  font-weight: lighter; }
+
+@media (min-width: 768px) and (max-width: 1000px) {
+	.marketing h2 { font-size: 25px; } }
+
+.marketing .col-lg-4 > p {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+/* 
+ * ==================================================
+ *	FEATURETTES
+ * ==================================================
+*/
+
+	/* add some padding to the bottom of the %hr.featurette-divider */
+
+hr.featurette-divider { padding-bottom: 40px; }
+
+	/* set left and right side featurette text alignment */
+
+.featurette { }
+.feat-l { text-align: left; }
+.feat-r { text-align: right; }
+
+.featurette-image { margin-bottom: 25px; }
+@media (max-width: 710px) {
+	.featurette-image { 
+		width: 512px;
+		height: 512px; } }
+
+@media (max-width: 767px) {
+	h2.featurette-heading { padding: 20px 20px 10px 20px; }
+	p.lead { padding: 0 20px 30px; } }
+
+@media (min-width: 710px) {
+	h2.featurette-heading { min-width: 280px; } }

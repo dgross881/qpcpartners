@@ -2,16 +2,26 @@
 	.container
 		.navbar.navbar-static-top
 			.container
-				= link_to "中文", '/cn', {:id => 'lang', :class=>"btn btn-danger nav-lang-btn"}
+				= link_to "#{!@cn ? '中文' : 'EN'}", '', {:id => 'lang', :class=>"btn btn-danger nav-lang-btn"}
 				%button.navbar-toggle{"type"=>"button", "data-toggle"=>"true", "data-target"=>".nav-collapse"}
 					%span.icon-bar
 					%span.icon-bar
 					%span.icon-bar
-				= link_to "QPC Partners", "/", :class => "navbar-brand"
+				- if !@cn
+					= link_to "QPC Partners", "/", :class => "navbar-brand"
+				- else
+					= link_to "QPC Partners", "/cn", :class => "navbar-brand"
 				.nav-collapse.collapse
 					%ul.nav.navbar-nav
-						- nav_items.each_with_index do |(nav, con), i|
-							- if i == 0 
-								%li= link_to nav, "/#{con}", {:class=>'active'}
-							- else
-								%li= link_to nav, "/#{con}"
+						- if !@cn
+							- nav_items.each_with_index do |(nav, con), i|
+								- if i == 0 
+									%li= link_to nav, "/#{con}", {:class=>'active'}
+								- else
+									%li= link_to nav, "/#{con}"
+						- else
+							- cn_nav_items.each_with_index do |(nav, con), i|
+								- if i == 0 
+									%li= link_to nav, "/cn/#{con}", {:class=>'active'}
+								- else
+									%li= link_to nav, "/cn/#{con}"

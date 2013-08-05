@@ -10,11 +10,7 @@ module PagesHelper
 		}
 	end
 
-	def cities
-		[ "New York", "Shanghai", "Washington D.C.", "Hangzhou" ]
-	end
-
-	def strategic_actions
+	def services
 		{
 			"Investor Road Shows" => "QPC conducts Investor Road Shows throughout the key markets of the Yangzi River Delta Region –– Shanghai, Suzhou, Nanjing, Hangzhou and Ningbo.",
 			"Investment Targeting" => "We target investment in the financial hotspots of the U.S. Northeast Region –– New York, Boston, Washington DC, Philadelphia and Chicago.",
@@ -30,7 +26,7 @@ module PagesHelper
 		}
 	end
 
-	def number_helper
+	def number_helper i
 		{
 			1 => "One",
 			2 => "Two",
@@ -42,7 +38,7 @@ module PagesHelper
 			8 => "Eight",
 			9 => "Nine",
 			10 => "Ten"
-		}
+		}[i]
 	end
 
 	def china_office

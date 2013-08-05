@@ -1,0 +1,40 @@
+
+// id the whole shebang, custom stylings
+#mainSlider { 
+	z-index: 1;
+	position: relative;
+	min-width: 240px; 
+	top: -120px; }
+@media (max-width: 768px) {
+	#mainSlider { 
+		top: 0;  } }
+
+// style the background, height, etc. the carousel's inner space
+.carousel-inner {
+	.item: {
+		width: 100%;
+		height: auto;
+		min-height: 640px;
+		position: absolute;
+		overflow: hidden; } }
+	
+.item-blue { background-image: url('bg-lg-blue.jpg'); }
+.item-red { background-image: url('bg-lg-red.jpg'); }
+.item-green { background-image: url('bg-lg-green.jpg'); }
+
+// interior text (ie. carousel-caption) 
+.carousel-text-block > a,
+.carousel-text-block > a:hover { color: white; }
+.carousel-text-block { margin: 0 auto; }
+@media (min-width: 1200px) {
+	.carousel-text-block { padding: 300px 0 0; } }
+@media (max-width: 1199px) and (min-width: 768px) {
+	.carousel-text-block { padding: 250px 0 0; } }
+@media (max-width: 767px) {
+	.carousel-text-block { margin: 0 0 60px; } }
+
+// image style (layout)
+@media (min-width: 768px) {
+	.image-carousel { padding: 180px 0 60px 50px; } }
+@media (max-width: 767px) {
+	.image-carousel { margin: 80px 0 0; } }

@@ -1,3 +1,4 @@
+
 #mainSlider.carousel.slide
 	%ol.carousel-indicators
 		%li{"data-target"=>"#mainSlider", "data-slide-to"=>"0", "class"=>"active"}
@@ -7,40 +8,63 @@
 		.item.item-blue.active
 			.row
 				.col-12
-					.col-lg-6.col-sm-8.col-12
-						= image_tag "bionic-eye-carousel.png", :class => "image-carousel hidden-sm"
-						= image_tag "bionic-eye-carousel.png", :class => "image-fluid image-carousel visible-sm"
-					.col-lg-6.col-sm-4.col-12
-						.carousel-text-block
-							%a{:href=>'/investment'}
-								%h3
-									QPC Representing Corcoran Group in China
-								%p
-									Our partnership with Corcoran Group enables us to better meet our clients' demands for ultra high-end real estate.
+					.col-lg-5.col-offset-1.col-sm-6.col-12
+						= image_tag "bionic-eye-carousel.png", :class => "image-fluid image-carousel"
+					.col-lg-4.col-sm-4.col-12
+						- if !@cn
+							.carousel-text-block
+								%a{:href=>'/investment'}
+									%h3
+										QPC Representing Corcoran Group in China
+									%p
+										Our partnership with Corcoran Group enables us to better meet our clients' demands for ultra high-end real estate.
+						- else
+							.carousel-text-block
+								%a{:href=>'/cn/investment'}
+									%h3
+										QPC被任命为Corcoran集团中国代表处
+									%p
+										作为Corcoran集团的中国代表，QPC已经大大增强了为其客户提供全方位，高品质的国际业务拓展服务的能力，并加强了其在中美市场的定位。
 		.item.item-red
 			.row
 				.col-12
-					.col-lg-8.col-sm-8.col-12
+					.col-lg-5.col-offset-1.col-sm-6.col-12
 						= image_tag "bionic-eye-carousel.png", :class => "image-fluid image-carousel"
 					.col-lg-4.col-sm-4.col-12
-						.carousel-text-block
-							%a{:href=>'/consulting'}
-								%h3
-									Bionic Eye Technologies
-								%p 
-									QPC providing consulting services to Bionic Eye Technologies Inc. during first round capital raising, July 2013.
+						- if !@cn
+							.carousel-text-block
+								%a{:href=>'/consulting'}
+									%h3
+										Bionic Eye Technologies
+									%p 
+										QPC providing consulting services to Bionic Eye Technologies Inc. during first round capital raising, July 2013.
+						- else
+							.carousel-text-block
+								%a{:href=>'/cn/consulting'}
+									%h3
+										Bionic Eye Technologies
+									%p 
+										QPC providing consulting services to Bionic Eye Technologies Inc. during first round capital raising, July 2013.
 		.item.item-green
 			.row
 				.col-12
-					.col-lg-8.col-sm-8.col-12
+					.col-lg-5.col-offset-1.col-sm-6.col-12
 						= image_tag "bionic-eye-carousel.png", :class => "image-fluid image-carousel"
 					.col-lg-4.col-sm-4.col-12
-						.carousel-text-block
-							%a{:href=>'/investment'}
-								%h3
-									Upcoming Investment Projects
-								%p 
-									Fundraising between June-August 2013 for Sept-Dec foreclosure purchases in the Washington DC and NYC metro areas.
+						- if !@cn
+							.carousel-text-block
+								%a{:href=>'/investment'}
+									%h3
+										QPC正工作于仿生眼技术
+									%p 
+										2013年7月，QPC正为马萨诸塞州波士顿的一家公司的仿生眼技术，具有革命性的视力矫正装置做第一轮资金筹集咨询服务。QPC已经决定代表仿生眼。
+						- else
+							.carousel-text-block
+								%a{:href=>'/cn/investment'}
+									%h3
+										即将投资的项目
+									%p 
+										2013年6月至8月，新基金正在被筹集，用于购买2013年9至12月在华盛顿特区和纽约市地铁地区丧失赎回权的房产。购买的房产将用于改造，将在2014年4月上市出租或出售。
 	%a.left.carousel-control{"href"=>"#mainSlider", "data-slide"=>"prev"}
 		%span.glyphicon.glyphicon-chevron-left
 	%a.right.carousel-control{"href"=>"#mainSlider", "data-slide"=>"next"}

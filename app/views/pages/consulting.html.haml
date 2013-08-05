@@ -1,37 +1,49 @@
-- @title = 'Consulting Projects'
+- @title = @cn ? "咨询项目" : 'Consulting Projects'
 
 .container
-	%h1.hidden-sm Consulting Projects
-	%h2.visible-sm Consulting Projects
+	%h1.hidden-sm= @title
+	%h2.visible-sm= @title
 	%br
 	.row
 		.col-lg-4.col-sm-6.col-12
-			= image_tag 'building_materials.jpg', :alt => "Building Materials", :class => "fluid-image consulting-image"
+			= image_tag 'building_materials.jpg', :alt => "Building Materials", :class => "image-fluid consulting-image"
 		.col-lg-8.col-sm-6.col-12
-			%h3 Building Materials
-			%p
-				Guided process for new product from R&D to global expansion entering 30+ markets.  In less than 10 years the product has reached $500 mill in annual sales.
+			- if !@cn
+				%h3 Building Materials
+				%p Guided process for new product from R&D to global expansion entering 30+ markets.  In less than 10 years the product has reached $500 mill in annual sales.
+			- else
+				%h3 建筑材料
+				%p 为新产品从研发全球拓展进入30个市场。这些市场近10年每年产品销售额达5亿美元。
 	%br
 	.row	
 		.col-lg-4.col-sm-6.col-12	
-			= image_tag 'electronics.jpg', :alt => "Electronics", :class => "fluid-image consulting-image"
+			= image_tag 'electronics.jpg', :alt => "Electronics", :class => "image-fluid consulting-image"
 		.col-lg-8.col-sm-6.col-12
-			%h3 Electronics
-			%p 
-				Multiple projects in the electronics industry working with products at every stage of product life.
+			- if !@cn
+				%h3 Electronics
+				%p Multiple projects in the electronics industry working with products at every stage of product life.
+			- else
+				%h3 电子
+				%p 电子工业的多个项目，涉及电子产品生命周期每个阶段的产品。
 	%br
 	.row
 		.col-lg-4.col-sm-6.col-12
-			= image_tag 'medical.jpg', :alt => "Medical Devices & Instruments", :class => "fluid-image consulting-image"
+			= image_tag 'medical.jpg', :alt => "Medical Devices & Instruments", :class => "image-fluid consulting-image"
 		.col-lg-8.col-sm-6.col-12
-			%h3 Medical Devices
-			%p 
-				New projects involving cutting-edge surgical technology and other medical instruments and instruments.
+			- if !@cn
+				%h3 Medical Devices
+				%p New projects involving cutting-edge surgical technology and other medical instruments and instruments.
+			- else
+				%h3 医疗用具
+				%p 尖端医疗用品与用具。
 	%br
 	.row	
 		.col-lg-4.col-sm-6.col-12
-			= image_tag 'textiles.jpg', :alt => "Textiles", :class => "fluid-image consulting-image"
+			= image_tag 'textiles.jpg', :alt => "Textiles", :class => "image-fluid consulting-image"
 		.col-lg-8.col-sm-6.col-12	
-			%h3 Textiles
-			%p 
-				Demand-oriented projects assisting clothing manufacturers in finding alternative suppliers, in addition to supply-oriented projects developing international markets for manufacturers.
+			- if !@cn
+				%h3 Textiles
+				%p Demand-oriented projects assisting clothing manufacturers in finding alternative suppliers, in addition to supply-oriented projects developing international markets for manufacturers.
+			- else
+				%h3 纺织
+				%p 需求导向项目，协助服装生产线寻找供应商。供应导向项目，为制造商开发国际市场。

@@ -31,4 +31,6 @@ class CnController < ApplicationController
     @contact = Contact.new
   end
 
+  private
+
 end

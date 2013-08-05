@@ -1,0 +1,133 @@
+@import 'mixins';
+
+	/* style a darker 'well' element for use with white text */
+
+.dark-well { 
+	background-color: hsla(0, 0%, 0%, .35);
+	border-color: #222;
+	color: white;
+	@include box-shadow(inset, 0, 0, 8px, black); }
+
+p.well { 
+	color: #111;
+	text-shadow: none; }
+
+/* 
+ * ==================================================
+ *	ACCORDION styles
+ * ==================================================
+*/
+
+	/* SUMMARY accordion */
+
+.accordion-group {
+	border: 1px solid #04498F; }
+
+.accordion-heading {
+	background-color: #e6eff7; }
+
+.accordion-inner {
+	background-color: #ffffff;
+	border-top-color: #04498F; }
+
+	/* fluid image class */
+
+.image-fluid { max-width: 100%; }
+
+.consulting-image { 
+	@include rounded(4px);
+	border: 1px solid #333; }
+
+	/* padding for small devices */
+
+@media (max-width: 767px) {
+	.padding-sm { padding: 0 15px; } }
+
+	/* a larger font-size, without .lead */
+
+@media (min-width: 1200px) {
+	.text-large { font-size: 130%; } }
+
+	/* grid 'col-lg-4 > p' style below 1000px  */
+
+@media (max-width: 1000px) {
+	.col-lg-4 > p { margin-top: 0; } }	
+
+@media (max-width: 768px) {
+	.col-lg-4 > p { margin: 20px 0; }
+	.col-sm-3 > p { margin: 20px 0; } }
+
+/* 
+ * ==================================================
+ *	BODY CONTAINER overflow hide
+ * ==================================================
+*/
+
+	/* hides the overflow of featurette images in mobile views */
+
+#pages-container > .container { overflow: hidden; }
+@media (max-width: 767px) {
+	#pages-container > .container { padding: 50px 0 0; } }
+
+@media (max-width: 768px) {
+	.container > h1, .container > h2 { 
+		padding-left: 15px;
+		padding-right: 15px; } }
+		
+ /* 
+ * ==================================================
+ *	FOOTER styles
+ * ==================================================
+*/
+
+footer.col-12 .copyright {
+	float: right;
+	padding: 60px 0;
+	color: #d8d8d8; }
+
+/* 
+ * ==================================================
+ *	FORM styles
+ * ==================================================
+*/
+
+.form-control:focus {
+  border-color: #04498F;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #04498F;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #04498F; }
+
+/* 
+ * ==================================================
+ *	FLASH MESSAGE styles
+ * ==================================================
+*/
+
+	/* styles for the flash messages needed for index and contact */
+
+.flash { padding: 20px 0; }
+
+.flash-contact {
+	@include rounded(4px);
+	border: solid 1px;
+	padding: 10px 20px;
+	margin: 0 0 30px 0;
+}
+
+.flash-index { 
+	position: absolute; 
+	top: 0;
+	width: 100%;
+	display: block; }
+
+.flash-notice { 
+	background-color: #fefefe;
+	border-color: #333;
+	color: #333; }
+.flash-success { 
+	background-color: #dff0d8;
+	border-color: #468847;
+	color: #468847; }
+.flash-warning {
+	background-color: #fcf8e3;
+	border-color: #c09853;
+	color: #c09853; }
