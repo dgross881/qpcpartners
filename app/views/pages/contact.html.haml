@@ -20,42 +20,42 @@
 							%h4.text-right.hidden-sm Full Name
 							%h4.text-left.visible-sm Full Name
 						.col-lg-8.col-sm-8.col-12
-							= text_field_tag "contact[name]", (flash[:contact] ? flash[:contact][:name] : nil), :class => "form-control", :required => "true"
+							= text_field_tag "contact[name]", value_for(:contact, :name), :class => "form-control", :required => "true"
 					%br.hidden-sm
 					.row
 						.col-lg-4.col-sm-4.col-12
 							%h4.text-right.hidden-sm Email Address
 							%h4.text-left.visible-sm Email Address
 						.col-lg-8.col-sm-8.col-12
-							= text_field_tag "contact[email]", (flash[:contact] ? flash[:contact][:email] : nil), :class => "form-control", :required => "true"
+							= text_field_tag "contact[email]", value_for(:contact, :email), :class => "form-control", :required => "true"
 					%br.hidden-sm
 					.row
 						.col-lg-4.col-sm-4.col-12
 							%h4.text-right.hidden-sm Phone Number
 							%h4.text-left.visible-sm Phone Number
 						.col-lg-8.col-sm-8.col-12
-							= text_field_tag "contact[phone]", (flash[:contact] ? flash[:contact][:phone] : nil), :class => "form-control"
+							= text_field_tag "contact[phone]", value_for(:contact, :phone), :class => "form-control"
 					%br.hidden-sm
 					.row
 						.col-lg-4.col-sm-4.col-12
 							%h4.text-right.hidden-sm Company Name
 							%h4.text-left.visible-sm Company Name
 						.col-lg-8.col-sm-8.col-12
-							= text_field_tag "contact[company]", (flash[:contact] ? flash[:contact][:company] : nil), :class => "form-control"
+							= text_field_tag "contact[company]", value_for(:contact, :company), :class => "form-control"
 					%br.hidden-sm
 					.row
 						.col-lg-4.col-sm-4.col-12
 							%h4.text-right.hidden-sm Company Website
 							%h4.text-left.visible-sm Company Website
 						.col-lg-8.col-sm-8.col-12
-							= text_field_tag "contact[website]", (flash[:contact] ? flash[:contact][:website] : nil), :class => "form-control"
+							= text_field_tag "contact[website]", value_for(:contact, :website), :class => "form-control"
 					%br.hidden-sm
 					.row
 						.col-lg-4.col-sm-4.col-12
 							%h4.text-right.hidden-sm Message Body
 							%h4.text-left.visible-sm Message Body
 						.col-lg-8.col-sm-8.col-12
-							= text_area_tag "contact[message]", (flash[:contact] ? flash[:contact][:message] : nil), :class => "form-control", :rows => "5", :required => "true"
+							= text_area_tag "contact[message]", value_for(:contact, :message), :class => "form-control", :rows => "5", :required => "true"
 					%br
 					.row
 						.col-lg-4.col-sm-4.col-12

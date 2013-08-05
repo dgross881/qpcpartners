@@ -4,32 +4,43 @@
 		%li{"data-target"=>"#mainSlider", "data-slide-to"=>"1"}
 		%li{"data-target"=>"#mainSlider", "data-slide-to"=>"2"}
 	.carousel-inner
-		.item.active
-			= image_tag "bg.jpg"
-			.carousel-caption
-				%a{:href=>'/investment'}
-					%h3
-						QPC Representing Corcoran Group in China
-					%p
-						Our partnership with Corcoran Group enables us to better meet our clients' demands for ultra high-end real estate.
-		.item
-			= image_tag "bg.jpg"
-			.carousel-caption
-				%a{:href=>'/consulting'}
-					%h3
-						Bionic Eye Technologies
-					%p 
-						QPC providing consulting services to Bionic Eye Technologies Inc. during first round capital raising, July 2013.
-
-		.item
-			= image_tag "bg.jpg"
-			.carousel-caption
-				%a{:href=>'/investment'}
-					%h3
-						Upcoming Investment Projects
-					%p 
-						Fundraising between June-August 2013 for Sept-Dec foreclosure purchases in the Washington DC and NYC metro areas.
-
+		.item.item-blue.active
+			.row
+				.col-12
+					.col-lg-6.col-sm-8.col-12
+						= image_tag "bionic-eye-carousel.png", :class => "image-carousel hidden-sm"
+						= image_tag "bionic-eye-carousel.png", :class => "image-fluid image-carousel visible-sm"
+					.col-lg-6.col-sm-4.col-12
+						.carousel-text-block
+							%a{:href=>'/investment'}
+								%h3
+									QPC Representing Corcoran Group in China
+								%p
+									Our partnership with Corcoran Group enables us to better meet our clients' demands for ultra high-end real estate.
+		.item.item-red
+			.row
+				.col-12
+					.col-lg-8.col-sm-8.col-12
+						= image_tag "bionic-eye-carousel.png", :class => "image-fluid image-carousel"
+					.col-lg-4.col-sm-4.col-12
+						.carousel-text-block
+							%a{:href=>'/consulting'}
+								%h3
+									Bionic Eye Technologies
+								%p 
+									QPC providing consulting services to Bionic Eye Technologies Inc. during first round capital raising, July 2013.
+		.item.item-green
+			.row
+				.col-12
+					.col-lg-8.col-sm-8.col-12
+						= image_tag "bionic-eye-carousel.png", :class => "image-fluid image-carousel"
+					.col-lg-4.col-sm-4.col-12
+						.carousel-text-block
+							%a{:href=>'/investment'}
+								%h3
+									Upcoming Investment Projects
+								%p 
+									Fundraising between June-August 2013 for Sept-Dec foreclosure purchases in the Washington DC and NYC metro areas.
 	%a.left.carousel-control{"href"=>"#mainSlider", "data-slide"=>"prev"}
 		%span.glyphicon.glyphicon-chevron-left
 	%a.right.carousel-control{"href"=>"#mainSlider", "data-slide"=>"next"}

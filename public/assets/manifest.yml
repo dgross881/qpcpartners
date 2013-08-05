@@ -13,8 +13,16 @@ QPC-logo.png: QPC-logo-291774440cd917c94def9692b6ff3f8e.png
 QPC-logo/index.png: QPC-logo-291774440cd917c94def9692b6ff3f8e.png
 QPC-logo_big.png: QPC-logo_big-93968554fdd8c7729b4d488c76b6e6cd.png
 QPC-logo_big/index.png: QPC-logo_big-93968554fdd8c7729b4d488c76b6e6cd.png
+bg-lg-blue.jpg: bg-lg-blue-1a748db82bb26d9436fd169ed8725db4.jpg
+bg-lg-blue/index.jpg: bg-lg-blue-1a748db82bb26d9436fd169ed8725db4.jpg
+bg-lg-green.jpg: bg-lg-green-b87cce1c5b4929121904e0200afb18f1.jpg
+bg-lg-green/index.jpg: bg-lg-green-b87cce1c5b4929121904e0200afb18f1.jpg
+bg-lg-red.jpg: bg-lg-red-c947b55d85a5a9d86b282bc771c88df7.jpg
+bg-lg-red/index.jpg: bg-lg-red-c947b55d85a5a9d86b282bc771c88df7.jpg
 bg.jpg: bg-5603884afb1bb1552733ae8794239807.jpg
 bg/index.jpg: bg-5603884afb1bb1552733ae8794239807.jpg
+bionic-eye-carousel.png: bionic-eye-carousel-2ac7ca2ad20674f707873a21c552839f.png
+bionic-eye-carousel/index.png: bionic-eye-carousel-2ac7ca2ad20674f707873a21c552839f.png
 bridge.jpg: bridge-18373a878d9fad98cdff3009ed6df75c.jpg
 bridge/index.jpg: bridge-18373a878d9fad98cdff3009ed6df75c.jpg
 building_materials.jpg: building_materials-097faa0871f0bbb12a8986a691d6e5a0.jpg
@@ -71,7 +79,7 @@ usa_flag.png: usa_flag-a6e8852272950a237f0b7609391bedb6.png
 usa_flag/index.png: usa_flag-a6e8852272950a237f0b7609391bedb6.png
 application.js: application-6f9f7334124ffc8c3900748f08ec44ec.js
 application/index.js: application-6f9f7334124ffc8c3900748f08ec44ec.js
-application.css: application-50ca84b19c0252bd9d528c7aa18cdf9b.css
-application/index.css: application-50ca84b19c0252bd9d528c7aa18cdf9b.css
+application.css: application-f2cffaee5d77315ec5f0b8e75d481c51.css
+application/index.css: application-f2cffaee5d77315ec5f0b8e75d481c51.css
 jquery.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
 jquery/index.min.map: jquery.min-6c267bfd2b3f36e6edccb2e584934c1c.map
