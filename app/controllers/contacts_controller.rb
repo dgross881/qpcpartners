@@ -5,7 +5,7 @@ class ContactsController < ApplicationController
 
   	respond_to do |format|
   		if @contact.save
-  			MailerGuy.perform_async(@contact)
+  			MailerGuy.perform_async(@contact.to_json)
   			flash[:success] = "Thank you for contacting us today, #{contact_name(@contact)}!  We'll get back to you as soon as we can."
   			format.html { redirect_to controller: "pages", action: "contact" }
   			format.json { render json: @contact, status: :created }
