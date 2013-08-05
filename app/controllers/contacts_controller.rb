@@ -5,8 +5,7 @@ class ContactsController < ApplicationController
 
   	respond_to do |format|
   		if @contact.save
-  			ContactMailer.thank_you_email(@contact).deliver
-  			NotifyMailer.notify_email(@contact).deliver
+  			Mailer.send_async @contact
   			flash[:success] = "Thank you for contacting us today, #{contact_name(@contact)}!  We'll get back to you as soon as we can."
   			format.html { redirect_to controller: "pages", action: "contact" }
   			format.json { render json: @contact, status: :created }
@@ -22,8 +21,8 @@ class ContactsController < ApplicationController
   private
 
   def current_url
-	  url_for :only_path => false, :overwrite_params => {}
-	end
+    request.original_url
+  end
 
 	def contact_name contact
 		name = contact.name.split(' ')

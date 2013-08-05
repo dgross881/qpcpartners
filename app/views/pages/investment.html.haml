@@ -4,13 +4,13 @@
 	%h1= @title
 	%p.padding-sm
 		- if !@cn
-			= link_to("Investment Properties", '#investment_properties')
+			= link_to "Investment Properties", '#investment-properties'
 			| 
-			=link_to("Investment Projects", '#investment_projects')
+			= link_to "Investment Projects", '#investment-projects'
 		- else
-			= link_to("投资财产", '#investment_properties')
+			= link_to "投资财产", '#investment-properties'
 			| 
-			=link_to("投资项目", '#investment_projects')
+			= link_to "投资项目", '#investment-projects'
 	- if !@cn
 		%h3#investment-properties.padding-sm Investment Properties	
 		%h4.padding-sm Commercial and Residential

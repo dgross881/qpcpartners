@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   private
 
   def define_domain
-  	params[:host] = 'http://www.qpcpartners.com'
+  	params[:host] = "http://www.qpcpartners.com"
   	redirect_to url_for(params), :status => 301
   end
 end

@@ -21,6 +21,12 @@ group :test do
 	gem 'autotest'
 end
 
+group :staging do
+	gem 'sqlite3'
+	gem 'thin'
+	gem 'haml-rails'
+end
+
 group :production do
 	gem 'pg'
 	gem 'thin'
@@ -43,6 +49,8 @@ end
 gem 'haml'
 gem 'turbolinks'
 gem 'jquery-rails'
+gem 'redis', ">= 2.6.14"
+gem 'sidekiq'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
