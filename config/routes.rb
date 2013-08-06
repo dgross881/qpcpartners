@@ -1,5 +1,7 @@
 Qpcpartners::Application.routes.draw do
 
+  require 'sidekiq/web'
+
   match "contact/new" => "contacts#new"
 
   root :to => 'pages#index'
@@ -9,6 +11,8 @@ Qpcpartners::Application.routes.draw do
     match "/#{page}" => "pages##{page}", :as => "#{page}"
     match "/cn/#{page}" => "pages##{page}", :as => "cn_#{page}"
   end
+
+  mount Sidekiq::Web, at: "/sidekiq"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

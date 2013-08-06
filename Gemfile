@@ -44,6 +44,8 @@ gem 'haml'
 gem 'turbolinks'
 gem 'jquery-rails'
 gem 'redis', ">= 2.6.14"
+gem 'sinatra', require: false
+gem 'slim'
 gem 'sidekiq'
 
 # To use ActiveModel has_secure_password

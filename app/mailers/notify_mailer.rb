@@ -3,7 +3,6 @@ class NotifyMailer < ActionMailer::Base
 
   def notify_email(contact)
   	@contact = contact
-  	# needs to mail both chinese and english versions
   	mail(to: "ryan.lindgren@gmail.com", subject: "New message received from 'qpcpartners.com'.")
   end
 end
