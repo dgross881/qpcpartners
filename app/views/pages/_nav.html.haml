@@ -2,26 +2,27 @@
 	.container
 		.navbar.navbar-static-top
 			.container
-				= link_to "#{!@cn ? '中文' : 'EN'}", '', {:id => 'lang', :class=>"btn btn-danger nav-lang-btn"}
+				= link_to "#{!chinese? ? '中文' : 'EN'}", '', {:id => 'lang', :class=>"btn btn-danger nav-lang-btn"}
 				%button.navbar-toggle{"type"=>"button", "data-toggle"=>"true", "data-target"=>".nav-collapse"}
 					%span.icon-bar
 					%span.icon-bar
 					%span.icon-bar
-				- if !@cn
-					= link_to "QPC Partners", "/", :class => "navbar-brand"
-				- else
+				- if chinese?
 					= link_to "QPC Partners", "/cn", :class => "navbar-brand"
+				- else
+					= link_to "QPC Partners", "/", :class => "navbar-brand"
 				.nav-collapse.collapse
 					%ul.nav.navbar-nav
-						- if !@cn
-							- nav_items.each_with_index do |(nav, con), i|
-								- if i == 0 
-									%li= link_to nav, "/#{con}", {:class=>'active'}
-								- else
-									%li= link_to nav, "/#{con}"
-						- else
-							- cn_nav_items.each_with_index do |(nav, con), i|
+						- if chinese?
+							- locale['cn']['nav_items'].each_with_index do |(nav, con), i|
 								- if i == 0 
 									%li= link_to nav, "/cn/#{con}", {:class=>'active'}
 								- else
 									%li= link_to nav, "/cn/#{con}"
+						- else
+							- locale['en']['nav_items'].each_with_index do |(nav, con), i|
+								- if i == 0 
+									%li= link_to nav, "/#{con}", {:class=>'active'}
+								- else
+									%li= link_to nav, "/#{con}"
+							

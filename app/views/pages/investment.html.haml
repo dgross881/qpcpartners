@@ -1,17 +1,29 @@
-- @title = @cn ? '不动产项目' : 'Real Estate'
+- @title = chinese? ? '不动产项目' : 'Real Estate'
 
 .container
 	%h1= @title
 	%p.padding-sm
-		- if !@cn
-			= link_to "Investment Properties", '#investment-properties'
-			| 
-			= link_to "Investment Projects", '#investment-projects'
-		- else
+		- if chinese?
 			= link_to "投资财产", '#investment-properties'
 			| 
 			= link_to "投资项目", '#investment-projects'
-	- if !@cn
+		- else
+			= link_to "Investment Properties", '#investment-properties'
+			| 
+			= link_to "Investment Projects", '#investment-projects'
+	- if chinese?
+		%h3#investment-properties.padding-sm 投资财产	
+		%h4.padding-sm 商业和住宅
+		%br
+		.row
+			.col-lg-8.col-sm-8.col-12
+				= image_tag "corcoran_home.jpg", :alt => "Corcoran Homes", :class => "image-fluid"
+			.col-lg-4.col-sm-4.col-12
+				%p.text-large
+					= link_to "Corcoran Group", "http://www.corcoran.com"
+					集团作为中国的代表，QPC具有得天独厚的优势为客户提供全纽约最好的房产选择。
+				= link_to image_tag('corcoran.png'), "http://www.corcoran.com", :class => "hidden-sm"	
+	- else
 		%h3#investment-properties.padding-sm Investment Properties	
 		%h4.padding-sm Commercial and Residential
 		%br
@@ -24,51 +36,10 @@
 					= link_to "Corcoran Group", "http://www.corcoran.com"
 					in China, QPC is uniquely positioned to offer its clients the finest property options across New York.
 				= link_to image_tag('corcoran.png'), "http://www.corcoran.com", :class => "hidden-sm"	
-	- else
-		%h3#investment-properties.padding-sm 投资财产	
-		%h4.padding-sm 商业和住宅
-		%br
-		.row
-			.col-lg-8.col-sm-8.col-12
-				= image_tag "corcoran_home.jpg", :alt => "Corcoran Homes", :class => "image-fluid"
-			.col-lg-4.col-sm-4.col-12
-				%p.text-large
-					= link_to "Corcoran Group", "http://www.corcoran.com"
-					集团作为中国的代表，QPC具有得天独厚的优势为客户提供全纽约最好的房产选择。
-				= link_to image_tag('corcoran.png'), "http://www.corcoran.com", :class => "hidden-sm"	
 	%br.visible-lg
 	%hr
 	%br
-	- if !@cn
-		%h3#investment-projects.padding-sm Investment Projects	
-		%h4.padding-sm Current Real Estate Projects	
-		%br
-		%h5.padding-sm Washington DC Metro Area
-		%br
-		.row
-			.col-lg-4.col-sm-6.col-12
-				= image_tag "forestglen.jpg", :class => "image-fluid"
-			.col-lg-5.col-sm-3.col-12
-				%p.text-large.text-left
-					This property is located in the National Park Seminary historic neighborhood of greater Washington DC and is surrounded by parks and wooded lots, located approximately 1.5 miles from the Washington DC city limits and 1 mile from the metro station. This exclusive location is situated in a national park and adjacent to recently renovated high-end housing complexes.
-			.col-lg-3.col-sm-3.col-12
-				%ul.list-group
-					%li.list-group-item
-						%strong Subdivision: 
-						Forest Glen Park
-					%li.list-group-item
-						%strong House Type: 
-						Single Family
-					%li.list-group-item
-						%strong House Size: 
-						2506 Sq. Ft.
-					%li.list-group-item
-						%strong Bedrooms: 
-						3
-					%li.list-group-item	
-						%strong Baths: 
-						2.5
-	- else
+	- if chinese?
 		%h3#investment-projects.padding-sm 投资项目	
 		%h4.padding-sm 当前的不动产项目	
 		%br
@@ -96,4 +67,33 @@
 						3
 					%li.list-group-item	
 						%strong 洗手间: 
+						2.5
+	- else
+		%h3#investment-projects.padding-sm Investment Projects	
+		%h4.padding-sm Current Real Estate Projects	
+		%br
+		%h5.padding-sm Washington DC Metro Area
+		%br
+		.row
+			.col-lg-4.col-sm-6.col-12
+				= image_tag "forestglen.jpg", :class => "image-fluid"
+			.col-lg-5.col-sm-3.col-12
+				%p.text-large.text-left
+					This property is located in the National Park Seminary historic neighborhood of greater Washington DC and is surrounded by parks and wooded lots, located approximately 1.5 miles from the Washington DC city limits and 1 mile from the metro station. This exclusive location is situated in a national park and adjacent to recently renovated high-end housing complexes.
+			.col-lg-3.col-sm-3.col-12
+				%ul.list-group
+					%li.list-group-item
+						%strong Subdivision: 
+						Forest Glen Park
+					%li.list-group-item
+						%strong House Type: 
+						Single Family
+					%li.list-group-item
+						%strong House Size: 
+						2506 Sq. Ft.
+					%li.list-group-item
+						%strong Bedrooms: 
+						3
+					%li.list-group-item	
+						%strong Baths: 
 						2.5

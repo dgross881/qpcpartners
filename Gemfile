@@ -44,9 +44,9 @@ gem 'haml'
 gem 'turbolinks'
 gem 'jquery-rails'
 gem 'redis', ">= 2.6.14"
-gem 'sinatra', require: false
 gem 'slim'
-gem 'sidekiq'
+gem 'resque'
+gem 'resque_mailer'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

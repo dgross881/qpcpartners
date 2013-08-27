@@ -1,31 +1,4 @@
-- if !@cn
-	%hr.featurette-divider
-
-	.featurette.feat-l.clearfix
-		= image_tag 'bridge.jpg', :class => 'featurette-image img-circle pull-right'
-		%h2.featurette-heading
-			Bridging the Gap
-		%p.lead
-			With in-depth cross-cultural understanding, QPC is positioned to assist its clients with addressing potential issues involved with international investment and expansion before they arise.
-
-	%hr.featurette-divider
-			
-	.featurette.feat-r.clearfix
-		= image_tag 'dragon-papercut.jpg', :class => 'featurette-image img-circle pull-left'
-		%h2.featurette-heading
-			Spearheading Projects
-		%p.lead
-			Our objective is to effectively consult our clients on the hurdles and requirements involved in international expansion, to eliminate bottlenecks and allow clients to focus on developing and implementing strategies for the future growth.
-
-	%hr.featurette-divider
-
-	.featurette.feat-l.clearfix
-		= image_tag 'deal-execution.jpg', :class => 'featurette-image img-circle pull-right'
-		%h2.featurette-heading
-			Deal Execution
-		%p.lead
-			We provide our clients with the knowledge and skills necessary to successfully execute international transactions, including (but not limited to): project management, cultural briefings, as well as language, legal, and financial services
-- else
+- if chinese?
 	%hr.featurette-divider
 
 	.featurette.feat-l.clearfix
@@ -52,3 +25,30 @@
 			重点项目
 		%p.lead
 			QPC与客户合作，在他们承接项目之前了解他们的需求并省去无效的运作，让客户能专注于正确的道路上并获得自己想要的结果
+- else
+	%hr.featurette-divider
+
+	.featurette.feat-l.clearfix
+		= image_tag 'bridge.jpg', :class => 'featurette-image img-circle pull-right'
+		%h2.featurette-heading
+			Bridging the Gap
+		%p.lead
+			With in-depth cross-cultural understanding, QPC is positioned to assist its clients with addressing potential issues involved with international investment and expansion before they arise.
+
+	%hr.featurette-divider
+			
+	.featurette.feat-r.clearfix
+		= image_tag 'dragon-papercut.jpg', :class => 'featurette-image img-circle pull-left'
+		%h2.featurette-heading
+			Spearheading Projects
+		%p.lead
+			Our objective is to effectively consult our clients on the hurdles and requirements involved in international expansion, to eliminate bottlenecks and allow clients to focus on developing and implementing strategies for the future growth.
+
+	%hr.featurette-divider
+
+	.featurette.feat-l.clearfix
+		= image_tag 'deal-execution.jpg', :class => 'featurette-image img-circle pull-right'
+		%h2.featurette-heading
+			Deal Execution
+		%p.lead
+			We provide our clients with the knowledge and skills necessary to successfully execute international transactions, including (but not limited to): project management, cultural briefings, as well as language, legal, and financial services

@@ -1,41 +1,8 @@
-- @title = @cn ? '执行摘要' : 'Executive Summary'
+- @title = chinese? ? '执行摘要' : 'Executive Summary'
 .container
-	%h1.hidden-sm= @cn ? '执行摘要' : 'About QPC Partners'
-	%h1.visible-sm= @cn ? '执行摘要' : 'About QPC'
-	- if !@cn
-		.row
-			.col-lg-9
-				%br
-				.col-lg-6.col-sm-6.col-12
-					
-				.col-lg-6.col-sm-6.col-12
-					.col-12
-						.panel
-							.panel-heading 
-								%h3.panel-title Our Clients
-							%p China and US based private citizens, entrepreneurs and corporations with investable assets exceeding $1million USD and an appetite for cross-border investments and business. 
-					.col-12
-						.panel
-							.panel-heading 
-								%h3.panel-title Consulting Services
-							%p We offer consulting services to individuals, companies and corporations requiring professional cross-border business advice and services. QPC Partners build on their business experience in more than 30 countries to assist clients on a consulting basis.   	
-				.col-12
-					.col-12
-						.panel
-							.panel-heading 
-								%h3.panel-title Target Acquisition
-							%p US-based companies, projects, real estate or assets presenting opportunities to create growth and value for stakeholders. At present, most US assets are under-valued while the country's economic outlook is improving. In order to fund growth, or relieve debt, these companies must obtain capital from the troubled US banking industry or through strategic partnerships. 
-							Companies showing less than $20 million USD annual revenue with deal size less than $10 million USD.
-				%br
-			.col-lg-3
-				.col-12
-					%h3 Executive Summary
-					%br 
-					%p
-						For the past two decades, China’s economic power has increased at an astonishing rate. Government controls have encouraged the majority of financial proceeds to remain within China, until recently. Over the last five years, the largest Chinese firms have begun expanding their operations and influence abroad, as the Chinese government strides to loosen financial controls. 
-					%p
-						With the market for Chinese internal investments becoming over-saturated and diminishing returns weighing on clients' minds, international markets struck by the global financial crisis will offer discounted assets. QPC’s aim is to assist small-to-mid-cap Chinese clients identify & evaluate opportunities, navigate international regulations and broker deals. Additionally QPC offers consulting services on an ad hoc basis for larger M&A deals and business development projects.
-	- else
+	%h1.hidden-sm= chinese? ? '执行摘要' : 'About QPC Partners'
+	%h1.visible-sm= chinese? ? '执行摘要' : 'About QPC'
+	- if chinese?
 		.row
 			.col-lg-9
 				%br
@@ -69,3 +36,36 @@
 						在过去的二十年里，中国的经济实力以惊人的速度增加。直到最近，政府干预鼓励财政收入的大部分留在中国。近五年来，由于中国政府放松对金融的控制，中国的一些大规模公司开始扩大自己的业务和跨界的影响力． 
 					%p
 						由于中国国内投资市场的超额认购以及客户收益的减少，国际市场受到全球金融危机引起的资产缩水的打击。 QPC的业务重点是协助小中型的中国客户识别并评估机会，明确国际法规以及如何执行交易。此外，QPC将就大型M＆A交易和商业开发项目提供额外咨商服务。
+	- else
+		.row
+			.col-lg-9
+				%br
+				.col-lg-6.col-sm-6.col-12
+					
+				.col-lg-6.col-sm-6.col-12
+					.col-12
+						.panel
+							.panel-heading 
+								%h3.panel-title Our Clients
+							%p China and US based private citizens, entrepreneurs and corporations with investable assets exceeding $1million USD and an appetite for cross-border investments and business. 
+					.col-12
+						.panel
+							.panel-heading 
+								%h3.panel-title Consulting Services
+							%p We offer consulting services to individuals, companies and corporations requiring professional cross-border business advice and services. QPC Partners build on their business experience in more than 30 countries to assist clients on a consulting basis.   	
+				.col-12
+					.col-12
+						.panel
+							.panel-heading 
+								%h3.panel-title Target Acquisition
+							%p US-based companies, projects, real estate or assets presenting opportunities to create growth and value for stakeholders. At present, most US assets are under-valued while the country's economic outlook is improving. In order to fund growth, or relieve debt, these companies must obtain capital from the troubled US banking industry or through strategic partnerships. 
+							Companies showing less than $20 million USD annual revenue with deal size less than $10 million USD.
+				%br
+			.col-lg-3
+				.col-12
+					%h3 Executive Summary
+					%br 
+					%p
+						For the past two decades, China’s economic power has increased at an astonishing rate. Government controls have encouraged the majority of financial proceeds to remain within China, until recently. Over the last five years, the largest Chinese firms have begun expanding their operations and influence abroad, as the Chinese government strides to loosen financial controls. 
+					%p
+						With the market for Chinese internal investments becoming over-saturated and diminishing returns weighing on clients' minds, international markets struck by the global financial crisis will offer discounted assets. QPC’s aim is to assist small-to-mid-cap Chinese clients identify & evaluate opportunities, navigate international regulations and broker deals. Additionally QPC offers consulting services on an ad hoc basis for larger M&A deals and business development projects.
