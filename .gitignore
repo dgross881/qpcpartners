@@ -15,4 +15,4 @@
 /tmp
 
 # Ignore .mailpass
-/config/mailpass.txt
+/config/initializers/mailpass.rb
