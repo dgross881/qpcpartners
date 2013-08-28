@@ -1,3 +1,5 @@
+#encoding: utf-8
+
 class NotifyMailer < ActionMailer::Base
   default from: "QPC Partners <no-reply@qpcpartners.com>"
 

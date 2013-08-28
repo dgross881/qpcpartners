@@ -1,3 +1,5 @@
+#encoding: utf-8
+
 class ContactMailer < ActionMailer::Base
 	default :to => @contact.email, :from => "QPC Partners <no-reply@qpcpartners.com>"
 
