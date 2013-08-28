@@ -6,12 +6,17 @@
 	<body>
 		<h1>New Message from, <%= @contact.name %></h1>
 
-		<p>Name: <%= @contact.name %></p>
-		<p>Email: <%= @contact.email %></p>
-		<p>Telephone: <%= @contact.phone %></p>
-		<p>Company Name: <%= @contact.company %></p>
-		<p>Company Website: <%= link_to @contact.website, @contact.website %>
+		<p><strong>Name</strong><%= @contact.name %></p>
+		<p><strong>Email</strong>
+			<%= @contact.email %></p>
+		<p><strong>Telephone</strong>
+			<%= @contact.phone %></p>
+		<p><strong>Company Name</strong>
+			<%= @contact.company %></p>
+		<p><strong>Company Website</strong>
+			<%= link_to @contact.website, @contact.website %></p>
 
-		<p>Message: <%= @contact.message %></p>
+		<p><strong>Message</strong></p>
+		<p><%= @contact.message %></p>
 	</body>
 </html>

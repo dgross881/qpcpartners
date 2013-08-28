@@ -5,11 +5,11 @@ class NotifyMailer < ActionMailer::Base
 
   def notify_email(contact)
   	@contact = contact
-  	mail(to: "rlindgren@qpcpartners.com", subject: "New message received via 'qpcpartners.com'.")
+  	mail(to: "Gregory Wilson <gwilson@qpcpartners.com>", subject: "New message received via 'qpcpartners.com'.")
   end
 
   def notify_email_cn(contact)
   	@contact = contact
-  	mail(to: "rlindgren@qpcpartners.com", subject: "QPC Partners <qpcpartners.com> 传发的信息.")
+  	mail(to: "Jimmy Song <jsong@qpcpartners.com>", subject: "QPC Partners <qpcpartners.com> 传发的信息.")
   end
 end

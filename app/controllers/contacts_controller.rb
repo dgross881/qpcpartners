@@ -47,8 +47,7 @@ class ContactsController < ApplicationController
   end
 
   def send_notify_email contact
-    chinese? ?
-    ContactMailer.thank_you_email_cn(contact).deliver :
+    ContactMailer.thank_you_email_cn(contact).deliver
     ContactMailer.thank_you_email(contact).deliver
   end
 
