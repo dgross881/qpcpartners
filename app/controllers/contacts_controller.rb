@@ -10,7 +10,7 @@ class ContactsController < ApplicationController
         send_mails @contact
         set_session @contact
   			flash_success @contact
-  			format.html { success_redirect }
+  			format.html { render template: 'pages/contact' }
   			format.json { render json: @contact, status: :created }
   		else
         set_session @contact
