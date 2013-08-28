@@ -3,9 +3,9 @@
 .container
 	%h1= @title
 	- if chinese?
-		%p.lead 欢迎您使用以下的方式联系我们， 谢谢！
+		%p.lead 欢迎您使用以下方式联系我们， 谢谢！
 	- else
-		%p.lead Please feel free to contact us via the form or contact information below.
+		%p.lead Please contact us via form or contact information below.
 	%br.hidden-sm
 	.container
 		- if flash[:success] 

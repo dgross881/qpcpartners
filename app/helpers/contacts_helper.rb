@@ -1,7 +1,7 @@
 module ContactsHelper
 
 	def value_for(model, field)
-		session[model] ? session[model][field] : nil
+		flash[model] ? flash[model][field] : nil
 	end
 
 end
