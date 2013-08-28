@@ -36,8 +36,8 @@ module EnHelper
 				"Government Regulation" => "Quantum Perspective Consultancy is constantly updating its practices to conform with evolving legal, financial and operational regulations, both in the U.S. and in China.",
 				"Financial Services" => "QPC is able to provide regulatory advice for specific investment fields, to help clients make important financial decisions in an educated and informed manner.",
 				"Legal Services" => "Strategic partnerships with corporate and business law offices and practitioners guarantee that our clients never find themselves without a legal footing, but rather are empowered by our decades of experience.",
-				"Deal Structuring" => "We are constantly conducting 360\º due diligence, in all cases, for all of our clients. When it comes time to structuring a deal, clients are left with no 'surprises'.",
-				"Negotiations" => "Quantum Perspective Consultancy Partners takes great pride in securing the best possible deals for our clients, and can handle negotiations on our client's behalf or coach and assist clients in negotiating their own deals.  We also provide high-quality translation services to all of our clients",
+				"Deal Structuring" => "We conduct 360\º due diligence, in all cases, for all of our clients.",
+				"Negotiations" => "Quantum Perspective Consultancy Partners takes great pride in securing the best possible deals for our clients. We can handles negotiations on a client's behalf or coach and assist them in negotiating their own deals.  We also provide high-quality translation services to all of our clients",
 				"Deal Finalization" => "We continue to work closely with our clients through the deal finalization phase, dealing with any and all issues that may arise during that time, to ensure that all deals reach a successful agreement.",
 				"Implementation" => "Our years of experience and technical knowledge are invaluable assets to companies of all sizes during the implementation phase of successful overseas business expansions."
 		} }

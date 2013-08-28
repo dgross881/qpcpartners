@@ -1,0 +1,9 @@
+<%= @contact.name %>发给QPCPartners.com的信息
+
+名称: <%= @contact.name %>
+邮箱: <%= @contact.email %>
+电话: <%= @contact.phone %>
+公司: <%= @contact.company %>
+网站: <%= link_to @contact.website, @contact.website %>
+
+消息体: <%= @contact.message %>
