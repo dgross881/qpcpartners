@@ -5,10 +5,11 @@ class ContactsController < ApplicationController
 
   	respond_to do |format|
   		if @contact.save
-  			ContactMailer.thank_you_email(@contact).deliver
-        NotifyMailer.notify_email(@contact).deliver
+  			NotifyMailer.notify_email(@contact).deliver
+        NotifyMailer.notify_email_cn(@contact).deliver
+        send_thank_you_email(@contact)
         session[:contact] = params[:contact]
-  			flash[:success] = "Thank you for contacting us today, #{contact_name(@contact)}!  We'll get back to you as soon as we can."
+  			flash[:success] = "Thank you for contacting us today, #{@contact}!  We'll get back to you as soon as we can."
   			format.html { redirect_to controller: "pages", action: "contact" }
   			format.json { render json: @contact, status: :created }
   		else
@@ -22,13 +23,18 @@ class ContactsController < ApplicationController
 
   private
 
+  def send_thank_you_email contact
+    chinese? ?
+    ContactMailer.thank_you_email_cn(contact).deliver :
+    ContactMailer.thank_you_email(contact).deliver
+  end
+
+  def chinese?
+    current_url.include? '/cn'
+  end
+
   def current_url
     request.original_url
   end
-
-	def contact_name contact
-		name = contact.name.split(' ')
-		name.size > 2 ? contact.name : name[0]
-	end
 
 end
