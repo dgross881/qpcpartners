@@ -5,11 +5,10 @@ class ContactsController < ApplicationController
 
   	respond_to do |format|
   		if @contact.save
-  			NotifyMailer.notify_email(@contact).deliver
-        NotifyMailer.notify_email_cn(@contact).deliver
+        send_notify_email(@contact)
         send_thank_you_email(@contact)
         session[:contact] = params[:contact]
-  			flash[:success] = "Thank you for contacting us today, #{@contact}!  We'll get back to you as soon as we can."
+  			flash[:success] = "Thank you for contacting us today, #{@contact.name}!  We'll get back to you as soon as we can."
   			format.html { redirect_to controller: "pages", action: "contact" }
   			format.json { render json: @contact, status: :created }
   		else
@@ -27,6 +26,12 @@ class ContactsController < ApplicationController
     chinese? ?
     ContactMailer.thank_you_email_cn(contact).deliver :
     ContactMailer.thank_you_email(contact).deliver
+  end
+
+  def send_thank_you_email contact
+    chinese? ?
+    NotifyMailer.notify_email_cn(contact).deliver :
+    NotifyMailer.notify_email(contact).deliver
   end
 
   def chinese?
