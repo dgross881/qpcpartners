@@ -1,6 +1,6 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  # Rails.env == "production" ? before_filter(:define_domain) : nil
+  Rails.env == "production" ? before_filter(:define_domain) : nil
 
   private
 

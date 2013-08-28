@@ -22,11 +22,12 @@ p.well {
 	border: 1px solid #04498F; }
 
 .accordion-heading {
-	background-color: #e6eff7; }
+	background-color: #e6eff7;
+	@include rounded(4px); }
 
 .accordion-inner {
-	background-color: #ffffff;
-	border-top-color: #04498F; }
+	border-top-color: #04498F; 
+	@include rounded(4px); }
 
 	/* fluid image class */
 

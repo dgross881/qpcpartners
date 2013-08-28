@@ -4,41 +4,7 @@
 	%h1= @title
 	%br
 	.row
-		.col-lg-3.col-sm-4.col-12
-			%small.text-right.visible-sm tap to expand
-			#services-accordion.accordion
-				- if chinese?
-					- locale["cn"]["services"].each_with_index do |(action,summary), i|
-						- num = i_to_s i
-						- if i == 0
-							.accordion-group
-								.accordion-heading
-									%a.accordion-toggle{"href"=>"#service-#{num}", "data-toggle"=>"collapse", "data-parent"=>"#services-accordion"}= action
-								%div{"id"=>"service-#{num}", "class"=>"accordion-body collapse in"}
-									.accordion-inner= summary
-						- else
-							.accordion-group
-								.accordion-heading
-									%a.accordion-toggle{"href"=>"#service-#{num}", "data-toggle"=>"collapse", "data-parent"=>"#services-accordion"}= action
-								%div{"id"=>"service-#{num}", "class"=>"accordion-body collapse"}
-									.accordion-inner= summary
-				- else
-					- locale["en"]["services"].each_with_index do |(action,summary), i|
-						- num = i_to_s i
-						- if i == 0
-							.accordion-group
-								.accordion-heading
-									%a.accordion-toggle{"href"=>"#service-#{num}", "data-toggle"=>"collapse", "data-parent"=>"#services-accordion"}= action
-								%div{"id"=>"service-#{num}", "class"=>"accordion-body collapse in"}
-									.accordion-inner= summary
-						- else
-							.accordion-group
-								.accordion-heading
-									%a.accordion-toggle{"href"=>"#service-#{num}", "data-toggle"=>"collapse", "data-parent"=>"#services-accordion"}= action
-								%div{"id"=>"service-#{num}", "class"=>"accordion-body collapse"}
-									.accordion-inner= summary
-			%small.hidden-sm click to expand
-		.col-lg-9.col-sm-8.col-12
+		.col-lg-8.col-sm-7.col-12
 			- if chinese?
 				%h3 QPC市场定位
 				%br.visible-lg
@@ -92,3 +58,37 @@
 								%strong Private Company Expansion
 							.col-lg-7
 								%p Small-to-mid-cap clients with assets ranging from $0.5-10 mill USD in the short-term to $10-20 mill USD for the mid-term.				
+		.col-lg-4.col-sm-5.col-12
+			%small.text-right.visible-sm tap to expand
+			%small.hidden-sm click to expand
+			#services-accordion.accordion
+				- if chinese?
+					- locale["cn"]["services"].each_with_index do |(action,summary), i|
+						- num = i_to_s i
+						- if i == 0
+							.accordion-group
+								.accordion-heading
+									%a.accordion-toggle{"href"=>"#service-#{num}", "data-toggle"=>"collapse", "data-parent"=>"#services-accordion"}= action
+								%div{"id"=>"service-#{num}", "class"=>"accordion-body collapse in"}
+									.accordion-inner= summary
+						- else
+							.accordion-group
+								.accordion-heading
+									%a.accordion-toggle{"href"=>"#service-#{num}", "data-toggle"=>"collapse", "data-parent"=>"#services-accordion"}= action
+								%div{"id"=>"service-#{num}", "class"=>"accordion-body collapse"}
+									.accordion-inner= summary
+				- else
+					- locale["en"]["services"].each_with_index do |(action,summary), i|
+						- num = i_to_s i
+						- if i == 0
+							.accordion-group
+								.accordion-heading
+									%a.accordion-toggle{"href"=>"#service-#{num}", "data-toggle"=>"collapse", "data-parent"=>"#services-accordion"}= action
+								%div{"id"=>"service-#{num}", "class"=>"accordion-body collapse in"}
+									.accordion-inner= summary
+						- else
+							.accordion-group
+								.accordion-heading
+									%a.accordion-toggle{"href"=>"#service-#{num}", "data-toggle"=>"collapse", "data-parent"=>"#services-accordion"}= action
+								%div{"id"=>"service-#{num}", "class"=>"accordion-body collapse"}
+									.accordion-inner= summary
