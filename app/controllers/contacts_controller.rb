@@ -1,3 +1,5 @@
+require 'uri'
+
 class ContactsController < ApplicationController
 
   def new
@@ -5,15 +7,14 @@ class ContactsController < ApplicationController
 
   	respond_to do |format|
   		if @contact.save
-        send_notify_email(@contact)
-        send_thank_you_email(@contact)
-        session[:contact] = params[:contact]
-  			flash[:success] = "Thank you for contacting us today, #{@contact.name}!  We'll get back to you as soon as we can."
-  			format.html { redirect_to controller: "pages", action: "contact" }
+        send_mails @contact
+        set_session @contact
+  			flash_success @contact
+  			format.html { success_redirect }
   			format.json { render json: @contact, status: :created }
   		else
-  			session[:contact] = params[:contact]
-  			flash[:warning] = "There was an error processing your message. Please make changes if designated below or contact us directly. Thank you!"
+        set_session @contact
+  			flash_failure @contact
         format.html { render template: 'pages/contact' }
         format.json { render json: @contact.errors, status: :unprocessable_entity }
   		end
@@ -21,6 +22,33 @@ class ContactsController < ApplicationController
   end
 
   private
+
+  def send_mails contact
+    send_notify_email contact
+    send_thank_you_email contact
+  end
+
+  def set_session contact
+    session[:contact] = contact.id
+  end
+
+  def flash_failure contact
+    chinese? ?
+    flash[:success] = "There was an error processing your message. Please make changes if designated below or contact us directly. Thank you!" :
+    flash[:success] = "There was an error processing your message. Please make changes if designated below or contact us directly. Thank you!"
+  end
+
+  def flash_success contact
+    chinese? ?
+    flash[:success] = "Thank you for contacting us today, #{contact.name}!  We'll get back to you as soon as we can." :
+    flash[:success] = "Thank you for contacting us today, #{contact.name}!  We'll get back to you as soon as we can."
+  end
+
+  def success_redirect
+    chinese? ?
+    redirect_to(URI.join('http://www.qpcpartners.com/', 'cn/', 'contact')) :
+    redirect_to(controller: "pages", action: "contact")
+  end
 
   def send_notify_email contact
     chinese? ?
