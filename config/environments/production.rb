@@ -76,4 +76,6 @@ Qpcpartners::Application.configure do
     password: ENV['SMTP_PASSWORD']
   }
 
+  config.middleware.use Rack::WWW
+
 end
