@@ -7,7 +7,8 @@ class ContactsController < ApplicationController
 
   	respond_to do |format|
   		if @contact.save
-        send_mails @contact
+        send_notify_email @contact
+        send_thank_you_email @contact
         set_session @contact
   			flash_success @contact
   			format.html { render template: 'pages/contact' }
@@ -22,11 +23,6 @@ class ContactsController < ApplicationController
   end
 
   private
-
-  def send_mails contact
-    send_notify_email contact
-    send_thank_you_email contact
-  end
 
   def set_session contact
     session[:contact] = contact.id
