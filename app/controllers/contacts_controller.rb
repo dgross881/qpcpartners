@@ -22,7 +22,7 @@ class ContactsController < ApplicationController
 
   private
 
-  def send_thank_you_email contact
+  def send_notify_email contact
     chinese? ?
     ContactMailer.thank_you_email_cn(contact).deliver :
     ContactMailer.thank_you_email(contact).deliver
