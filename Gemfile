@@ -10,7 +10,6 @@ group :development, :test do
 	gem 'debugger'
 	gem 'capybara'
 	gem 'haml-rails'
-	gem 'thin'
 end
 
 group :test do
@@ -23,7 +22,6 @@ end
 
 group :production do
 	gem 'pg'
-	gem 'thin'
 	gem 'rack-www'
 end
 
@@ -41,6 +39,7 @@ group :assets do
   gem "sass_rails_patch", "~> 0.0.1"
 end
 
+gem 'thin'
 gem 'haml'
 gem 'turbolinks'
 gem 'jquery-rails'
