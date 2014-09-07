@@ -93,7 +93,7 @@ usachinaflags.jpg: usachinaflags-eb6a176435eceffba03b846aaee802b6.jpg
 usachinaflags/index.jpg: usachinaflags-eb6a176435eceffba03b846aaee802b6.jpg
 application.js: application-3a7e194252f26e5eb147322f944c9999.js
 application/index.js: application-3a7e194252f26e5eb147322f944c9999.js
-application.css: application-ffe19cf31dd4963a5ec59fa9fd8077fd.css
-application/index.css: application-ffe19cf31dd4963a5ec59fa9fd8077fd.css
+application.css: application-f31fc2fff4709d8d6a26b8027e32c3bd.css
+application/index.css: application-f31fc2fff4709d8d6a26b8027e32c3bd.css
 jquery.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map
 jquery/index.min.map: jquery.min-6336c5bca4c709e809647cdfcb484d0a.map

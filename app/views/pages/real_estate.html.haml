@@ -20,14 +20,14 @@
 	- PropertiesHelper.current_properties.each_with_index do |property, i|
 		- property = property[chinese? ? :cn : :en]
 		.row
-			.col-lg-4.col-sm-6.col-12{:class => i%2==1 ? "pull-right col-offset-1" : "pull-left"}
+			.col-lg-4.col-sm-6.col-12{:class => "pull-right col-offset-1"}
 				%a{ :href => image_path( property[:image] ) }
 					= image_tag property[:image], :class => "image-fluid consulting-image"
-			.col-lg-7.col-sm-6.col-12{:class => i%2==1 ? "" : "col-offset-1" }
+			.col-lg-7.col-sm-6.col-12
 				%br.visible-sm
 				%p.text-large.text-left
 					= property[:desc]
-			.col-lg-7.col-sm-6.col-12{:class => i%2==1 ? "" : "col-offset-1" }
+			.col-lg-7.col-sm-6.col-12
 				%br
 				%table.table
 					%tr.active

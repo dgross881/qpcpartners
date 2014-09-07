@@ -22,7 +22,10 @@
 .item-red { background-image: url('bg-lg-red.jpg'); }
 .item-green { background-image: url('bg-lg-green.jpg'); }
 
-// interior text (ie. carousel-caption) 
+// interior text (ie. carousel-caption)
+.carousel-text-block {
+	display: table-cell;
+}
 .carousel-text-block > a,
 .carousel-text-block > a:hover { color: white; }
 .carousel-text-block { margin: 0 auto; }
