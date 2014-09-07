@@ -22,7 +22,8 @@ module EnHelper
 				"About QPC" => "summary",
 				"Services" => "services",
 				"Consulting" => "consulting",
-				"Real Estate" => "investment",
+				"Real Estate" => "real_estate",
+				"Investment Projects" => "investment",
 				"Contact Us" => "contact"
 		} }
 	end

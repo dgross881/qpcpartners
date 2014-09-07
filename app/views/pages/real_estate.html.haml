@@ -1,0 +1,89 @@
+- @title = chinese? ? '不动产项目' : 'Real Estate'
+
+.container
+	%h1
+		#{@title}
+		%small #{ chinese? ? "商业和住宅" : "Commercial and Residential" }
+	%p.padding-sm
+		- if chinese?
+			= link_to "当前的项目", '#current-properties'
+			| 
+			= link_to "近期的项目", '#recent-properties'
+		- else
+			= link_to "Current Projects", '#current-properties'
+			| 
+			= link_to "Recent Projects", '#recent-properties'
+
+	%h3#current-properties.padding-sm 
+		#{ chinese? ? "当前的项目" : "Current Projects" }
+	%br
+	- PropertiesHelper.current_properties.each_with_index do |property, i|
+		- property = property[chinese? ? :cn : :en]
+		.row
+			.col-lg-4.col-sm-6.col-12{:class => i%2==1 ? "pull-right col-offset-1" : "pull-left"}
+				%a{ :href => image_path( property[:image] ) }
+					= image_tag property[:image], :class => "image-fluid consulting-image"
+			.col-lg-7.col-sm-6.col-12{:class => i%2==1 ? "" : "col-offset-1" }
+				%br.visible-sm
+				%p.text-large.text-left
+					= property[:desc]
+			.col-lg-7.col-sm-6.col-12{:class => i%2==1 ? "" : "col-offset-1" }
+				%br
+				%table.table
+					%tr.active
+						%th #{ chinese? ? "地区" : "Area" }
+						%th #{ chinese? ? "类别" : "Type" }
+						%th	#{ chinese? ? "面积" : "Size" }
+						%th	#{ chinese? ? "卧室" : "Beds" }
+						%th #{ chinese? ? "卫生间" : "Baths" }
+					%tr	
+						%td= property[:area]
+						%td= property[:type]
+						%td= property[:size]
+						%td= property[:beds]
+						%td= property[:bath]
+		%br
+		- if i < PropertiesHelper.current_properties.length - 1
+			%hr
+			%br
+	%br.visible-lg
+	%hr
+	%h3#recent-properties.padding-sm
+		#{ chinese? ? "近期的项目" : "Recent Projects" }
+	%h4.padding-sm 
+	%br
+	%h5.padding-sm
+		#{ chinese? ? "华盛顿" : "Washington DC Metro Area" }
+	%br
+	- PropertiesHelper.recent_properties.each_with_index do |property, i|
+		- property = property[chinese? ? :cn : :en]
+		.row
+			.col-lg-4.col-sm-6.col-12
+				%a{ :href => image_path(property[:image]) }
+					= image_tag property[:image], :class => "image-fluid consulting-image"
+					.ribbon-wrapper-green
+						.ribbon-green
+							SOLD
+			.col-lg-7.col-offset-1.col-sm-6.col-12
+				%br.visible-sm
+				%p.text-large.text-left
+					= property[:desc]
+			.col-lg-7.col-offset-1.col-sm-6.col-12
+				%br
+				%table.table
+					%tr.active
+						%th #{ chinese? ? "地区" : "Area" }
+						%th #{ chinese? ? "类别" : "Type" }
+						%th	#{ chinese? ? "面积" : "Size" }
+						%th	#{ chinese? ? "卧室" : "Beds" }
+						%th #{ chinese? ? "卫生间" : "Baths" }
+					%tr	
+						%td= property[:area]
+						%td= property[:type]
+						%td= property[:size]
+						%td= property[:beds]
+						%td= property[:bath]
+		%br
+		- if i < PropertiesHelper.recent_properties.length - 1
+			%hr
+			%br

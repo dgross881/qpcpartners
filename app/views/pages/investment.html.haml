@@ -1,97 +1,32 @@
-- @title = chinese? ? '不动产项目' : 'Real Estate'
+- @title = chinese? ? '投资项目' : 'Investment Projects'
 
 .container
-	%h1= @title
-	%p.padding-sm
-		- if chinese?
-			= link_to "投资财产", '#investment-properties'
-			| 
-			= link_to "投资项目", '#investment-projects'
-		- else
-			= link_to "Investment Properties", '#investment-properties'
-			| 
-			= link_to "Investment Projects", '#investment-projects'
-	- if chinese?
-		%h3#investment-properties.padding-sm 投资财产	
-		%h4.padding-sm 商业和住宅
-		%br
-		.row
-			.col-lg-7.col-sm-8.col-12
-				= image_tag "corcoran_home.jpg", :alt => "Corcoran Homes", :class => "image-fluid consulting-image"
-			.col-lg-4.col-offset-1.col-sm-4.col-12
-				%p.text-large
-					= link_to "Corcoran Group", "http://www.corcoran.com"
-					集团作为中国的代表，QPC具有得天独厚的优势为客户提供全纽约最好的房产选择。
-				= link_to image_tag('corcoran.png'), "http://www.corcoran.com", :class => "hidden-sm"	
-	- else
-		%h3#investment-properties.padding-sm Investment Properties	
-		%h4.padding-sm Commercial and Residential
-		%br
-		.row
-			.col-lg-7.col-sm-8.col-12
-				= image_tag "corcoran_home.jpg", :alt => "Corcoran Homes", :class => "image-fluid consulting-image"
-			.col-lg-4.col-offset-1.col-sm-4.col-12
-				%p.text-large
-					As the representative of 
-					= link_to "Corcoran Group", "http://www.corcoran.com"
-					in China, QPC is uniquely positioned to offer its clients the finest property options across New York.
-				= link_to image_tag('corcoran.png'), "http://www.corcoran.com", :class => "hidden-sm"	
-	%br.visible-lg
+	%h1
+		#{@title}
+	%br
+	.row
+		.col-sm-4
+			= image_tag "clean-water.jpg", :class => "circlized-carousel-image"
+		.col-sm-8
+			%h2
+				%a{:href => 'http://www.environmental-expert.com/companies/maritime-solutions-inc-756'}
+					Maritime Solutions Inc.’s
+				safe, environmentally-sound shipboard ballast water treatment system (BWT System) (patented)
+			%br
+			%p
+				Solution addresses the global ballast water problem of the shipping industry that caused contamination of the world’s harbors and waterways by delivering aquatic nuisance species during ship ballast operations (taking on or discharging water to balance ships).
+			.well
+				Current ballastwater transfers between geographic regions destroy local and regional coastal and waterway ecosystems and has an estimated multi-billon dollar negative economic imapct.
+			%h5
+				QPC Partners is raising $3m USD to fund commercialization of the project.
 	%hr
-	- if chinese?
-		%h3#investment-projects.padding-sm 投资项目	
-		%h4.padding-sm 当前的不动产项目	
-		%br
-		%h5.padding-sm 华盛顿
-		%br
-		.row
-			.col-lg-4.col-sm-4.col-12
-				= image_tag "forestglen.jpg", :class => "image-fluid consulting-image"	
-			.col-lg-7.col-offset-1.col-sm-8.col-12
-				%br.visible-sm
-				%p.text-large.text-left
-					这套房产是位于华盛顿大都会区的国家公园学院历史上著名的街区, 地段周围公园环绕, 树木繁茂, 距离华盛顿大都会区1.5公里, 距离地铁站1公里。这个独特的位置, 坐落在国家公园及邻近新近装修的高档住宅区。该物业目前状况较差, 没有人居住的
-			.col-lg-7.col-offset-1.col-sm-8.col-12
-				%br
-				%table.table
-					%tr.active
-						%td 地区
-						%td 类别
-						%td 面积
-						%td 卧室
-						%td 卫生间
-					%tr
-						%td Forest Glen Park
-						%td 别墅
-						%td 233平米
-						%td 3
-						%td 2.5
-	- else
-		%h3#investment-projects.padding-sm Investment Projects	
-		%h4.padding-sm Current Real Estate Projects	
-		%br
-		%h5.padding-sm Washington DC Metro Area
-		%br
-		.row
-			.col-lg-4.col-sm-6.col-12
-				= image_tag "forestglen.jpg", :class => "image-fluid consulting-image"
-			.col-lg-7.col-offset-1.col-sm-6.col-12
-				%br.visible-sm
-				%p.text-large.text-left
-					This property is located in the National Park Seminary historic neighborhood of greater Washington DC and is surrounded by parks and wooded lots, located approximately 1.5 miles from the Washington DC city limits and 1 mile from the metro station. This exclusive location is situated in a national park and adjacent to recently renovated high-end housing complexes.
-			.col-lg-7.col-offset-1.col-sm-6.col-12
-				%br
-				%table.table
-					%tr.active
-						%td Area
-						%td Type
-						%td	Size
-						%td Beds
-						%td Baths
-					%tr
-						%td Forest Glen Park
-						%td Single Family
-						%td 2506 sq.ft.
-						%td 3
-						%td 2.5
-				
+	.row
+		.col-sm-4
+			= image_tag "bionic-eye-carousel.png", :class => "circlized-carousel-image"
+		.col-sm-8
+			%h2
+				%a{:href => 'http://www.bostonretinalimplant.org/'}
+					Bionic Eye Technologies Inc.
+			%br
+			%p
+				Bionic Eye is developing a retinal prosthesis that is designed to be used in the sub-retinal space. This approach offers advantages over the competing epiretinal devices in that our approach seems to provide reduced risk of eye infection, reduced risk of erosion through the delicate tissues that cover the front surface of the eye (i.e. the conjunctiva), and the ability to place our stimulating electrodes closer to the retinal nerve cells, which should improve the safety of the device and also enhance the visual outcome.

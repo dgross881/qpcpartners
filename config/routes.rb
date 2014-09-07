@@ -5,7 +5,7 @@ Qpcpartners::Application.routes.draw do
   root :to => 'pages#index'
   match "/cn" => "pages#index", :as => 'cn_root'
   
-  %w(summary services consulting investment contact).each do |page|
+  %w(summary services consulting investment real_estate contact).each do |page|
     match "/#{page}" => "pages##{page}", :as => "#{page}"
     match "/cn/#{page}" => "pages##{page}", :as => "cn_#{page}"
   end

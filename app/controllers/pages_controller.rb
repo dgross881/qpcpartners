@@ -14,6 +14,9 @@ class PagesController < ApplicationController
   def consulting
   end
 
+  def real_estate
+  end
+
   def investment
   end
 

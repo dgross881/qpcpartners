@@ -20,7 +20,8 @@ module CnHelper
 				"执行摘要" => "summary",
 				"业务服务" => "services",
 				"咨询项目" => "consulting",
-				"不动产项目" => "investment",
+				"不动产项目" => "real_estate",
+				"投资项目" => "investment",
 				"联系我们" => "contact"
 		} }
 	end
