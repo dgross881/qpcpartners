@@ -1,13 +1,13 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
-ruby '1.9.3'
-gem 'rails', '3.2.13'
+ruby '2.2.4'
+gem 'rails', '4.2.6'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development, :test do
 	gem 'sqlite3'
-	gem 'debugger'
+	gem 'byebug'
 	gem 'capybara'
 	gem 'haml-rails'
 end
@@ -28,15 +28,14 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails',   '~> 5.0'
+  gem 'coffee-rails', '~> 4.1.0'
   gem 'compass-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
-  gem "sass_rails_patch", "~> 0.0.1"
+  gem 'uglifier', '>= 1.3.0'
 end
 
 gem 'thin'

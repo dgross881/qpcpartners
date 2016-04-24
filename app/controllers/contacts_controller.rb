@@ -3,7 +3,7 @@ require 'uri'
 class ContactsController < ApplicationController
 
   def new
-  	@contact = Contact.new(params[:contact])
+  	@contact = Contact.new(contact_params)
 
   	respond_to do |format|
   		if @contact.save
@@ -65,4 +65,8 @@ class ContactsController < ApplicationController
     request.original_url
   end
 
+
+  def contact_params
+    params.require(:contact).permit(:company, :email, :message, :name, :phone, :website)
+  end
 end

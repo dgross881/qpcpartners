@@ -1,13 +1,13 @@
 Qpcpartners::Application.routes.draw do
 
-  match "contact/new" => "contacts#new"
+  get "contact/new" => "contacts#new"
 
   root :to => 'pages#index'
-  match "/cn" => "pages#index", :as => 'cn_root'
+  get "/cn" => "pages#index", :as => 'cn_root'
   
   %w(summary services consulting investment real_estate contact).each do |page|
-    match "/#{page}" => "pages##{page}", :as => "#{page}"
-    match "/cn/#{page}" => "pages##{page}", :as => "cn_#{page}"
+    get "/#{page}" => "pages##{page}", :as => "#{page}"
+    get "/cn/#{page}" => "pages##{page}", :as => "cn_#{page}"
   end
 
   # The priority is based upon order of creation:
