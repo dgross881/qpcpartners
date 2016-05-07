@@ -17,17 +17,6 @@ module EnHelper
 		]
 	end
 
-	def self.nav_items_hash
-		{ "nav_items" => {
-				"About QPC" => "summary",
-				"Services" => "services",
-				"Consulting" => "consulting",
-				"Real Estate" => "real_estate",
-				"Investment Projects" => "investment",
-				"Contact Us" => "contact"
-		} }
-	end
-
 	def self.services_hash
 		{ "services" => {
 				"Investor Road Shows" => "QPC conducts Investor Road Shows throughout the key markets of the Yangzi River Delta Region –– Shanghai, Suzhou, Nanjing, Hangzhou and Ningbo.",

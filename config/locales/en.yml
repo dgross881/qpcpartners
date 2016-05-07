@@ -22,4 +22,16 @@ en:
     target_acquisition_pg: "US-based companies, projects, real estate or assets presenting opportunities to create growth and value for stakeholders. At present, most US assets are under-valued while the country's economic outlook is improving. In order to fund growth, or relieve debt, these companies must obtain capital from the troubled US banking industry or through strategic partnerships."
     companies_showing: 'Companies showing less than $20 million USD annual revenue with deal size less than $10 million USD.'
 
-
+  services: 
+    title: 'Services'
+    lang: 'en'
+    niche_markets: Niche Markets
+    niche_markets_pg_first: QPC offers services to Chinese and American clients whose requirements fall outside the scope of services provided by large institutions and investment banks. We focus on small-to-medium-sized deals involving Chinese entities establishing or acquiring assets in the USA.
+    niche_markets_pg_second: Such transactions require specific skills which are rare in the small- to medium-size deal segment. We offer our clients the skills, experience and cross-cultural/cross-border understanding necessary to successfully expand overseas and attract a completely new demographic.
+    niche_markets_pg_third: QPC offers its US clients in-depth troubleshooting assistance, business development consulting, and marketing guidance in order to capture Chinese consumer demand and interest.
+    business_development: Business Development Consulting
+    business_development_pg: Chinese and United States companies entering international markets.
+    corporate_expansion: Corporate Expansion & Investment 
+    corporate_expansion_pg: Business development and cross-border expansion.
+    private_company: Private Company Expansion
+    private_company_pg: Small-to-mid-cap clients with assets ranging from $0.5-10 mill USD in the short-term to $10-20 mill USD for the mid-term.

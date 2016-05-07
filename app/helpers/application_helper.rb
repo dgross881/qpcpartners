@@ -21,4 +21,8 @@ module ApplicationHelper
   def chinese?
     I18n.locale == :'zh-CN'
   end
+
+  def lang
+    english? ? 'en' : 'cn'
+  end
 end

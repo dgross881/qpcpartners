@@ -9,6 +9,7 @@ class PagesController < ApplicationController
   end
 
   def services
+    @services = Service.all
   end
 
   def consulting
