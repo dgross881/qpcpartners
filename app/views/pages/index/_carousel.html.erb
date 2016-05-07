@@ -1,0 +1,62 @@
+<div class='carousel slide' id='mainSlider'>
+  <ol class='carousel-indicators'>
+    <li data-target='#mainSlider' data-slide-to='0' class='active'></li>
+    <li data-target='#mainSlider' data-slide-to='1' ></li>
+    <li data-target='#mainSlider' data-slide-to='2' ></li>
+  </ol>
+  <div class='carousel-inner'>
+    <div class='item item-blue active'>
+      <div class='row'>
+        <div class='col-12'>
+          <div class='col-lg-5 col-offset-1 col-sm-6 col-12 image-carousel'>
+            <%= image_tag "clean-water.jpg", :class => "image-fluid image-carousel circlized-carousel-image" %>
+          </div>
+          <div class='col-lg-4 col-sm-4 col-12'>
+            <div class='carousel-text-block'>
+             <a href="/investment">
+               <h3><%= t('home.carousel.blue_hd') %></h3>
+               <p><%= t('home.carousel.blue_pg') %></p>
+             </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='item item-red'>
+      <div class='row'>
+        <div class='col-12'>
+          <div class='col-lg-5 col-offset-1 col-sm-6 col-12 image-carousel'>
+            <%= image_tag "bionic-eye-carousel.png", :class => "image-fluid image-carousel circlized-carousel-image" %>
+          </div>
+          <div class='col-lg-4 col-sm-4 col-12'>
+            <div class='carousel-text-block'>
+             <a href="/investment">
+               <h3><%= t('home.carousel.red_hd') %></h3>
+               <p><%= t('home.carousel.red_pg') %></p>
+             </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='item item-green'>
+      <div class='row'>
+        <div class='col-12'>
+          <div class='col-lg-5 col-offset-1 col-sm-6 col-12 image-carousel'>
+            <%= image_tag "clean-water.jpg", :class => "image-fluid image-carousel circlized-carousel-image" %>
+          </div>
+          <div class='col-lg-4 col-sm-4 col-12'>
+            <div class='carousel-text-block'>
+              <a href="/investment">
+                <h3><%= t('home.carousel.green_hd') %></h3>
+                <p><%= t('home.carousel.green_pg') %></p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#mainSlider" data-slide='prev' class='left carousel-control'><span class='glyphicon glyphicon-chevron-left'></span></a>
+    <a href="#mainSlider" data-slide='next' class='right carousel-control'><span class='glyphicon glyphicon-chevron-right'></span></a>
+  </div>
+</div>

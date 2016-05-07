@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   helper :all
   
-  def index
+  def home
     @index = true
   end
 

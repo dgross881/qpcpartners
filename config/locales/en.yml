@@ -5,6 +5,20 @@ en:
   nav: 
     english: EN 
     chinese: 中文
+    summary: Summary
+    services: Services
+    consulting: Consulting
+    real_estate: Real Estate
+    investment: Investment
+    contact: Contact
+  home: 
+    carousel: 
+      blue_hd: Maritime Solutions Inc.’s safe, environmentally-sound shipboard ballast water treatment system
+      blue_pg: Solution addresses the global ballast water problem of the shipping industry that cause contamination of the world’s harbors and waterways by delivering aquatic nuisance species during ship ballast operations (taking on or discharging water to balance ships).
+      green_hd: Upcoming Investment Projects
+      green_pg: Fund being raised through August 2013 for Sept-Dec foreclosure purchases in the Washington DC and NYC metro areas.
+      red_hd: 'Bionic Eye Technologies Inc.'
+      red_pg: 'QPC provides consulting services to Bionic Eye Technologies Inc. during first round capital raising in July 2013.' 
   summary: 
     executive_summary: Executive Summary
     about_qpc_partners: About QPC Partners
