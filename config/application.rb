@@ -11,20 +11,13 @@ end
 
 module Qpcpartners
   class Application < Rails::Application
-    config.encoding = "utf-8"
-
-    # Configure sensitive parameters which will be filtered from the log file.
-    config.filter_parameters += [:password]
-
-    # Enable escaping HTML in JSON.
-    config.active_support.escape_html_entities_in_json = true
-
-    # Enable the asset pipeline
-    config.assets.enabled = true
-
     config.assets.paths << "#{Rails.root}/app/assets/fonts"
-
-    # Version of your assets, change this if you want to expire all your assets
-    config.assets.version = '1.0'
+    config.active_record.raise_in_transactional_callbacks = true
+    config.autoload_paths << Rails.root.join('lib')
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
+    config.i18n.enforce_available_locales = true
+    config.i18n.available_locales = %w(en zh-CN)
+    config.i18n.default_locale = :en
+    config.i18n.fallbacks = true
   end
 end

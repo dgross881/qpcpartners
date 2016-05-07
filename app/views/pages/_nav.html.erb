@@ -1,0 +1,29 @@
+<div class= 'nav navbar-wrapper'>
+   <div class='container'>
+     <div class='navbar nabvar-static-top'>
+       <div class='container'>
+         <% if I18n.locale == :en %> 
+           <%= link_to I18n.t('nav.chinese'), request.parameters.merge({locale: 'zh-CN'}), class: 'btn btn-danger nav-lang-btn', id: 'cn' %>
+         <% else  %>
+           <%= link_to I18n.t('nav.english'), request.parameters.merge({locale: 'en'}), class: 'btn btn-danger nav-lang-btn', id: 'en' %>
+         <% end %>
+         <button class="navbar-toggle" data-target=".nav-collapse" data-toggle="true" type="button">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+         </button>
+         <%= link_to 'QPC Partners', root_path, class: 'navbar-brand' %> 
+        <div class='nav-collapse collapse'>
+          <ul class='nav navbar-nav'>
+            <li><%= link_to( t('nav.summary'), summary_path, class: 'active') %></li>
+            <li><%= link_to t('nav.services'),  services_path, class: 'active'%></li>
+            <li><%= link_to t('nav.consulting'), consulting_path, class: 'active' %></li>
+            <li><%= link_to t('nav.real_estate'), real_estate_path, class: 'active' %></li>
+            <li><%= link_to t('nav.investment'), investment_path, class: 'active' %></li>
+            <li><%= link_to t('nav.contact'), contact_path, class: 'active' %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
