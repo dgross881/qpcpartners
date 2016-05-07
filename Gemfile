@@ -2,6 +2,8 @@ source 'http://rubygems.org'
 
 ruby '2.2.4'
 gem 'rails', '4.2.6'
+gem 'pg'
+gem 'fog'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -21,9 +23,12 @@ group :test do
 end
 
 group :production do
-	gem 'pg'
 	gem 'rack-www'
 end
+
+# Foreman: To run Nginx and Unicorn
+gem 'unicorn'
+gem 'foreman'
 
 # Gems used only for assets and not required
 # in production environments by default.
