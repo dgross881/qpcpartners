@@ -1,9 +1,7 @@
 Rails.application.routes.draw do
   filter :locale
   get "contact/new" => "contacts#new"
-
   root :to => 'pages#index'
-  get "/cn" => "pages#index", :as => 'cn_root'
   
   get "/summary" => "pages#summary", as: :summary
   get "/services" => "pages#services", as: :services

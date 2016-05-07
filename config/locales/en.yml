@@ -6,5 +6,20 @@ en:
     english: EN 
     chinese: 中文
   summary: 
-    title: Executive Summary
+    executive_summary: Executive Summary
+    about_qpc_partners: About QPC Partners
+    about_qpc: About QPC
+
+    executive_summary_first: For the past two decades, China’s economic power has increased at an astonishing rate. Government controls have encouraged the majority of financial proceeds to remain within China, until recently. Over the last five years, the largest Chinese firms have begun expanding their operations and influence abroad, as the Chinese government strides to loosen financial controls. 
+    executive_summary_second: With the market for Chinese internal investments becoming over-saturated and diminishing returns weighing on clients' minds, international markets struck by the global financial crisis will offer discounted assets. QPC’s aim is to assist small-to-mid-cap Chinese clients identify & evaluate opportunities, navigate international regulations and broker deals. Additionally QPC offers consulting services on an ad hoc basis for larger M&A deals and business development projects.
+
+    business_scope: Business Scope
+    our_clients: Our Clients
+    our_clients_pg: China and US based private citizens, entrepreneurs and corporations with investable assets exceeding $1million USD and an appetite for cross-border investments and business. 
+    consulting_services: Consulting Services 
+    consulting_services_pg: "We offer consulting services to individuals, companies and corporations requiring professional cross-border business advice and services. QPC Partners build on their business experience in more than 30 countries to assist clients on a consulting basis."
+    target_acquisition: Target Acquisition
+    target_acquisition_pg: "US-based companies, projects, real estate or assets presenting opportunities to create growth and value for stakeholders. At present, most US assets are under-valued while the country's economic outlook is improving. In order to fund growth, or relieve debt, these companies must obtain capital from the troubled US banking industry or through strategic partnerships."
+    companies_showing: 'Companies showing less than $20 million USD annual revenue with deal size less than $10 million USD.'
+
 

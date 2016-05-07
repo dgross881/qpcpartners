@@ -13,4 +13,12 @@ module ApplicationHelper
 			10 => "Ten"
 		}[i]
 	end
+
+  def english?
+    I18n.locale == :en 
+  end
+  
+  def chinese?
+    I18n.locale == :'zh-CN'
+  end
 end

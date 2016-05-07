@@ -1,0 +1,50 @@
+<% @title = t('summary.executive_summary') %>
+<div class='container'>
+  <h1><%= t('summary.about_qpc_partners') %></h1>
+  <br>
+  <div class='row'>
+    <div class='col-lg-7 col-sm-6 col-12'>
+      <br/>
+      <%= image_tag 'usachinaflags.jpg', class: 'image-fluid consulting-image' %>
+      <h3><%= t('summary.executive_summary') %></h3>
+      <p><%= t('summary.executive_summary_first')%></p>
+      <p><%= t('summary.executive_summary_second')%></p>
+      <% if !english? %>
+        <p><%= t('summary.executive_summary_third') %></p>
+      <% end %>
+    </div>    
+    <div class='col-lg-4 col-offset-1 col-sm-6 col-12'>
+      <div class='row'>
+        <div class='col-12'>
+          <h3><%= t('summary.business_scope') %></h3>
+          <br />
+        </div>
+        <div class='col-12'>
+          <div class='panel'>
+            <div class='panel-heading'>
+              <h3 class='panel-title'><%= t('summary.our_clients') %></h3>
+            </div>
+            <p><%= t('summary.our_clients_pg') %></p>
+          </div>
+        </div>
+        <div class='col-12'>
+          <div class='panel'>
+            <div class='panel-heading'>
+              <h3 class='panel-title'><%= t('summary.consulting_services') %></h3>
+            </div>
+            <p><%= t('summary.consulting_services_pg') %></p>
+          </div>
+        </div>
+        <div class='col-12'>
+          <div class='panel'>
+            <div class='panel-heading'>
+              <h3 class='panel-title'><%= t('summary.target_acquisition') %></h3>
+            </div>
+            <p><%= t('summary.target_acquisition_pg') %></p>
+             <%= t('summary.companies_showing') if english?  %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
