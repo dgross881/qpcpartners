@@ -1,9 +1,10 @@
 source 'http://rubygems.org'
 
-ruby '2.2.4'
+ruby '2.3.1'
 gem 'rails', '4.2.6'
 gem 'pg'
 gem 'fog'
+gem 'routing-filter', '~> 0.5.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
