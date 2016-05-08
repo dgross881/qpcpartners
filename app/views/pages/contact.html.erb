@@ -1,0 +1,11 @@
+- @title = chinese? ? '联系我们' : 'Contact Us'
+<div class='container'>
+  <h1><%= t('contact.title') %></h1>
+  <p><%= t('contact.lead') %></p>
+  <br class='hidden-sm' />
+  <div class='container'>
+    <%= render 'shared/flash_message' %>
+    <%= render 'pages/contact/contact_form' %>
+  </div>
+</div>
+
