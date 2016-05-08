@@ -1,0 +1,47 @@
+<% @title = chinese? ? "咨询项目" : 'Consulting Projects' %>
+
+<div class='container'>
+  <h1 class='hidden-sm'><%= @title %></h1>
+  <h2 class='visible-sm'><%= @title  %></h2>
+  <br />
+  <div class='row'>
+    <div class='col-lg-4 col-sm-6 col-12'>
+      <%= image_tag 'building_materials.jpg', alt: 'Building Materials', class: 'image-fluid consulting-image'  %>
+    </div>
+    <div class='col-lg-7 col-offset-1 col-sm-6 col-12'>
+      <h3><%= t('services.building_hd') %></h3>
+      <p><%= t('services.building_pg') %></p>
+      <br />
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-lg-4 col-sm-6 col-12'>
+       <%= image_tag 'electronics.jpg', alt: 'Building Materials', class: 'image-fluid consulting-image'  %>
+    </div>
+    <div class='col-lg-7 col-offset-1 col-sm-6 col-12'>
+      <h3><%= t('services.electronics_hd') %></h3>
+      <p><%= t('services.electronics_pg') %></p>
+      <br />
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-lg-4 col-sm-6 col-12'>
+      <%= image_tag 'medical.jpg', alt: 'Building Materials', class: 'image-fluid consulting-image'  %>
+    </div>
+    <div class='col-lg-7 col-offset-1 col-sm-6 col-12'>
+      <h3><%= t('services.medical_hd') %></h3>
+      <p><%= t('services.medical_pg') %></p>
+      <br />
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-lg-4 col-sm-6 col-12'>
+      <%= image_tag 'textiles.jpg', alt: 'Building Materials', class: 'image-fluid consulting-image'  %>
+    </div>
+    <div class='col-lg-7 col-offset-1 col-sm-6 col-12'>
+      <h3><%= t('services.textile_hd') %></h3>
+      <p><%= t('services.textile_pg') %></p>
+      <br />
+    </div>
+  </div>
+</div>

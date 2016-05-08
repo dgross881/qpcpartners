@@ -42,4 +42,12 @@ zh-CN:
     corporate_expansion_pg: Business development and cross-border expansion.
     private_company: Private Company Expansion
     private_company_pg: Small-to-mid-cap clients with assets ranging from $0.5-10 mill USD in the short-term to $10-20 mill USD for the mid-term.
-
+  services: 
+    building_hd: '建筑材料'
+    building_pg: '为新产品从研发全球拓展进入30个市场。这些市场近10年每年产品销售额达5亿美元。'
+    electronics_hd: '电子'
+    electronics_pg: '电子工业的多个项目，涉及电子产品生命周期每个阶段的产品。'
+    medical_hd: '医疗用具'
+    medical_pg: '尖端医疗用品与用具。'
+    textile_hd: '纺织'
+    textile_pg: '需求导向项目，协助服装生产线寻找供应商。供应导向项目，为制造商开发国际市场。'

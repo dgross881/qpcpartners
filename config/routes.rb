@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   filter :locale
   get "contact/new" => "contacts#new"
-  root :to => 'pages#index'
+  root :to => 'pages#home'
   
   get "/summary" => "pages#summary", as: :summary
   get "/services" => "pages#services", as: :services

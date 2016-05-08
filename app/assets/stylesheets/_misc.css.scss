@@ -35,7 +35,9 @@ p.well {
 
 .consulting-image { 
 	@include rounded(4px);
-	border: 1px solid #333; }
+	border: 1px solid #333; 
+  margin-bottom: 20px;
+}
 
 	/* padding for small devices */
 
