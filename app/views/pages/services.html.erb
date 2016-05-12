@@ -53,9 +53,11 @@
            <div class='panel-heading summary'>
              <a class="panel-title" data-parent="#services-pannel" data-toggle="collapse" aria-expanded="true" href=<%= "#service-#{index}" %>><i class='fa fa-plus'></i>  <%= service.title(lang) %></a>
            </div>
-           <div class='panel-body collapse <%= 'in' if index == 1 %>' id=<%= "service-#{index}" %>>
-             <div class='accordion-inner'>
-               <%= service.description(lang) %>
+           <div class='collapse <%= 'in' if index == 1 %>' id='<%= "service-#{index}" %>'>
+             <div class='panel-body'>
+               <div class='accordion-inner'>
+                 <%= service.description(lang) %>
+               </div>
              </div>
            </div>
          </div>
