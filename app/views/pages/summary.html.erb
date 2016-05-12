@@ -13,35 +13,45 @@
         <p><%= t('summary.executive_summary_third') %></p>
       <% end %>
     </div>    
-    <div class='col-lg-4 col-offset-1 col-sm-6 col-12'>
+    <div class='col-md-4 col-sm-12 col-md-offset-1'>
       <div class='row'>
-        <div class='col-12'>
+        <div class='col-md-12'>
           <h3><%= t('summary.business_scope') %></h3>
           <br />
         </div>
-        <div class='col-12'>
-          <div class='panel'>
+        <div class='col-md-12'>
+          <div class='panel panel-default'>
             <div class='panel-heading'>
               <h3 class='panel-title'><%= t('summary.our_clients') %></h3>
             </div>
-            <p><%= t('summary.our_clients_pg') %></p>
+            <div class='panel-body'>
+              <%= t('summary.our_clients_pg') %>
+            </div>
           </div>
         </div>
-        <div class='col-12'>
-          <div class='panel'>
+        <div class='col-md-12'>
+          <div class='panel panel-default'>
             <div class='panel-heading'>
               <h3 class='panel-title'><%= t('summary.consulting_services') %></h3>
             </div>
-            <p><%= t('summary.consulting_services_pg') %></p>
+            <div class='panel-body'>
+              <%= t('summary.consulting_services_pg') %>
+            </div>
           </div>
         </div>
-        <div class='col-12'>
-          <div class='panel'>
+        <div class='col-md-12'>
+          <div class='panel panel-default'>
             <div class='panel-heading'>
               <h3 class='panel-title'><%= t('summary.target_acquisition') %></h3>
             </div>
-            <p><%= t('summary.target_acquisition_pg') %></p>
-             <%= t('summary.companies_showing') if english?  %>
+            <div class='panel-body'>
+              <%= t('summary.target_acquisition_pg') %>
+            </div>
+            <% if english? %>
+              <div class='panel-body'>
+               <%= t('summary.companies_showing') %>
+              </div>
+            <% end %>
           </div>
         </div>
       </div>

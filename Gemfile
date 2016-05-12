@@ -4,7 +4,12 @@ ruby '2.3.1'
 gem 'rails', '4.2.6'
 gem 'pg'
 gem 'fog'
+
+#css 
 gem 'routing-filter', '~> 0.5.1'
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

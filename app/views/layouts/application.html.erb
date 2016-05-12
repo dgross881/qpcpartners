@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     <!--
        -<#%= render 'layouts/ga' if RAils.env.include?('production') %>
        -->
@@ -14,7 +15,7 @@
 
   <body ontouchstar>
     <%= render 'shared/nav' %>
-    <div class="<%= 'container' unless @index %>">
+    <div class="<%= 'container' unless @index %>" style='margin-top:70px'>
       <%= yield %>
     </div>
     <%= render partial: 'shared/footer' %>
