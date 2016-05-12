@@ -22,12 +22,37 @@
   margin-right: 10px; 
 }
 
-.ft-icon {
+.featurette-image {
+    display: none;
+}
+
+.feat-hd {
+  text-align: center; 
+}
+
+.lead {
+  margin: 10px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .featurette-image {
+    display: block;
     width: 440px;
     height: 248px;
-    padding-right: 20px;
     margin-right: 10px;
-    position: relative;
-    background: #8c73b0 url('Come_Correct.png') no-repeat;
+    margin-left: 40px;
+    border-radius: 30px;
     background-size: 100%;
+  }
+  .feat-hd {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .lead {
+    text-align: left;
+    margin-right: 50px;
+  }
 }
+

@@ -15,54 +15,48 @@
       <div class='panel-heading'>
         <h3 class='panel-title'><%= t('services.primary_sector') %></h3>
       </div>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-md-3'>
-              <strong><%= t('services.business_development') %></strong>
-            </div>
-            <div class='col-md-4'>
-              <p><%= t('services.business_development_pg') %></p>
-            </div>
-          </div>
-          <div class="row">
-            <div class='col-md-3'>
-              <strong><%= t('services.expansion') %></strong>
-            </div>
-            <div class='col-md-4'>
-              <p><%= t('services.business_expanision_pg') %></p>
-             </div>
-          </div>
-          <div class='row'>
-            <div class='col-md-3'>
-              <strong><%= t('services.private_company') %></strong>
-            </div>
-            <div class='col-md-4'>
-              <p><%= t('services.private_company_pg') %></p>
-            </div>
-          </div>
+      <div class='row' style='padding:20px'>
+        <div class='col-md-5'>
+          <strong><%= t('services.business_development') %></strong>
+        </div>
+        <div class='col-md-7'>
+          <p><%= t('services.business_development_pg') %></p>
+        </div>
+        <div class='col-md-5'>
+          <strong><%= t('services.expansion') %></strong>
+        </div>
+        <div class='col-md-7'>
+          <p><%= t('services.business_expanision_pg') %></p>
          </div>
+        <div class='col-md-5'>
+          <strong><%= t('services.private_company') %></strong>
+        </div>
+        <div class='col-md-7'>
+          <p><%= t('services.private_company_pg') %></p>
         </div>
       </div>
+    </div>
+  </div>
 
-   <div class='col-md-4 col-md-offset-1 col-sm-5'>
-      <small class="text-right visible-sm">tap to expand</small>
-      <small class='hidden-sm'>click to expand </small>
-      <div class='panel-group' id='service-pannel'>
-        <% @services.each.with_index(1) do |service, index|  %>
-         <div class='panel panel-default'>
-           <div class='panel-heading summary'>
-             <a class="panel-title" data-parent="#services-pannel" data-toggle="collapse" aria-expanded="true" href=<%= "#service-#{index}" %>><i class='fa fa-plus'></i>  <%= service.title(lang) %></a>
-           </div>
-           <div class='collapse <%= 'in' if index == 1 %>' id='<%= "service-#{index}" %>'>
-             <div class='panel-body'>
-               <div class='accordion-inner'>
-                 <%= service.description(lang) %>
-               </div>
+  <div class='col-md-4 col-md-offset-1 col-sm-5'>
+    <small class="text-right visible-sm">tap to expand</small>
+    <small class='hidden-sm'>click to expand </small>
+    <div class='panel-group' id='service-pannel'>
+      <% @services.each.with_index(1) do |service, index|  %>
+       <div class='panel panel-default'>
+         <div class='panel-heading summary'>
+           <a class="panel-title" data-parent="#services-pannel" data-toggle="collapse" aria-expanded="true" href=<%= "#service-#{index}" %>><i class='fa fa-plus'></i>  <%= service.title(lang) %></a>
+         </div>
+         <div class='collapse <%= 'in' if index == 1 %>' id='<%= "service-#{index}" %>'>
+           <div class='panel-body'>
+             <div class='accordion-inner'>
+               <%= service.description(lang) %>
              </div>
            </div>
          </div>
-        <% end %>
-      </div>
+       </div>
+      <% end %>
     </div>
    </div>
+ </div>
 </div>

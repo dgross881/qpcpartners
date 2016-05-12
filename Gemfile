@@ -9,6 +9,7 @@ gem 'fog'
 gem 'routing-filter', '~> 0.5.1'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
+gem 'autoprefixer-rails'
 
 
 # Bundle edge Rails instead:

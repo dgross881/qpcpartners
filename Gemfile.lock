@@ -365,6 +365,7 @@ PLATFORMS
 
 DEPENDENCIES
   annotate
+  autoprefixer-rails
   autotest
   bootstrap-sass
   byebug
