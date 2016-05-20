@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-ruby '2.3.1'
+ruby '2.3.0'
 gem 'rails', '4.2.6'
 gem 'pg'
 gem 'fog'
@@ -10,6 +10,7 @@ gem 'routing-filter', '~> 0.5.1'
 gem 'bootstrap-sass'
 gem 'font-awesome-rails'
 gem 'autoprefixer-rails'
+gem 'dotenv-rails'
 
 
 # Bundle edge Rails instead:

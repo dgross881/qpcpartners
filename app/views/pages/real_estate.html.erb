@@ -1,0 +1,68 @@
+<div class='container'>
+  <h1><%= t('realestate.title') %></h1>  
+  <small><%= t('realestate.comercial') %></small>
+  <p class='padding-sm'>
+    <%= link_to t('realestate.cu_projects'), '#current-projects' %>| 
+    <%= link_to t('realestate.rec_projects'), '#recent-projects' %>
+  </p>
+  <h3 id='current-properties' class='padding-sm'><%= t('realestate.cu_projects') %></h3>
+  <br />
+  <% PropertiesHelper.current_properties.each_with_index do |property, index| %>   <% property = property[chinese? ? :cn : :en] %>
+   <div class='row'>
+     <div class='col-md-7'>
+       <p class='text-large'><%= property[:desc] %></p>
+       <table class='table'>
+         <tr class='active'>
+          <th><%= t('realestate.area') %></th>
+          <th><%= t('realestate.type') %></th>
+          <th><%= t('realestate.size') %></th>
+          <th><%= t('realestate.beds') %></th>
+          <th><%= t('realestate.bath') %></th>
+         </tr>
+         <tr>
+          <td><%= property[:area] %></td>
+          <td><%= property[:type] %></td>
+          <td><%= property[:size] %></td>
+          <td><%= property[:beds] %></td>
+          <td><%= property[:bath] %></td>
+          <br />
+         </tr>
+       </table>
+     </div>
+     <div class='col-md-4 col-sm-6'>
+       <%= image_tag property[:image], class: 'image-fluid consulting-image'%>
+     </div>
+   </div>
+  <% end %>
+  <h3 id='recent-properties' class='padding-sm'><%= t('realestate.rec_projects') %></h3>
+  <br />
+  <% PropertiesHelper.recent_properties.each_with_index do |property, index| %>   
+  <% property = property[chinese? ? :cn : :en] %>
+   <div class='row'>
+     <div class='col-md-4 col-sm-6'>
+       <%= image_tag property[:image], class: 'image-fluid consulting-image'%>
+     </div>
+     <div class='col-md-7'>
+       <p class='text-large'><%= property[:desc] %></p>
+       <table class='table'>
+         <tr class='active'>
+          <th><%= t('realestate.area') %></th>
+          <th><%= t('realestate.type') %></th>
+          <th><%= t('realestate.size') %></th>
+          <th><%= t('realestate.beds') %></th>
+          <th><%= t('realestate.bath') %></th>
+         </tr>
+         <tr>
+          <td><%= property[:area] %></td>
+          <td><%= property[:type] %></td>
+          <td><%= property[:size] %></td>
+          <td><%= property[:beds] %></td>
+          <td><%= property[:bath] %></td>
+          <br />
+         </tr>
+       </table>
+     </div>
+   </div>
+  <% end %>
+</div>
+
