@@ -11,7 +11,7 @@ Rails.application.configure do
   config.eager_load = true
 
   # Full error reports are disabled and caching is turned on.
-  config.consider_all_requests_local       = false
+  config.consider_all_requests_local       = true
   config.action_controller.perform_caching = true
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
@@ -64,6 +64,7 @@ Rails.application.configure do
   # config.assets.prefix = '/production/assets'
   config.static_cache_control = 'public, max-age=315576000'
   Excon.defaults[:nonblock] = false
+  config.assets.raise_runtime_errors = true
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
