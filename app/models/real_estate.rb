@@ -28,11 +28,17 @@ class RealEstate < ActiveRecord::Base
 
   include AttachedFileModule
 
-  attached_file_module(:attachment, '/real_estate/:id_:basename/:style/:basename.:extension', {
+  attached_file_module(:attachment, '/real_estate/:basename/:style/:basename.:extension', {
                          styles: { mini: '200x134>', small: '400x268>', house: '700x469>'},
                          convert_options: { all: '-strip -auto-orient -colorspace sRGB -quality 80 -interlace Plane' },
                          default_style: :small
                        })
 
-  validates_attachment_content_type :attachment, content_type: /\Aimage\/.*\Z/
+  validates_attachment_content_type :attachment, content_type: [/\Aimage/, 'application/octet-stream']
+
+  before_post_process :set_content_type
+
+  def set_content_type
+    self.attachment.instance_write(:content_type, MIME::Types.type_for(self.sketch_file_name).to_s)
+  end
 end
