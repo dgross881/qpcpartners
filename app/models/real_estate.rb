@@ -39,6 +39,6 @@ class RealEstate < ActiveRecord::Base
   before_post_process :set_content_type
 
   def set_content_type
-    self.attachment.instance_write(:content_type, MIME::Types.type_for(self.sketch_file_name).to_s)
+    self.attachment.instance_write('Content-Type', MIME::Types.type_for(self.attachment_file_name).first.to_s)
   end
 end
