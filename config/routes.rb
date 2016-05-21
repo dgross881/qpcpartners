@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   namespace :admin do
+    resources :real_estates
+    resources :services
     resources :contacts
-resources :services
 
-    root to: "contacts#index"
+    root to: "real_estates#index"
   end
 
   filter :locale

@@ -16,6 +16,8 @@ class PagesController < ApplicationController
   end
 
   def real_estate
+    @real_estate_recent = RealEstate.recent
+    @real_estate_unrecent = RealEstate.not_recent
   end
 
   def investment

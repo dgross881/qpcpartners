@@ -2,15 +2,15 @@
   <h1><%= t('realestate.title') %></h1>  
   <small><%= t('realestate.comercial') %></small>
   <p class='padding-sm'>
-    <%= link_to t('realestate.cu_projects'), '#current-projects' %>| 
+    <%= link_to t('realestate.cur_projects'), '#current-projects' %> | 
     <%= link_to t('realestate.rec_projects'), '#recent-projects' %>
   </p>
-  <h3 id='current-properties' class='padding-sm'><%= t('realestate.cu_projects') %></h3>
+  <h3 id='current-properties' class='padding-sm'><%= t('realestate.cur_projects') %></h3>
   <br />
-  <% PropertiesHelper.current_properties.each_with_index do |property, index| %>   <% property = property[chinese? ? :cn : :en] %>
+  <% @real_estate_unrecent.each do |property| %>   
    <div class='row'>
      <div class='col-md-7'>
-       <p class='text-large'><%= property[:desc] %></p>
+       <p class='text-large'><%= property.description_en %></p>
        <table class='table'>
          <tr class='active'>
           <th><%= t('realestate.area') %></th>
@@ -20,30 +20,29 @@
           <th><%= t('realestate.bath') %></th>
          </tr>
          <tr>
-          <td><%= property[:area] %></td>
-          <td><%= property[:type] %></td>
-          <td><%= property[:size] %></td>
-          <td><%= property[:beds] %></td>
-          <td><%= property[:bath] %></td>
+          <td><%= property.area_en %></td>
+          <td><%= property.type_en %></td>
+          <td><%= property.size_en %></td>
+          <td><%= property.beds %></td>
+          <td><%= property.baths %></td>
           <br />
          </tr>
        </table>
      </div>
      <div class='col-md-4 col-sm-6'>
-       <%= image_tag property[:image], class: 'image-fluid consulting-image'%>
+       <%= image_tag property.attachment.url, class: 'image-fluid consulting-image'%>
      </div>
    </div>
   <% end %>
   <h3 id='recent-properties' class='padding-sm'><%= t('realestate.rec_projects') %></h3>
   <br />
-  <% PropertiesHelper.recent_properties.each_with_index do |property, index| %>   
-  <% property = property[chinese? ? :cn : :en] %>
+  <% @real_estate_recent.each do |property| %>   
    <div class='row'>
      <div class='col-md-4 col-sm-6'>
-       <%= image_tag property[:image], class: 'image-fluid consulting-image'%>
+       <%= image_tag property.attachment.url, class: 'image-fluid consulting-image'%>
      </div>
      <div class='col-md-7'>
-       <p class='text-large'><%= property[:desc] %></p>
+       <p class='text-large'><%= property.description_en %></p>
        <table class='table'>
          <tr class='active'>
           <th><%= t('realestate.area') %></th>
@@ -53,11 +52,11 @@
           <th><%= t('realestate.bath') %></th>
          </tr>
          <tr>
-          <td><%= property[:area] %></td>
-          <td><%= property[:type] %></td>
-          <td><%= property[:size] %></td>
-          <td><%= property[:beds] %></td>
-          <td><%= property[:bath] %></td>
+          <td><%= property.area_en %></td>
+          <td><%= property.type_en %></td>
+          <td><%= property.size_en %></td>
+          <td><%= property.beds %></td>
+          <td><%= property.baths %></td>
           <br />
          </tr>
        </table>

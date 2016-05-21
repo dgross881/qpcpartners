@@ -1,9 +1,7 @@
 source 'http://rubygems.org'
-
 ruby '2.3.0'
 gem 'rails', '4.2.6'
 gem 'pg'
-gem 'fog'
 
 #css 
 gem 'routing-filter', '~> 0.5.1'
@@ -15,6 +13,10 @@ gem 'dotenv-rails'
 
 #admin
 gem "administrate", "~> 0.1.4"
+
+#images
+gem 'paperclip'
+gem 'fog'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
