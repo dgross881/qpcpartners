@@ -30,15 +30,17 @@ class RealEstate < ActiveRecord::Base
 
   attached_file_module(:attachment, '/real_estate/:basename/:style/:basename.:extension', {
                          styles: { mini: '200x134>', small: '400x268>', house: '700x469>'},
+                         google_headers: lambda { |attachment| 
+                                  byebug
+                                  { 'Content-Type' => attachment.content_type,
+                                    'Content-Disposition' => "attachment; filename=#{attachment.original_filename}"
+                                  }
+                                },
                          convert_options: { all: '-strip -auto-orient -colorspace sRGB -quality 80 -interlace Plane' },
                          default_style: :small
                        })
 
-  validates_attachment_content_type :attachment, content_type: [/\Aimage/, 'application/octet-stream']
+  do_not_validate_attachment_file_type :attachment
 
-  before_post_process :set_content_type
-
-  def set_content_type
-    self.attachment.instance_write('Content-Type', MIME::Types.type_for(self.attachment_file_name).first.to_s)
-  end
+ # validates_attachment_content_type :attachment, content_type: [/\Aimage/, 'application/octet-stream']
 end
