@@ -11,6 +11,8 @@
 /db/*.sqlite3
 .env
 
+/public/real_estate
+
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
