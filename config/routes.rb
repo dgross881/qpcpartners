@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  namespace :admin do
+    resources :contacts
+resources :services
+
+    root to: "contacts#index"
+  end
+
   filter :locale
   get "contact/new" => "contacts#new"
   root :to => 'pages#home'

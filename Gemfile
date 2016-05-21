@@ -13,6 +13,9 @@ gem 'autoprefixer-rails'
 gem 'dotenv-rails'
 
 
+#admin
+gem "administrate", "~> 0.1.4"
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development, :test do
