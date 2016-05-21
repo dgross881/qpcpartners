@@ -16,7 +16,9 @@ gem "administrate", "~> 0.1.4"
 
 #images
 gem 'paperclip'
-gem 'fog'
+gem "fog-google"
+gem "google-api-client"
+gem "mime-types"
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
