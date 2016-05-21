@@ -40,7 +40,12 @@ class RealEstate < ActiveRecord::Base
                          default_style: :small
                        })
 
-  do_not_validate_attachment_file_type :attachment
+  # Validate content type
+  validates_attachment_content_type :attachment, :content_type => /\Aimage/
 
- # validates_attachment_content_type :attachment, content_type: [/\Aimage/, 'application/octet-stream']
+  # Validate filename
+  validates_attachment_file_name :attachment, :matches => [/png\Z/, /jpe?g\Z/]
+
+  # Explicitly do not validate
+  do_not_validate_attachment_file_type :attachment
 end
