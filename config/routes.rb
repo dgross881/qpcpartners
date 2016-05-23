@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   namespace :admin do
     resources :real_estates
     resources :services
     resources :contacts
+    resources :slides
 
     root to: "real_estates#index"
   end

@@ -6,6 +6,7 @@ gem 'pg'
 #css 
 gem 'routing-filter', '~> 0.5.1'
 gem 'bootstrap-sass'
+gem 'bootstrap-colorpicker-rails'
 gem 'font-awesome-rails'
 gem 'autoprefixer-rails'
 gem 'dotenv-rails'
@@ -13,6 +14,8 @@ gem 'dotenv-rails'
 
 #admin
 gem "administrate", "~> 0.1.4"
+gem "ckeditor", "~> 4.1"
+
 
 #images
 gem 'paperclip'

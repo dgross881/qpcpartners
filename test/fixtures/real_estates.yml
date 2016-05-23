@@ -13,7 +13,7 @@
 #  size_cn                 :string
 #  beds                    :integer
 #  baths                   :integer
-#  recent_project          :boolean          default("false")
+#  recent_project          :boolean          default("f")
 #  attachment_file_name    :string
 #  attachment_content_type :string
 #  attachment_file_size    :integer
