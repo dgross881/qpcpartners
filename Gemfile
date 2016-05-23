@@ -14,7 +14,7 @@ gem 'dotenv-rails'
 
 #admin
 gem "administrate", "~> 0.1.4"
-gem "ckeditor", "~> 4.1"
+gem "ckeditor"
 
 
 #images
