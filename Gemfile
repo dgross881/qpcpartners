@@ -50,9 +50,9 @@ group :test do
 	gem 'autotest'
 end
 
-gem 'puma'
 
 group :production do
+  gem 'puma'
   gem 'rails_12factor'
 	gem 'rack-www'
 end
