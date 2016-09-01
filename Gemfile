@@ -4,6 +4,7 @@ ruby '2.3.1'
 
 # Update Dockerfile if you change the Rails version
 gem 'rails', '5.0.0.1', '< 5.1'
+gem 'pg'
 
 #css
 gem 'bootstrap-sass'
@@ -53,7 +54,6 @@ end
 group :production do
 	gem 'rack-www'
   gem 'puma'
-  gem 'pg'
 end
 
 # Foreman: To run Nginx and Unicorn
