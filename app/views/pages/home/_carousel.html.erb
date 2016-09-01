@@ -5,7 +5,7 @@
     <li data-target='#mainSlider' data-slide-to='2' ></li>
   </ol>
   <div class='carousel-inner'>
-    <div class='item item-blue active'>
+    <div class='item active' style="background-image: url(<%= asset_path('bg-lg-blue.jpg') %>) ">
       <div class='row'>
         <div class='col-md-5 col-md-offset-1 image-carousel'>
           <%= image_tag "clean-water.jpg", :class => "image-fluid image-carousel circlized-carousel-image" %>
@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-    <div class='item item-red'>
+    <div class='item' style="background-image: url(<%= asset_path('bg-lg-red.jpg') %>) ">
       <div class='row'>
         <div class='col-md-5 col-md-offset-1 image-carousel'>
           <%= image_tag "bionic-eye-carousel.png", :class => "image-fluid image-carousel circlized-carousel-image" %>
@@ -35,7 +35,7 @@
         </div>
       </div>
     </div>
-    <div class='item item-green'>
+    <div class='item' style="background-image: url(<%= asset_path('bg-lg-green.jpg') %>)">
       <div class='row'>
         <div class='col-md-5 col-md-offset-1 image-carousel'>
           <%= image_tag "fundraising-carousel.png", :class => "image-fluid image-carousel circlized-carousel-image" %>
