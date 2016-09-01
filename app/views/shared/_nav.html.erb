@@ -1,9 +1,12 @@
 <div class="navbar navbar-default navbar-fixed-top">
    <div class="container">
-     <% if I18n.locale == :en %> 
+     <% if I18n.locale == :en %>
        <%= link_to phrase('nav.chinese'), request.parameters.merge({locale: 'zh-CN'}), class: 'btn btn-danger nav-lang-btn', id: 'cn' %>
      <% else  %>
        <%= link_to phrase('nav.english'), request.parameters.merge({locale: 'en'}), class: 'btn btn-danger nav-lang-btn', id: 'en' %>
+     <% end %>
+     <% if current_user %>
+      <%= link_to 'Log Out', logout_path, class: 'btn btn-default' %>
      <% end %>
       <div class="navbar-header">
        <button type="button" class="pull-left navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -11,7 +14,7 @@
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
        </button>
-       <%= link_to 'QPC Partners', root_path, class: 'navbar-brand' %> 
+       <%= link_to 'QPC Partners', root_path, class: 'navbar-brand' %>
     </div>
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
