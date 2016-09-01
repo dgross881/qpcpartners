@@ -4,7 +4,7 @@
 #
 #  id         :integer          not null, primary key
 #  body       :text
-#  publish    :boolean          default("f")
+#  publish    :boolean          default(FALSE)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #

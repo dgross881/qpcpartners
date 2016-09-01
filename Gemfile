@@ -34,6 +34,10 @@ group :development, :test do
 	gem 'capybara'
 end
 
+#login && authorization
+gem 'devise'
+gem 'cancancan' # updated 'cancan'
+
 group :test do
 	gem 'database_cleaner'
 	gem 'rspec-rails'

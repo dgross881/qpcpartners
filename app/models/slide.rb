@@ -13,7 +13,7 @@
 #  image_updated_at   :datetime
 #  created_at         :datetime
 #  updated_at         :datetime
-#  position           :integer          default("0"), not null
+#  position           :integer          default(0), not null
 #  cta_1_text         :string
 #  cta_1_link         :string
 #  cta_2_text         :string
