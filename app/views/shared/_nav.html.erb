@@ -17,13 +17,15 @@
     </div>
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
-        <li><%= link_to 'Log Out', destroy_user_session_path %></li>
         <li><%= link_to( phrase('nav.summary'), summary_path, class: 'active') %></li>
         <li><%= link_to phrase('nav.services'),  services_path, class: 'active'%></li>
         <li><%= link_to phrase('nav.consulting'), consulting_path, class: 'active' %></li>
         <li><%= link_to phrase('nav.real_estate'), real_estate_path, class: 'active' %></li>
         <li><%= link_to phrase('nav.investment'), investment_path, class: 'active' %></li>
         <li><%= link_to phrase('nav.contact'), contact_path, class: 'active' %></li>
+        <% if current_user  %>
+        <li><%= link_to 'Log Out', destroy_user_session_path, class: 'btn btn-primary' %></li>
+        <% end %>
       </ul>
     </div>
   </div>
