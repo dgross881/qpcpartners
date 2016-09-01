@@ -51,8 +51,8 @@ group :test do
 end
 
 group :production do
+  gem 'puma'
 	gem 'rack-www'
-  gem 'thin'
 end
 
 # Foreman: To run Nginx and Unicorn
