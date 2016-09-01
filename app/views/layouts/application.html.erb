@@ -19,6 +19,7 @@
     <%= render 'shared/nav' %>
     <div class="<%= 'container' unless @index %>" style='margin-top:70px'>
       <%= yield %>
+      <%= render 'phrasing/initializer' %>
     </div>
     <%= render partial: 'shared/footer' %>
   </body>

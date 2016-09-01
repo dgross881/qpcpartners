@@ -1,9 +1,9 @@
 <div class="navbar navbar-default navbar-fixed-top">
    <div class="container">
      <% if I18n.locale == :en %> 
-       <%= link_to I18n.t('nav.chinese'), request.parameters.merge({locale: 'zh-CN'}), class: 'btn btn-danger nav-lang-btn', id: 'cn' %>
+       <%= link_to phrase('nav.chinese'), request.parameters.merge({locale: 'zh-CN'}), class: 'btn btn-danger nav-lang-btn', id: 'cn' %>
      <% else  %>
-       <%= link_to I18n.t('nav.english'), request.parameters.merge({locale: 'en'}), class: 'btn btn-danger nav-lang-btn', id: 'en' %>
+       <%= link_to phrase('nav.english'), request.parameters.merge({locale: 'en'}), class: 'btn btn-danger nav-lang-btn', id: 'en' %>
      <% end %>
       <div class="navbar-header">
        <button type="button" class="pull-left navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -15,12 +15,12 @@
     </div>
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav">
-        <li><%= link_to( t('nav.summary'), summary_path, class: 'active') %></li>
-        <li><%= link_to t('nav.services'),  services_path, class: 'active'%></li>
-        <li><%= link_to t('nav.consulting'), consulting_path, class: 'active' %></li>
-        <li><%= link_to t('nav.real_estate'), real_estate_path, class: 'active' %></li>
-        <li><%= link_to t('nav.investment'), investment_path, class: 'active' %></li>
-        <li><%= link_to t('nav.contact'), contact_path, class: 'active' %></li>
+        <li><%= link_to( phrase('nav.summary'), summary_path, class: 'active') %></li>
+        <li><%= link_to phrase('nav.services'),  services_path, class: 'active'%></li>
+        <li><%= link_to phrase('nav.consulting'), consulting_path, class: 'active' %></li>
+        <li><%= link_to phrase('nav.real_estate'), real_estate_path, class: 'active' %></li>
+        <li><%= link_to phrase('nav.investment'), investment_path, class: 'active' %></li>
+        <li><%= link_to phrase('nav.contact'), contact_path, class: 'active' %></li>
       </ul>
     </div>
   </div>

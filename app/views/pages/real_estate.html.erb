@@ -1,11 +1,11 @@
 <div class='container'>
-  <h1><%= t('realestate.title') %></h1>  
-  <small><%= t('realestate.comercial') %></small>
+  <h1><%= phrase('realestate.title') %></h1>  
+  <small><%= phrase('realestate.comercial') %></small>
   <p class='padding-sm'>
-    <%= link_to t('realestate.cur_projects'), '#current-projects' %> | 
-    <%= link_to t('realestate.rec_projects'), '#recent-projects' %>
+    <%= link_to phrase('realestate.cur_projects'), '#current-projects' %> | 
+    <%= link_to phrase('realestate.rec_projects'), '#recent-projects' %>
   </p>
-  <h3 id='current-properties' class='padding-sm'><%= t('realestate.cur_projects') %></h3>
+  <h3 id='current-properties' class='padding-sm'><%= phrase('realestate.cur_projects') %></h3>
   <br />
   <% @real_estate_unrecent.each do |property| %>   
    <div class='row'>
@@ -13,11 +13,11 @@
        <p class='text-large'><%= property.description_en %></p>
        <table class='table'>
          <tr class='active'>
-          <th><%= t('realestate.area') %></th>
-          <th><%= t('realestate.type') %></th>
-          <th><%= t('realestate.size') %></th>
-          <th><%= t('realestate.beds') %></th>
-          <th><%= t('realestate.bath') %></th>
+          <th><%= phrase('realestate.area') %></th>
+          <th><%= phrase('realestate.type') %></th>
+          <th><%= phrase('realestate.size') %></th>
+          <th><%= phrase('realestate.beds') %></th>
+          <th><%= phrase('realestate.bath') %></th>
          </tr>
          <tr>
           <td><%= property.area_en %></td>
@@ -34,7 +34,7 @@
      </div>
    </div>
   <% end %>
-  <h3 id='recent-properties' class='padding-sm'><%= t('realestate.rec_projects') %></h3>
+  <h3 id='recent-properties' class='padding-sm'><%= phrase('realestate.rec_projects') %></h3>
   <br />
   <% @real_estate_recent.each do |property| %>   
    <div class='row'>
@@ -45,11 +45,11 @@
        <p class='text-large'><%= property.description_en %></p>
        <table class='table'>
          <tr class='active'>
-          <th><%= t('realestate.area') %></th>
-          <th><%= t('realestate.type') %></th>
-          <th><%= t('realestate.size') %></th>
-          <th><%= t('realestate.beds') %></th>
-          <th><%= t('realestate.bath') %></th>
+          <th><%= phrase('realestate.area') %></th>
+          <th><%= phrase('realestate.type') %></th>
+          <th><%= phrase('realestate.size') %></th>
+          <th><%= phrase('realestate.beds') %></th>
+          <th><%= phrase('realestate.bath') %></th>
          </tr>
          <tr>
           <td><%= property.area_en %></td>

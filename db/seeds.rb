@@ -5,6 +5,15 @@ def has_image(name, type="jpg")
   File.open(path)
 end
 
+roles = %w(superadmin user)
+
+roles.each.with_index(1) do |role, index|
+  Role.create!(name: role) unless Role.find_by(name: role)
+  puts "[#{index}..#{roles.length}] Created Role: #{role}"
+end
+
+User.create!(name: 'Greg Wilson', email: 'gwilson@qpcpartners.com ', password: 'gregchangethis', roles: Role.where(name: %w(superadmin))) unless User.find_by(email: 'admin@user.com')
+
 Service.create(title_cn: '客户/投资者巡回指导',  description_cn: '上海办事处在上海，杭州，苏州进行巡回指导，继而扩展到更多中国的二线城市', title_en: "Investor Road Shows", description_en: "QPC conducts Investor Road Shows throughout the key markets of the Yangzi River Delta Region –– Shanghai, Suzhou, Nanjing, Hangzhou and Ningbo.")
 
 Service.create(title_cn: "项目目标",  description_cn: "纽约办公室将集中发掘在美国东北部的三角:波士顿 - 华盛顿-芝加哥及相连地区范围内所有领域的潜在机会", title_en: "Investment Targeting", description_en: "We target investment in the financial hotspots of the U.S. Northeast Region –– New York, Boston, Washington DC, Philadelphia and Chicago.")

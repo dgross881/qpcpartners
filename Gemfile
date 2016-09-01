@@ -20,6 +20,10 @@ gem 'administrate', github: 'thoughtbot/administrate', branch: 'rails-5'
 gem 'bourbon'
 gem "ckeditor"
 
+#editing
+gem "phrasing", branch: 'new-release-4'
+gem "haml"
+
 #images
 gem 'paperclip'
 gem "fog-google"
@@ -29,6 +33,8 @@ gem "mime-types"
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development, :test do
+  gem 'pry-byebug'
+  gem 'pry-rails'
 	gem 'sqlite3'
 	gem 'byebug'
 	gem 'capybara'
@@ -46,6 +52,7 @@ end
 
 group :production do
 	gem 'rack-www'
+  gem 'thin'
 end
 
 # Foreman: To run Nginx and Unicorn
@@ -65,7 +72,6 @@ group :assets do
   gem 'uglifier', '>= 1.3.0'
 end
 
-gem 'thin'
 gem 'turbolinks'
 gem 'jquery-rails'
 

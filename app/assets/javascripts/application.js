@@ -8,3 +8,18 @@
 //= require bs_overrides
 //= require utils.js
 //= require misc.js
+//= require phrasing
+
+$(function() {
+  $(document).on('click', 'a', function(e) {
+    if ($(this).find('.phrasable_on').length) {
+      if (e.preventDefault()) {
+        e.preventDefault();
+      } else if (window.event) {
+        window.event.returnValue = false;
+      } else {
+        return false;
+      }
+    }
+  });
+});

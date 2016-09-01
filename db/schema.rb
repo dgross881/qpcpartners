@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160901042130) do
+ActiveRecord::Schema.define(version: 20160901060430) do
 
   create_table "ckeditor_assets", force: :cascade do |t|
     t.string   "data_file_name",               null: false
@@ -36,6 +36,15 @@ ActiveRecord::Schema.define(version: 20160901042130) do
     t.string   "website"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "phrasing_phrases", force: :cascade do |t|
+    t.string   "locale"
+    t.string   "key"
+    t.text     "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.index ["locale", "key"], name: "index_phrasing_phrases_on_locale_and_key", unique: true
   end
 
   create_table "real_estates", force: :cascade do |t|

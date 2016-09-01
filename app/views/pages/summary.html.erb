@@ -1,55 +1,55 @@
-<% @title = t('summary.executive_summary') %>
+<% @title = phrase('summary.executive_summary') %>
 <div class='container'>
-  <h1><%= t('summary.about_qpc_partners') %></h1>
+  <h1><%= phrase('summary.about_qpc_partners') %></h1>
   <br>
   <div class='row'>
     <div class='col-md-7 col-sm-6 col-12'>
       <br/>
       <%= image_tag 'usachinaflags.jpg', class: 'image-fluid consulting-image' %>
-      <h3><%= t('summary.executive_summary') %></h3>
-      <p><%= t('summary.executive_summary_first')%></p>
-      <p><%= t('summary.executive_summary_second')%></p>
+      <h3><%= phrase('summary.executive_summary') %></h3>
+      <p><%= phrase('summary.executive_summary_first')%></p>
+      <p><%= phrase('summary.executive_summary_second')%></p>
       <% if !english? %>
-        <p><%= t('summary.executive_summary_third') %></p>
+        <p><%= phrase('summary.executive_summary_third') %></p>
       <% end %>
     </div>    
     <div class='col-md-4 col-sm-12 col-md-offset-1'>
       <div class='row'>
         <div class='col-md-12'>
-          <h3><%= t('summary.business_scope') %></h3>
+          <h3><%= phrase('summary.business_scope') %></h3>
           <br />
         </div>
         <div class='col-md-12'>
           <div class='panel panel-default'>
             <div class='panel-heading'>
-              <h3 class='panel-title'><%= t('summary.our_clients') %></h3>
+              <h3 class='panel-title'><%= phrase('summary.our_clients') %></h3>
             </div>
             <div class='panel-body'>
-              <%= t('summary.our_clients_pg') %>
+              <%= phrase('summary.our_clients_pg') %>
             </div>
           </div>
         </div>
         <div class='col-md-12'>
           <div class='panel panel-default'>
             <div class='panel-heading'>
-              <h3 class='panel-title'><%= t('summary.consulting_services') %></h3>
+              <h3 class='panel-title'><%= phrase('summary.consulting_services') %></h3>
             </div>
             <div class='panel-body'>
-              <%= t('summary.consulting_services_pg') %>
+              <%= phrase('summary.consulting_services_pg') %>
             </div>
           </div>
         </div>
         <div class='col-md-12'>
           <div class='panel panel-default'>
             <div class='panel-heading'>
-              <h3 class='panel-title'><%= t('summary.target_acquisition') %></h3>
+              <h3 class='panel-title'><%= phrase('summary.target_acquisition') %></h3>
             </div>
             <div class='panel-body'>
-              <%= t('summary.target_acquisition_pg') %>
+              <%= phrase('summary.target_acquisition_pg') %>
             </div>
             <% if english? %>
               <div class='panel-body'>
-               <%= t('summary.companies_showing') %>
+               <%= phrase('summary.companies_showing') %>
               </div>
             <% end %>
           </div>

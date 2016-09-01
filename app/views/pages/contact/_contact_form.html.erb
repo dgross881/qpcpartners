@@ -3,7 +3,7 @@
     <div class= 'col-md-9'>
       <div class='form-group row'>
         <label class='col-md-3 col-sm-4'>
-          <h4 class='text-right'><%= t('contact.full_name') %></h4>
+          <h4 class='text-right'><%= phrase('contact.full_name') %></h4>
         </label>
         <div class='col-sm-8 col-md-9'>
           <%= text_field_tag "contact[name]", value_for(:contact, :name), class: 'form-control', required: "true" %>
@@ -11,7 +11,7 @@
       </div>
       <div class='form-group row'>
         <label class='col-sm-4 col-md-3'>
-          <h4 class='text-right'><%= t('contacts.email_address') %></h4>
+          <h4 class='text-right'><%= phrase('contacts.email_address') %></h4>
         </label>
         <div class='col-sm-8 col-md-9'>
           <%= text_field_tag "contact[email_address]", value_for(:contact, :name), class: 'form-control', required: "true" %>
@@ -19,7 +19,7 @@
       </div>
       <div class='form-group row'>
         <label class='col-sm-4 col-md-3'>
-          <h4 class='text-right'> <%= t('contacts.phone_number') %></h4>
+          <h4 class='text-right'> <%= phrase('contacts.phone_number') %></h4>
         </label>
         <div class='col-sm-8 col-md-9'>
           <%= text_field_tag "contact[phone_number]", value_for(:contact, :name), class: 'form-control' %>
@@ -27,7 +27,7 @@
       </div>
       <div class='form-group row'>
         <label class='col-sm-4 col-md-3'>
-          <h4 class='text-right'> <%= t('contacts.company_name') %> </h4>
+          <h4 class='text-right'> <%= phrase('contacts.company_name') %> </h4>
         </label>
         <div class='col-sm-8 col-md-9'>
           <%= text_field_tag "contact[company_name]", value_for(:contact, :name), class: 'form-control' %>
@@ -35,7 +35,7 @@
       </div>
       <div class='form-group row'>
         <label class='col-sm-4 col-md-3'>
-          <h4 class='text-right'> <%= t('contacts.company_website') %></h4>
+          <h4 class='text-right'> <%= phrase('contacts.company_website') %></h4>
         </label>
         <div class='col-sm-8 col-md-9'>
           <%= text_field_tag "contact[name]", value_for(:contact, :name), class: 'form-control' %>
@@ -43,7 +43,7 @@
       </div>
       <div class='form-group row'>
         <label class='col-sm-4 col-md-3'>
-          <h4 class='text-right'> <%= t('contacts.message_body') %></h4>
+          <h4 class='text-right'> <%= phrase('contacts.message_body') %></h4>
         </label>
         <div class='col-sm-8 col-md-9'>
           <%= text_area_tag "contact[message_body]", value_for(:contact, :name), class: 'form-control', :required => "true", rows: '5' %>
@@ -51,7 +51,7 @@
       </div>
       <div class='form-group row'>
         <div class='col-sm-8 col-md-9 col-md-offset-3 col-sm-offset-4'>
-          <%= submit_tag t('contacts.send'), class: 'btn btn-block' %>
+          <%= submit_tag phrase('contacts.send'), class: 'btn btn-block' %>
         </div>
       </div>
     </div>
