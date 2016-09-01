@@ -130,32 +130,33 @@
           <div class='field-unit fld_custom'>
             <div class="field-unit__field cstm-field">
               <%= f.label :head_pos, 'Headings Position' %>
-              <%= f.select :head_pos, options_for_select(%w(left center right).map{|c| [c.capitalize, c]}, selected: f.object.head_pos), {}%>
+              <%= f.select :head_pos, options_for_select(%w(left center right).map{|c| [c.capitalize, c]}, selected: f.object.head_pos), {class: 'position-select'}%>
             </div>
           </div>
         </div>
         <div class='col-md-3'>
           <div class='field-unit fld_custom'>
-            <div class="field-unit__field cstm-field">
+            <div class="field-unit__field cstm-field form-group">
               <%= f.label :cta_pos, "CTA's Position" %>
-              <%= f.select :cta_pos, options_for_select(%w(left center right).map{|c| [c.capitalize, c]}, selected: f.object.cta_pos), {} %>
+              <%= f.select :cta_pos, options_for_select(%w(left center right).map{|c| [c.capitalize, c]}, selected: f.object.cta_pos), {}, { class: 'form-control position-select' } %>
             </div>
           </div>
         </div>
         <div class='col-md-3'>
           <div class='field-unit fld_custom'>
-            <div class="field-unit__field cstm-field">
+            <div class="field-unit__field cstm-field form-group">
             <%= f.label :img_pos, 'Image Position <small>(check mobile)</small>'.html_safe %>
-            <%= f.select :img_pos, options_for_select(%w(left center right).map{|c| [c.capitalize, c]}, selected: f.object.img_pos), {}%>
+            <%= f.select :img_pos, options_for_select(%w(left center right).map{|c| [c.capitalize, c]}, selected: f.object.img_pos), {class: 'position-select'}%>
            </div>
           </div>
         </div>
       <% fields.each do |field| %>
         <div class='col-md-3'>
          <div class='field-unit fld_custom'>
-            <div class="field-unit__field cstm-field">
+            <div class="field-unit__field cstm-field form-group">
                   <%= f.label field[:name], field[:title] %>
                   <%= f.text_field field[:name], class: 'form-control color-picker', 'data-color' => field[:color] %>
+                  <span class='input-group-addon' style="background-color:<%= field[:color] %>"></span>
             </div>
           </div>
         </div>

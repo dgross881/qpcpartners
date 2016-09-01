@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     resources :services
     resources :contacts
     resources :slides
+    resources :summary
 
     root to: "real_estates#index"
   end

@@ -2,18 +2,19 @@
 @import 'home';
 @import 'realestate';
 @import 'services';
+@import 'contacts';
 @import 'navbar';
 
-.dark-well { 
+.dark-well {
 	background-color: hsla(0, 0%, 0%, .35);
 	border-color: #222;
 	color: white;
-	@include box-shadow(inset, 0, 0, 8px, black); 
+	@include box-shadow(inset, 0, 0, 8px, black);
 }
 
-p.well { 
+p.well {
 	color: #111;
-	text-shadow: none; 
+	text-shadow: none;
 }
 
 
@@ -36,7 +37,7 @@ p.well {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
-  color: #d8d8d8; 
+  color: #d8d8d8;
 }
 
 .lead {

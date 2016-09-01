@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160523091224) do
+ActiveRecord::Schema.define(version: 20160523132945) do
 
   create_table "ckeditor_assets", force: :cascade do |t|
     t.string   "data_file_name",               null: false
@@ -98,6 +98,13 @@ ActiveRecord::Schema.define(version: 20160523091224) do
     t.string   "head_pos",           default: "left"
     t.string   "cta_pos",            default: "right"
     t.string   "img_pos",            default: "center"
+  end
+
+  create_table "summaries", force: :cascade do |t|
+    t.text     "body"
+    t.boolean  "publish",    default: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
   end
 
 end

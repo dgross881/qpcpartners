@@ -1,15 +1,15 @@
-zh-CN: 
-  nav: 
-    english: 'EN' 
+zh-CN:
+  nav:
+    english: 'EN'
     chinese: '中文'
     summary: '执行摘要'
-    services: '业务服务' 
-    consulting: '咨询项目' 
+    services: '业务服务'
+    consulting: '咨询项目'
     real_estate: '不动产项目'
     investment: '投资项目'
     contact: '联系我们'
-  home: 
-    carousel: 
+  home:
+    carousel:
       blue_hd: 'Maritime Solutions Inc.’s safe, environmentally-sound shipboard ballast water treatment system'
       blue_pg: 'Solution addresses the global ballast water problem of the shipping industry that cause contamination of the world’s harbors and waterways by delivering aquatic nuisance species during ship ballast operations (taking on or discharging water to balance ships).'
       green_hd: '即将投资的项目'
@@ -23,7 +23,7 @@ zh-CN:
       dragon_pg: 'QPC为客户他们不具备的国际交易所需的技能（例如，管理方法，文化/语言，法律，会计）'
       deal_hd: '重点项目'
       deal_pg: 'QPC与客户合作，在他们承接项目之前了解他们的需求并省去无效的运作，让客户能专注于正确的道路上并获得自己想要的结果'
-  summary: 
+  summary:
     title: '执行摘要'
     executive_summary: '执行摘要'
     about_qpc_partners: '执行摘要'
@@ -35,21 +35,21 @@ zh-CN:
     business_scope: '工作范围'
     our_clients: '客户'
     our_clients_pg: '可投资资产> 100万美元并希望跨境投资或拓展业务的中国和美国的普通公民，公司和企业。中国客户主要来源于中国一、二线城市。在过去的二十年中，由于中国的经济繁荣和人民币或外币的现金流入和财富积累，这些客户都获得了利益。中国的经济增长和投资回报率不断下降，减少了开放外国直接投资机会的可能性。美国的客户主要是来自于东北海岸，他们主要看上了中国的出口量和消费者需求的日益增大.'
-    consulting_services: '咨询服务' 
+    consulting_services: '咨询服务'
     consulting_services_pg: '个人, 公司或需要跨境专业业务咨询服务的企业. QPC的合作伙伴将在30多个国家建立自己的业务网络, 在咨询上协助客户.'
     target_acquisition: '收购目标'
     target_acquisition_pg: '在美国的公司，项目，房地产或资产为利益相关者提供了机会，创造了增长和价值。目前，大多数美国资产价值被低估，但国家的经济前景正在改善。为了价值增长或减轻债务，这些公司必须获得的资金，但却是很难从陷入困境的美国银行业或战略合作伙伴那里获得的。 年收益额小于20,000,000美元的公司规模和小于10,000,000美元的交易额。'
 
-  services: 
+  services:
     niche_markets: 'QPC市场定位'
     niche_markets_pg_first: 'QPC将向中国和美国的客户提供大型投资机构和投资银行服务范围内容以外的服务。专注于涉及中小型交易的中国在美国设立或收购资产的实体。这些交易需要在中小型投资交易里所需的特殊的技能.'
-    business_development: '询服务' 
+    business_development: '询服务'
     business_development_pg: '个人，公司或需要跨境专业业务咨询服务的企业。 QPC的合作伙伴将在30多个国家建立自己的业务网络，在咨询上协助客户.'
     corporate_expansion: 'Corporate Expansion & Investment'
     corporate_expansion_pg: 'Business development and cross-border expansion.'
     private_company: 'Private Company Expansion'
     private_company_pg: 'Small-to-mid-cap clients with assets ranging from $0.5-10 mill USD in the short-term to $10-20 mill USD for the mid-term.'
-  services: 
+  services:
     building_hd: '建筑材料'
     building_pg: '为新产品从研发全球拓展进入30个市场。这些市场近10年每年产品销售额达5亿美元。'
     electronics_hd: '电子'
@@ -59,7 +59,7 @@ zh-CN:
     textile_hd: '纺织'
     textile_pg: '需求导向项目，协助服装生产线寻找供应商。供应导向项目，为制造商开发国际市场。'
     title: "咨询项目"
-  contacts: 
+  contacts:
     title: '联系我们'
     lead: '欢迎您使用以下方式联系我们， 谢谢！'
     full_name: 'Full Name'
@@ -74,4 +74,9 @@ zh-CN:
     commercial: '商业和住宅'
     cur_projects: '当前的项目'
     rec_projects: '近期的项目'
-
+  investments:
+     title: 投资项目
+  marketing:
+    networks: 专家联络
+    portfolio: 形形色色的案例
+    luxury: 豪华房产

@@ -1,21 +1,24 @@
 source 'http://rubygems.org'
-ruby '2.3.0'
-gem 'rails', '4.2.6'
+
+ruby '2.3.1'
+
+# Update Dockerfile if you change the Rails version
+gem 'rails', '5.0.0.1', '< 5.1'
 gem 'pg'
 
-#css 
-gem 'routing-filter', '~> 0.5.1'
+#css
 gem 'bootstrap-sass'
 gem 'bootstrap-colorpicker-rails'
 gem 'font-awesome-rails'
 gem 'autoprefixer-rails'
 gem 'dotenv-rails'
 
+gem 'routing-filter', branch: 'rails5-final'
 
 #admin
-gem "administrate", "~> 0.1.4"
+gem 'administrate', github: 'thoughtbot/administrate', branch: 'rails-5'
+gem 'bourbon'
 gem "ckeditor"
-
 
 #images
 gem 'paperclip'

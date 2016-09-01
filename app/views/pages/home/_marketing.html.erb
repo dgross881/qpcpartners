@@ -1,0 +1,28 @@
+  <div class="container marketing">
+    <div class="row">
+      <div class="col-sm-4">
+        <%= image_tag 'experts.jpg', :class => 'img-circle' %>
+        <h2><%= I18n.t('marketing.networks') %></h2>
+        <p>
+          Our core team is composed of experts from integral sectors such as finance, law, government regulation and logistics.
+        </p>
+        <%= link_to 'Learn More',  services_path, class: 'btn btn-default' %>
+      </div>
+      <div class="col-sm-4">
+        <%= image_tag 'portfolio.jpg', :class => 'img-circle' %>
+        <h2><%= I18n.t('marketing.portfolio') %></h2>
+        <p>
+          We are engaged in numerous high-yield markets within China and the United States as product developers and consultants.
+        </p>
+        <%= link_to 'View Details',  consulting_path, class: 'btn btn-default' %>
+      </div>
+      <div class="col-sm-4">
+        <%= image_tag 'luxury_homes_sm.jpg', :class => 'img-circle' %>
+        <h2><%= I18n.t('marketing.luxury') %></h2>
+        <p>
+          Through direct investment and strategic partnerships, QPC offers its clients exclusive access to the finest investment opportunities in New York.
+        </p>
+        <%= link_to 'Learn More', real_estate_path, class: 'btn btn-default' %>
+      </div>
+    </div>
+  </div>

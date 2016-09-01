@@ -1,8 +1,8 @@
 //= require jquery
 //= require jquery_ujs
-//= require selectize
 //= require moment
+//= require selectize
 //= require datetime_picker
-//= require bootstrap-colorpicker
 //= require ckeditor/init
+//= require bootstrap-colorpicker
 //= require_tree .

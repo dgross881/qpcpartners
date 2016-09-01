@@ -1,6 +1,6 @@
 en:
-  nav: 
-    english: 'EN' 
+  nav:
+    english: 'EN'
     chinese: '中文'
     summary: 'Summary'
     services: 'Services'
@@ -8,14 +8,14 @@ en:
     real_estate: 'Real Estate'
     investment: 'Investment'
     contact: 'Contact'
-  home: 
-    carousel: 
+  home:
+    carousel:
       blue_hd: 'Maritime Solutions Inc.’s safe, environmentally-sound shipboard ballast water treatment system'
       blue_pg: 'Solution addresses the global ballast water problem of the shipping industry that cause contamination of the world’s harbors and waterways by delivering aquatic nuisance species during ship ballast operations (taking on or discharging water to balance ships).'
       green_hd: 'Upcoming Investment Projects'
       green_pg: 'Fund being raised through August 2013 for Sept-Dec foreclosure purchases in the Washington DC and NYC metro areas.'
       red_hd: 'Bionic Eye Technologies Inc.'
-      red_pg: 'QPC provides consulting services to Bionic Eye Technologies Inc. during first round capital raising in July 2013.' 
+      red_pg: 'QPC provides consulting services to Bionic Eye Technologies Inc. during first round capital raising in July 2013.'
     featurette:
       bridge_hd: 'Bridging the Gap'
       bridge_pg: 'With in-depth cross-cultural understanding, QPC is positioned to assist its clients with addressing potential issues involved with international investment and expansion before they arise.'
@@ -23,7 +23,7 @@ en:
       dragon_pg: 'Our objective is to effectively consult our clients on the hurdles and requirements involved in international expansion, to eliminate bottlenecks and allow clients to focus on developing and implementing strategies for the future growth.'
       deal_hd: 'Deal Execution'
       deal_pg: 'We provide our clients with the knowledge and skills necessary to successfully execute international transactions, including (but not limited to): project management, cultural briefings, as well as language, legal, and financial services'
-  summary: 
+  summary:
     executive_summary: 'Executive Summary'
     about_qpc_partners: 'About QPC Partners'
     about_qpc: 'About QPC'
@@ -39,7 +39,7 @@ en:
     target_acquisition: 'Target Acquisition'
     target_acquisition_pg: "US-based companies, projects, real estate or assets presenting opportunities to create growth and value for stakeholders. At present, most US assets are under-valued while the country's economic outlook is improving. In order to fund growth, or relieve debt, these companies must obtain capital from the troubled US banking industry or through strategic partnerships."
     companies_showing: 'Companies showing less than $20 million USD annual revenue with deal size less than $10 million USD.'
-  services: 
+  services:
     title: 'Services'
     lang: 'en'
     niche_markets: 'Niche Markets'
@@ -48,11 +48,11 @@ en:
     niche_markets_pg_third: 'QPC offers its US clients in-depth troubleshooting assistance, business development consulting, and marketing guidance in order to capture Chinese consumer demand and interest.'
     business_development: 'Business Development Consulting'
     business_development_pg: 'Chinese and United States companies entering international markets.'
-    corporate_expansion: 'Corporate Expansion & Investment' 
+    corporate_expansion: 'Corporate Expansion & Investment'
     corporate_expansion_pg: 'Business development and cross-border expansion.'
     private_company: 'Private Company Expansion'
     private_company_pg: 'Small-to-mid-cap clients with assets ranging from $0.5-10 mill USD in the short-term to $10-20 mill USD for the mid-term.'
-  consulting: 
+  consulting:
     building_hd: 'Building Materials'
     building_pg: 'Guided process for new product from R&D to global expansion entering 30+ markets. In less than 10 years the product has reached $500 mill in annual sales.'
     electronics_hd: 'Electronics'
@@ -62,7 +62,7 @@ en:
     textile_hd: 'Textiles'
     textile_pg: 'Demand-oriented projects assisting clothing manufacturers in finding alternative suppliers, in addition to supply-oriented projects developing international markets for manufacturers.'
     title: 'Consulting Projects'
-  contacts: 
+  contacts:
     title: 'Contact Us'
     lead: 'Please contact us via form or contact information below.'
     full_name: 'Full Name'
@@ -72,8 +72,15 @@ en:
     company_website: 'Company Website'
     message_body: 'Message Body'
     send: 'Send'
-  realestate: 
+  realestate:
     title: 'Real Estate'
     commercial: 'Commercial and Residential'
     cur_projects: 'Current Project'
     rec_projects: 'Recent Projects'
+  investments:
+    title: Investment Projects
+  marketing:
+    networks: Network of Experts
+    portfolio: Diverse Project Portfolio
+    luxury: Luxury Real Estate
+
