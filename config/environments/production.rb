@@ -62,7 +62,7 @@ Rails.application.configure do
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = "//#{ENV['aws_s3_host_alias']}"
   # config.assets.prefix = '/production/assets'
-  config.static_cache_control = 'public, max-age=315576000'
+  config.public_file_server.headers = { 'Cache-Control' => 'public, max-age=315576000' }
   Excon.defaults[:nonblock] = false
   config.assets.raise_runtime_errors = true
 

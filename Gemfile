@@ -50,9 +50,10 @@ group :test do
 	gem 'autotest'
 end
 
+
 group :production do
-  gem 'puma'
 	gem 'rack-www'
+  gem 'puma'
 end
 
 # Foreman: To run Nginx and Unicorn
