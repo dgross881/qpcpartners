@@ -50,7 +50,7 @@ group :test do
 	gem 'autotest'
 end
 
-gem 'puma'
+#gem 'puma'
 
 group :production do
   gem 'rails_12factor'

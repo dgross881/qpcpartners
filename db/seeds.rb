@@ -12,7 +12,7 @@ roles.each.with_index(1) do |role, index|
   puts "[#{index}..#{roles.length}] Created Role: #{role}"
 end
 
-User.create!(email: 'gwilson@qpcpartners.com ', password: 'gregchangethis', roles: Role.where(name: %w(superadmin))) unless User.find_by(email: 'admin@user.com')
+User.create!(email: 'gwilson@qpcpartners.com', password: 'gregchangethis', roles: Role.where(name: %w(superadmin))) unless User.find_by(email: 'admin@user.com')
 
 #Service.create(title_cn: '客户/投资者巡回指导',  description_cn: '上海办事处在上海，杭州，苏州进行巡回指导，继而扩展到更多中国的二线城市', title_en: "Investor Road Shows", description_en: "QPC conducts Investor Road Shows throughout the key markets of the Yangzi River Delta Region –– Shanghai, Suzhou, Nanjing, Hangzhou and Ningbo.")
 
