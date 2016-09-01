@@ -32,7 +32,6 @@ group :development, :test do
 	gem 'sqlite3'
 	gem 'byebug'
 	gem 'capybara'
-	gem 'haml-rails'
 end
 
 group :test do
@@ -63,7 +62,6 @@ group :assets do
 end
 
 gem 'thin'
-gem 'haml'
 gem 'turbolinks'
 gem 'jquery-rails'
 
