@@ -18,9 +18,9 @@
 		position: absolute;
 		overflow: hidden; } }
 	
-.item-blue { background-image: image-url('bg-lg-blue.jpg'); }
-.item-red { background-image: image-url('bg-lg-red.jpg'); }
-.item-green { background-image: image-url('bg-lg-green.jpg'); }
+.item-blue { background-image: url(image_path('bg-lg-blue.jpg')); }
+.item-red { background-image: url(image_path('bg-lg-red.jpg')); }
+.item-green { background-image: url(image_path('bg-lg-green.jpg')); }
 
 // interior text (ie. carousel-caption)
 .carousel-text-block {
