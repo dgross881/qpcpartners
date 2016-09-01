@@ -19,12 +19,6 @@ test: &test
   timeout: 5000
 
 production:
-  adapter: postgresql
-  encoding: unicode
-  username: <%= ENV['PSQL_GOOGLENAME'] %>
-  password: <%= ENV['PSQL_GOOGLEPASSWORD'] %>
   pool: 5
-  host: 104.197.209.68
   timeout: 5000
-  database: qpc-production-vm
 
