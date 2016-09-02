@@ -26,8 +26,8 @@ gem "haml"
 
 #images
 gem 'paperclip'
-gem "fog-google"
-gem "google-api-client"
+gem 'aws-sdk'
+gem "fog"
 gem "mime-types"
 
 # Bundle edge Rails instead:
