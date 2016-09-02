@@ -8,7 +8,7 @@
             { name: :color_cta_2_text, title: 'CTA #2 Color', color: 'rgba(255,255,255,1)' },
             { name: :color_cta_2_bg, title: 'CTA #2 BG', color: 'rgba(238,123,52,1)' },
             { name: :color_cta_2_hover, title: 'CTA #2 Hover BG', color: 'rgba(107,197,170,1)' }
-           ] 
+           ]
 %>
 
 <%= form_for([namespace, page.resource], html: { class: "form" }) do |f| %>
@@ -175,7 +175,7 @@
       <%= f.hidden_field :head_pos, value: 'left' %>
       <%= f.hidden_field :cta_pos, value: 'right' %>
     <% end %>
-  
+
   <div class="form-actions">
     <%= f.submit %>
   </div>

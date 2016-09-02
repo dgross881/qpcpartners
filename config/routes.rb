@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     resources :services
     resources :contacts
     resources :slides
-    resources :summary
+    resources :summaries
 
     root to: "real_estates#index"
   end
@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   filter :locale
   get "contact/new" => "contacts#new"
   root :to => 'pages#home'
-  
+
   get "/summary" => "pages#summary", as: :summary
   get "/services" => "pages#services", as: :services
   get "/consulting" => "pages#consulting", as: :consulting

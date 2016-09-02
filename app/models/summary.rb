@@ -10,5 +10,5 @@
 #
 
 class Summary < ActiveRecord::Base
-  #validates :body, precense: true 
+#  validates :body, precense: true
 end
