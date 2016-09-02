@@ -8,12 +8,10 @@ module Admin
   class ApplicationController < Administrate::ApplicationController
     before_filter :verify_access
 
-    protected 
+    protected
 
     def verify_access
-      authenticate_or_request_with_http_basic("Restricted Access") do |username, password|
-        username == ENV['ADMIN_NAME'] && password == ENV['ADMIN_PASSWORD']
-      end
+      current_user.has_role?("superadmin") if current_user.present?
     end
   end
 end
