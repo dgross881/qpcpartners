@@ -30,8 +30,7 @@ class RealEstate < ActiveRecord::Base
 
   attached_file_module(:attachment, '/real_estate/:basename/:style/:basename.:extension', {
                          styles: { mini: '200x134>', small: '400x268>', house: '700x469>'},
-                         google_headers: lambda { |attachment| 
-                                  byebug
+                         google_headers: lambda { |attachment|
                                   { 'Content-Type' => attachment.content_type,
                                     'Content-Disposition' => "attachment; filename=#{attachment.original_filename}"
                                   }
