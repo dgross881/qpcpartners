@@ -11,6 +11,7 @@ module Admin
     protected
 
     def verify_access
+      redirect_to new_user_session_path if !current_user
       current_user.has_role?("superadmin") if current_user.present?
     end
   end
