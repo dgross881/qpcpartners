@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   helper :all
-  
+
   def home
     @index = true
   end
@@ -12,7 +12,7 @@ class PagesController < ApplicationController
     @services = Service.all
   end
 
-  def consulting
+  def current_trade
   end
 
   def real_estate

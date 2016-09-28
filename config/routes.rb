@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :real_estates
     resources :services
+    resources :investments
+    resources :current_trades
     resources :contacts
     resources :slides
     resources :summaries
@@ -17,7 +19,7 @@ Rails.application.routes.draw do
 
   get "/summary" => "pages#summary", as: :summary
   get "/services" => "pages#services", as: :services
-  get "/consulting" => "pages#consulting", as: :consulting
+  get "/current_trade" => "pages#current_trade", as: :current_trade
   get "/investment" => "pages#investment", as: :investment
   get "/real_estate" => "pages#real_estate", as: :real_estate
   get "/contact" => "pages#contact", as: :contact

@@ -1,5 +1,7 @@
 //= require jquery
 //= require jquery_ujs
+//= require jquery.cookie
+//= require phrasing
 //= require bootstrap/dropdown
 //= require bootstrap/transition
 //= require bootstrap/carousel
@@ -8,7 +10,6 @@
 //= require bs_overrides
 //= require utils.js
 //= require misc.js
-//= require phrasing
 
 $(function() {
   $(document).on('click', 'a', function(e) {

@@ -22,7 +22,9 @@ gem "ckeditor"
 
 #editing
 gem "phrasing", branch: 'new-release-4'
+gem 'jquery-cookie-rails', github: 'dgross881/jquery-cookie-rails', branch: 'master'
 gem "haml"
+
 
 #images
 gem 'paperclip'
@@ -64,7 +66,6 @@ gem 'foreman'
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 5.0'
-  gem 'coffee-rails', '~> 4.1.0'
   gem 'compass-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes

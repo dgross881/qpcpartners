@@ -4,7 +4,7 @@ en:
     chinese: '中文'
     summary: 'Summary'
     services: 'Services'
-    consulting: 'Consulting'
+    consulting: 'Current Trade'
     real_estate: 'Real Estate'
     investment: 'Investment'
     contact: 'Contact'
@@ -80,7 +80,10 @@ en:
   investments:
     title: Investment Projects
   marketing:
-    networks: Network of Experts
-    portfolio: Diverse Project Portfolio
-    luxury: Luxury Real Estate
+    networks: 'Network of Experts'
+    network_info: 'Our core team is composed of experts from integral sectors such as finance, law, government regulation and logistics.'
+    portfolio: 'Diverse Project Portfolio'
+    portfolio_info: 'We are engaged in numerous high-yield markets within China and the United States as product developers and consultants.'
+    luxury: 'Luxury Real Estate'
+    luxury_info: 'Through direct investment and strategic partnerships, QPC offers its clients exclusive access to the finest investment opportunities in New York.'
 

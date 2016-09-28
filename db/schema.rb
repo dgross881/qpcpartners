@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160901060430) do
+ActiveRecord::Schema.define(version: 20160928050411) do
 
   create_table "ckeditor_assets", force: :cascade do |t|
     t.string   "data_file_name",               null: false
@@ -36,6 +36,32 @@ ActiveRecord::Schema.define(version: 20160901060430) do
     t.string   "website"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "current_trades", force: :cascade do |t|
+    t.string   "title_en"
+    t.string   "title_cn"
+    t.string   "description_en"
+    t.text     "description_cn"
+    t.string   "attachment_file_name"
+    t.string   "attachment_content_type"
+    t.integer  "attachment_file_size"
+    t.datetime "attachment_updated_at"
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
+
+  create_table "investments", force: :cascade do |t|
+    t.string   "title_en"
+    t.string   "title_cn"
+    t.text     "description_en"
+    t.text     "description_cn"
+    t.string   "attachment_file_name"
+    t.string   "attachment_content_type"
+    t.integer  "attachment_file_size"
+    t.datetime "attachment_updated_at"
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   create_table "phrasing_phrases", force: :cascade do |t|
