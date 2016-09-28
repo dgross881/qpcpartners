@@ -24,7 +24,7 @@ class CurrentTradeDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :id,
-    :attachment
+    :attachment,
     :title_en,
     :title_cn,
     :description_en,
