@@ -9,15 +9,11 @@ class CurrentTradeDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     id: Field::Number,
+    attachment: PaperclipField,
     title_en: Field::String,
     title_cn: Field::String,
     description_en: Field::String,
     description_cn: Field::Text,
-    attachment_file_name: Field::String,
-    attachment_content_type: Field::String,
-    attachment_file_size: Field::Number,
-    attachment_updated_at: Field::DateTime,
-    created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
 
@@ -28,6 +24,7 @@ class CurrentTradeDashboard < Administrate::BaseDashboard
   # Feel free to add, remove, or rearrange items.
   COLLECTION_ATTRIBUTES = [
     :id,
+    :attachment
     :title_en,
     :title_cn,
     :description_en,
@@ -37,14 +34,11 @@ class CurrentTradeDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed on the model's show page.
   SHOW_PAGE_ATTRIBUTES = [
     :id,
+    :attachment,
     :title_en,
     :title_cn,
     :description_en,
     :description_cn,
-    :attachment_file_name,
-    :attachment_content_type,
-    :attachment_file_size,
-    :attachment_updated_at,
     :created_at,
     :updated_at,
   ].freeze
@@ -53,14 +47,11 @@ class CurrentTradeDashboard < Administrate::BaseDashboard
   # an array of attributes that will be displayed
   # on the model's form (`new` and `edit`) pages.
   FORM_ATTRIBUTES = [
+    :attachment,
     :title_en,
     :title_cn,
     :description_en,
     :description_cn,
-    :attachment_file_name,
-    :attachment_content_type,
-    :attachment_file_size,
-    :attachment_updated_at,
   ].freeze
 
   # Overwrite this method to customize how current trades are displayed

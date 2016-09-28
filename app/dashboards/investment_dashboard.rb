@@ -9,11 +9,11 @@ class InvestmentDashboard < Administrate::BaseDashboard
   # on pages throughout the dashboard.
   ATTRIBUTE_TYPES = {
     id: Field::Number,
+    attachment: PaperclipField,
     title_en: Field::String,
     title_cn: Field::String,
     description_en: Field::String,
     description_cn: Field::Text,
-    attachment: PaperclipField,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
