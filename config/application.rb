@@ -15,7 +15,7 @@ module Qpcpartners
     config.active_record.raise_in_transactional_callbacks = true
     config.autoload_paths << Rails.root.join('lib')
     config.autoload_paths << Rails.root.join('/app/models/concerns')
-    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]
+    config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.enforce_available_locales = true
     config.i18n.available_locales = %w(en zh-CN)
     config.i18n.default_locale = :en
