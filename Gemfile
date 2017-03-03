@@ -16,7 +16,7 @@ gem 'dotenv-rails'
 gem 'routing-filter', branch: 'rails5-final'
 
 #admin
-gem 'administrate', github: 'thoughtbot/administrate', branch: 'rails-5'
+gem 'administrate'
 gem 'bourbon'
 gem "ckeditor"
 
