@@ -21,9 +21,9 @@ class PagesController < ApplicationController
   end
 
   def investment
+    @investments = Investment.all
   end
 
   def contact
   end
-
 end

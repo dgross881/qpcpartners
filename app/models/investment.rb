@@ -28,4 +28,14 @@ class Investment < ApplicationRecord
                          convert_options: { all: '-strip -auto-orient -colorspace sRGB -quality 80 -interlace Plane' },
                          default_style: :small
                        })
+
+  # Validate content type
+  validates_attachment_content_type :attachment, :content_type => /\Aimage/
+
+  # Validate filename
+  validates_attachment_file_name :attachment, :matches => [/png\Z/, /jpe?g\Z/]
+ 
+  def description(lang)
+    lang.include?('en') ? description_en : description_cn 
+  end
 end

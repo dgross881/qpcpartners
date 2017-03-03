@@ -12,8 +12,8 @@ class InvestmentDashboard < Administrate::BaseDashboard
     attachment: PaperclipField,
     title_en: Field::String,
     title_cn: Field::String,
-    description_en: Field::String,
-    description_cn: Field::Text,
+    description_en: CkeditorField,
+    description_cn: CkeditorField,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
