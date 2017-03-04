@@ -1,55 +1,28 @@
 <div class='carousel slide' id='mainSlider'>
   <ol class='carousel-indicators'>
-    <li data-target='#mainSlider' data-slide-to='0' class='active'></li>
-    <li data-target='#mainSlider' data-slide-to='1' ></li>
-    <li data-target='#mainSlider' data-slide-to='2' ></li>
+   <% (0..@sliders.length).each do |index| %>
+     <li data-target='#mainSlider' data-slide-to="<%= index %>" class='<%= 'active' if index == 0 %>'></li>
+   <% end %>
   </ol>
+
   <div class='carousel-inner'>
-    <div class='item active' style="background-image: url(<%= asset_path('bg-lg-blue.jpg') %>) ">
+   <% @sliders.each_with_index do |slide, index| %>
+     <div class='item <%= 'active' if index == 0 %>' style="background-image: url(<%= asset_path(slide.attachment_background.url(:original)) %>) ">
       <div class='row'>
         <div class='col-md-5 col-md-offset-1 image-carousel'>
-          <%= image_tag "clean-water.jpg", :class => "image-fluid image-carousel circlized-carousel-image" %>
+          <%= image_tag slide.attachment.url(:original), class: "image-fluid image-carousel circlized-carousel-image" %>
         </div>
         <div class='col-md-4'>
           <div class='carousel-text-block'>
            <a href="/investment">
-             <h3><%= phrase('home.carousel.blue_hd') %></h3>
-             <p><%= phrase('home.carousel.blue_pg') %></p>
+             <h3><%= slide.title(lang) %></h3>
+             <p><%= slide.description(lang) %></p>
            </a>
           </div>
         </div>
       </div>
     </div>
-    <div class='item' style="background-image: url(<%= asset_path('bg-lg-red.jpg') %>) ">
-      <div class='row'>
-        <div class='col-md-5 col-md-offset-1 image-carousel'>
-          <%= image_tag "bionic-eye-carousel.png", :class => "image-fluid image-carousel circlized-carousel-image" %>
-        </div>
-        <div class='col-md-4'>
-          <div class='carousel-text-block'>
-           <a href="/investment">
-             <h3><%= phrase('home.carousel.red_hd') %></h3>
-             <p><%= phrase('home.carousel.red_pg') %></p>
-           </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class='item' style="background-image: url(<%= asset_path('bg-lg-green.jpg') %>)">
-      <div class='row'>
-        <div class='col-md-5 col-md-offset-1 image-carousel'>
-          <%= image_tag "fundraising-carousel.png", :class => "image-fluid image-carousel circlized-carousel-image" %>
-        </div>
-        <div class='col-lg-4 col-sm-4 col-12'>
-          <div class='carousel-text-block'>
-            <a href="/investment">
-              <h3><%= phrase('home.carousel.green_hd') %></h3>
-              <p><%= phrase('home.carousel.green_pg') %></p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
+    <% end %>
     <a href="#mainSlider" data-slide='prev' class='left carousel-control'><span class='glyphicon glyphicon-chevron-left'></span></a>
     <a href="#mainSlider" data-slide='next' class='right carousel-control'><span class='glyphicon glyphicon-chevron-right'></span></a>
   </div>

@@ -3,6 +3,7 @@ class PagesController < ApplicationController
 
   def home
     @index = true
+    @sliders = Slide.all 
   end
 
   def summary

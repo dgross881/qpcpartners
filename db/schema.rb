@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160928050411) do
+ActiveRecord::Schema.define(version: 20170303234113) do
 
   create_table "ckeditor_assets", force: :cascade do |t|
     t.string   "data_file_name",               null: false
@@ -117,17 +117,13 @@ ActiveRecord::Schema.define(version: 20160928050411) do
   end
 
   create_table "slides", force: :cascade do |t|
-    t.string   "name"
-    t.text     "body"
+    t.string   "title_en"
+    t.text     "description_en"
     t.string   "link_url"
     t.boolean  "published"
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "position",           default: 0,        null: false
+    t.integer  "position",                           default: 0,        null: false
     t.string   "cta_1_text"
     t.string   "cta_1_link"
     t.string   "cta_2_text"
@@ -142,9 +138,19 @@ ActiveRecord::Schema.define(version: 20160928050411) do
     t.string   "color_cta_1_hover"
     t.string   "color_cta_2_hover"
     t.string   "alt_text"
-    t.string   "head_pos",           default: "left"
-    t.string   "cta_pos",            default: "right"
-    t.string   "img_pos",            default: "center"
+    t.string   "head_pos",                           default: "left"
+    t.string   "cta_pos",                            default: "right"
+    t.string   "img_pos",                            default: "center"
+    t.string   "attachment_background_file_name"
+    t.string   "attachment_background_content_type"
+    t.integer  "attachment_background_file_size"
+    t.datetime "attachment_background_updated_at"
+    t.string   "title_cn"
+    t.text     "description_cn"
+    t.string   "attachment_file_name"
+    t.string   "attachment_content_type"
+    t.integer  "attachment_file_size"
+    t.datetime "attachment_updated_at"
   end
 
   create_table "summaries", force: :cascade do |t|
